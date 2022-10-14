@@ -1,0 +1,4 @@
+stm32_f103c6_RCC.c:36:10:MCAL_Get_SYSCLC_FREQ	4	static
+stm32_f103c6_RCC.c:55:10:MCAL_Get_HCLC_FREQ	8	static
+stm32_f103c6_RCC.c:60:10:MCAL_Get_PCLC1_FREQ	8	static
+stm32_f103c6_RCC.c:65:10:MCAL_Get_PCLC2_FREQ	8	static

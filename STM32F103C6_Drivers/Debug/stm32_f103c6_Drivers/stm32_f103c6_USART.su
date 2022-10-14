@@ -1,0 +1,11 @@
+stm32_f103c6_USART.c:63:6:MCAL_USART_Init	24	static
+stm32_f103c6_USART.c:143:6:MCAL_USART_DeInit	16	static
+stm32_f103c6_USART.c:170:6:MCAL_USART_Set_Pin	24	static
+stm32_f103c6_USART.c:274:6:MCAL_USART_Send_String	24	static
+stm32_f103c6_USART.c:327:6:MCAL_USART_Receive_String	24	static
+stm32_f103c6_USART.c:381:6:MCAL_USART_SendData	24	static
+stm32_f103c6_USART.c:431:6:MCAL_USART_WAIT_TC	16	static
+stm32_f103c6_USART.c:448:6:MCAL_USART_ReceiveData	24	static
+stm32_f103c6_USART.c:540:6:USART1_IRQHandler	8	static
+stm32_f103c6_USART.c:545:6:USART2_IRQHandler	8	static
+stm32_f103c6_USART.c:550:6:USART3_IRQHandler	8	static
