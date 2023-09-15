@@ -1,0 +1,5 @@
+stm32_f103c6_Flash.c:21:6:MCAL_Flash_Unlock	4	static
+stm32_f103c6_Flash.c:30:6:MCAL_Flash_Lock	4	static
+stm32_f103c6_Flash.c:36:6:MCAL_Flash_Main	8	static
+stm32_f103c6_Flash.c:83:13:Receive_Image	16	static
+stm32_f103c6_Flash.c:92:13:Write_Image	16	static

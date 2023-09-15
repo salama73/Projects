@@ -1,0 +1,2 @@
+delay.c:11:6:delay_ms	16	static
+delay.c:27:6:delay_us	16	static

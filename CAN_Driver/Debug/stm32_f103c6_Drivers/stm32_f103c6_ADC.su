@@ -1,0 +1,2 @@
+stm32_f103c6_ADC.c:19:6:MCAL_ADC_Init	16	static
+stm32_f103c6_ADC.c:72:10:MCAL_ADC_Read	24	static

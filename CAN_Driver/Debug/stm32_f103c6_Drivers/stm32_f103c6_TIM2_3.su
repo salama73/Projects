@@ -1,0 +1,4 @@
+stm32_f103c6_TIM2_3.c:66:6:MCAL_TIMx_Init	32	static
+stm32_f103c6_TIM2_3.c:284:6:MCAL_TIMx_Set_Compare_Value	16	static
+stm32_f103c6_TIM2_3.c:321:6:MCAL_TIMx_Set_TOP_Value	16	static
+stm32_f103c6_TIM2_3.c:334:6:MCAL_TIMx_DeInit	16	static

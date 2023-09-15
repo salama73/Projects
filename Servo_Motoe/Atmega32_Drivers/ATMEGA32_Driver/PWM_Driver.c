@@ -43,7 +43,7 @@ void MCAL_PWM_Init(PWM_config_t* PWM_Config)
 	uint8_t Temp_TCCR1B=0 , Temp_TCCR1A=0 ;
 	//Set Fast PWM and TOP at ICR1
 	Temp_TCCR1B |=(3<<3) ;
-	Temp_TCCR1A |=(2<<0) ;
+	Temp_TCCR1A |=(1<<1) ;
 	//Set Output_Compare_pin_A
 	Temp_TCCR1A |=PWM_Config->Output_Compare_pin_A ;
 	if ( PWM_Config->Output_Compare_pin_A != PWM_Output_Compare_pin_A_Disable)

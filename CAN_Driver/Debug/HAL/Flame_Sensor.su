@@ -1,0 +1,2 @@
+Flame_Sensor.c:9:6:Flame_Sensor_Init	40	static
+Flame_Sensor.c:26:10:Flame_Sensor_Read	8	static

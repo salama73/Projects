@@ -36,8 +36,6 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
                               ATMEGA32_Driver/I2C_Driver.o (__tablejump2__)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                              main.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
                               ATMEGA32_Driver/EXTI_Driver.o (__do_clear_bss)
 
@@ -62,30 +60,14 @@ Discarded input sections
  .text          0x00000000        0x0 ATMEGA32_Driver/GPIO_Driver.o
  .data          0x00000000        0x0 ATMEGA32_Driver/GPIO_Driver.o
  .bss           0x00000000        0x0 ATMEGA32_Driver/GPIO_Driver.o
- .text.MCAL_GPIO_Init
-                0x00000000       0x50 ATMEGA32_Driver/GPIO_Driver.o
  .text.MCAL_GPIO_DeInit
                 0x00000000        0x8 ATMEGA32_Driver/GPIO_Driver.o
  .text.MCAL_GPIO_ReadPin
                 0x00000000        0xc ATMEGA32_Driver/GPIO_Driver.o
  .text.MCAL_GPIO_ReadPort
                 0x00000000        0x8 ATMEGA32_Driver/GPIO_Driver.o
- .text.MCAL_GPIO_WritePin
-                0x00000000       0x1e ATMEGA32_Driver/GPIO_Driver.o
- .text.MCAL_GPIO_WritePort
-                0x00000000        0x6 ATMEGA32_Driver/GPIO_Driver.o
  .text.MCAL_GPIO_TogglePin
                 0x00000000        0xa ATMEGA32_Driver/GPIO_Driver.o
- .debug_info    0x00000000      0x28c ATMEGA32_Driver/GPIO_Driver.o
- .debug_abbrev  0x00000000       0xe8 ATMEGA32_Driver/GPIO_Driver.o
- .debug_loc     0x00000000       0xe1 ATMEGA32_Driver/GPIO_Driver.o
- .debug_aranges
-                0x00000000       0x50 ATMEGA32_Driver/GPIO_Driver.o
- .debug_ranges  0x00000000       0x40 ATMEGA32_Driver/GPIO_Driver.o
- .debug_line    0x00000000      0x1c8 ATMEGA32_Driver/GPIO_Driver.o
- .debug_str     0x00000000      0x246 ATMEGA32_Driver/GPIO_Driver.o
- .comment       0x00000000       0x31 ATMEGA32_Driver/GPIO_Driver.o
- .debug_frame   0x00000000       0x84 ATMEGA32_Driver/GPIO_Driver.o
  .text          0x00000000        0x0 ATMEGA32_Driver/I2C_Driver.o
  .data          0x00000000        0x0 ATMEGA32_Driver/I2C_Driver.o
  .bss           0x00000000        0x0 ATMEGA32_Driver/I2C_Driver.o
@@ -175,9 +157,6 @@ Discarded input sections
  .text          0x00000000        0x0 HAL/LCD.o
  .data          0x00000000        0x0 HAL/LCD.o
  .bss           0x00000000        0x0 HAL/LCD.o
- .text.LCD_cmd  0x00000000       0x9c HAL/LCD.o
- .text.LCD_init
-                0x00000000      0x140 HAL/LCD.o
  .text.lcd_Clear
                 0x00000000       0x1a HAL/LCD.o
  .text.GOTO_XY  0x00000000       0x24 HAL/LCD.o
@@ -185,16 +164,6 @@ Discarded input sections
                 0x00000000       0x9c HAL/LCD.o
  .text.LCD_String
                 0x00000000       0x64 HAL/LCD.o
- .debug_info    0x00000000      0xa7a HAL/LCD.o
- .debug_abbrev  0x00000000      0x1ad HAL/LCD.o
- .debug_loc     0x00000000      0x4fd HAL/LCD.o
- .debug_aranges
-                0x00000000       0x48 HAL/LCD.o
- .debug_ranges  0x00000000       0x38 HAL/LCD.o
- .debug_line    0x00000000      0x405 HAL/LCD.o
- .debug_str     0x00000000      0x285 HAL/LCD.o
- .comment       0x00000000       0x31 HAL/LCD.o
- .debug_frame   0x00000000       0xbc HAL/LCD.o
  .text          0x00000000        0x0 HAL/Servo_Motor.o
  .data          0x00000000        0x0 HAL/Servo_Motor.o
  .bss           0x00000000        0x0 HAL/Servo_Motor.o
@@ -339,22 +308,6 @@ Discarded input sections
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.div
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.prologue
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
@@ -508,7 +461,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x866
+.text           0x00000000      0xab4
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -551,10 +504,8 @@ END GROUP
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000074       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x00000074                __do_copy_data
- .init4         0x0000008a       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x0000008a                __do_clear_bss
+ .init4         0x00000074       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000074                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -565,98 +516,112 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000009a        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
+ .init9         0x00000084        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  *(.init9)
  *(.text)
- .text          0x000000a2        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
-                0x000000a2                __vector_6
-                0x000000a2                __vector_17
-                0x000000a2                __vector_5
-                0x000000a2                __vector_4
-                0x000000a2                __vector_16
-                0x000000a2                __vector_18
-                0x000000a2                __vector_20
-                0x000000a2                __bad_interrupt
-                0x000000a6                . = ALIGN (0x2)
+ .text          0x0000008c        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
+                0x0000008c                __vector_6
+                0x0000008c                __vector_17
+                0x0000008c                __vector_5
+                0x0000008c                __vector_4
+                0x0000008c                __vector_16
+                0x0000008c                __vector_18
+                0x0000008c                __vector_20
+                0x0000008c                __bad_interrupt
+                0x00000090                . = ALIGN (0x2)
  *(.text.*)
  .text.__vector_1
-                0x000000a6       0x4e ATMEGA32_Driver/EXTI_Driver.o
-                0x000000a6                __vector_1
+                0x00000090       0x4e ATMEGA32_Driver/EXTI_Driver.o
+                0x00000090                __vector_1
  .text.__vector_2
-                0x000000f4       0x4e ATMEGA32_Driver/EXTI_Driver.o
-                0x000000f4                __vector_2
+                0x000000de       0x4e ATMEGA32_Driver/EXTI_Driver.o
+                0x000000de                __vector_2
  .text.__vector_3
-                0x00000142       0x4e ATMEGA32_Driver/EXTI_Driver.o
-                0x00000142                __vector_3
+                0x0000012c       0x4e ATMEGA32_Driver/EXTI_Driver.o
+                0x0000012c                __vector_3
+ .text.MCAL_GPIO_Init
+                0x0000017a       0x50 ATMEGA32_Driver/GPIO_Driver.o
+                0x0000017a                MCAL_GPIO_Init
+ .text.MCAL_GPIO_WritePin
+                0x000001ca       0x1e ATMEGA32_Driver/GPIO_Driver.o
+                0x000001ca                MCAL_GPIO_WritePin
+ .text.MCAL_GPIO_WritePort
+                0x000001e8        0x6 ATMEGA32_Driver/GPIO_Driver.o
+                0x000001e8                MCAL_GPIO_WritePort
  .text.MCAL_I2C_Init
-                0x00000190       0x62 ATMEGA32_Driver/I2C_Driver.o
-                0x00000190                MCAL_I2C_Init
+                0x000001ee       0x62 ATMEGA32_Driver/I2C_Driver.o
+                0x000001ee                MCAL_I2C_Init
  .text.Get_flag_stutus
-                0x000001f2       0xb4 ATMEGA32_Driver/I2C_Driver.o
-                0x000001f2                Get_flag_stutus
+                0x00000250       0xb4 ATMEGA32_Driver/I2C_Driver.o
+                0x00000250                Get_flag_stutus
  .text.I2C_Generate_Start
-                0x000002a6       0x1c ATMEGA32_Driver/I2C_Driver.o
-                0x000002a6                I2C_Generate_Start
+                0x00000304       0x1c ATMEGA32_Driver/I2C_Driver.o
+                0x00000304                I2C_Generate_Start
  .text.I2C_Generate_Stop
-                0x000002c2        0x6 ATMEGA32_Driver/I2C_Driver.o
-                0x000002c2                I2C_Generate_Stop
+                0x00000320        0x6 ATMEGA32_Driver/I2C_Driver.o
+                0x00000320                I2C_Generate_Stop
  .text.MCAL_I2C_Master_TX
-                0x000002c8       0x6c ATMEGA32_Driver/I2C_Driver.o
-                0x000002c8                MCAL_I2C_Master_TX
+                0x00000326       0x6c ATMEGA32_Driver/I2C_Driver.o
+                0x00000326                MCAL_I2C_Master_TX
  .text.MCAL_I2C_Master_RX
-                0x00000334       0x62 ATMEGA32_Driver/I2C_Driver.o
-                0x00000334                MCAL_I2C_Master_RX
+                0x00000392       0x78 ATMEGA32_Driver/I2C_Driver.o
+                0x00000392                MCAL_I2C_Master_RX
  .text.__vector_19
-                0x00000396       0x54 ATMEGA32_Driver/I2C_Driver.o
-                0x00000396                __vector_19
+                0x0000040a       0x54 ATMEGA32_Driver/I2C_Driver.o
+                0x0000040a                __vector_19
  .text.__vector_9
-                0x000003ea       0x54 ATMEGA32_Driver/PWM_Driver.o
-                0x000003ea                __vector_9
+                0x0000045e       0x54 ATMEGA32_Driver/PWM_Driver.o
+                0x0000045e                __vector_9
  .text.__vector_7
-                0x0000043e       0x54 ATMEGA32_Driver/PWM_Driver.o
-                0x0000043e                __vector_7
+                0x000004b2       0x54 ATMEGA32_Driver/PWM_Driver.o
+                0x000004b2                __vector_7
  .text.__vector_8
-                0x00000492       0x54 ATMEGA32_Driver/PWM_Driver.o
-                0x00000492                __vector_8
+                0x00000506       0x54 ATMEGA32_Driver/PWM_Driver.o
+                0x00000506                __vector_8
  .text.__vector_12
-                0x000004e6       0x54 ATMEGA32_Driver/SPI_Driver.o
-                0x000004e6                __vector_12
+                0x0000055a       0x54 ATMEGA32_Driver/SPI_Driver.o
+                0x0000055a                __vector_12
  .text.__vector_10
-                0x0000053a       0x54 ATMEGA32_Driver/TIMER0_Driver.o
-                0x0000053a                __vector_10
+                0x000005ae       0x54 ATMEGA32_Driver/TIMER0_Driver.o
+                0x000005ae                __vector_10
  .text.__vector_11
-                0x0000058e       0x54 ATMEGA32_Driver/TIMER0_Driver.o
-                0x0000058e                __vector_11
+                0x00000602       0x54 ATMEGA32_Driver/TIMER0_Driver.o
+                0x00000602                __vector_11
  .text.__vector_13
-                0x000005e2       0x4e ATMEGA32_Driver/USART_Driver.o
-                0x000005e2                __vector_13
+                0x00000656       0x4e ATMEGA32_Driver/USART_Driver.o
+                0x00000656                __vector_13
  .text.__vector_14
-                0x00000630       0x4e ATMEGA32_Driver/USART_Driver.o
-                0x00000630                __vector_14
+                0x000006a4       0x4e ATMEGA32_Driver/USART_Driver.o
+                0x000006a4                __vector_14
  .text.__vector_15
-                0x0000067e       0x4e ATMEGA32_Driver/USART_Driver.o
-                0x0000067e                __vector_15
+                0x000006f2       0x4e ATMEGA32_Driver/USART_Driver.o
+                0x000006f2                __vector_15
  .text.EEPROM_Init
-                0x000006cc       0x38 HAL/EEPROM.o
-                0x000006cc                EEPROM_Init
+                0x00000740       0x38 HAL/EEPROM.o
+                0x00000740                EEPROM_Init
  .text.EEPROM_Write_Data
-                0x00000704       0x68 HAL/EEPROM.o
-                0x00000704                EEPROM_Write_Data
+                0x00000778       0x68 HAL/EEPROM.o
+                0x00000778                EEPROM_Write_Data
  .text.EEPROM_Read_Data
-                0x0000076c       0x42 HAL/EEPROM.o
-                0x0000076c                EEPROM_Read_Data
- .text.main     0x000007ae       0x64 main.o
-                0x000007ae                main
+                0x000007e0       0x42 HAL/EEPROM.o
+                0x000007e0                EEPROM_Read_Data
+ .text.LCD_cmd  0x00000822       0x9c HAL/LCD.o
+                0x00000822                LCD_cmd
+ .text.LCD_init
+                0x000008be      0x140 HAL/LCD.o
+                0x000008be                LCD_init
+ .text.main     0x000009fe       0x62 main.o
+                0x000009fe                main
  .text.libgcc.div
-                0x00000812       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00000812                __udivmodsi4
- .text.libgcc   0x00000856        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x00000856                __tablejump2__
-                0x00000862                . = ALIGN (0x2)
+                0x00000a60       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000a60                __udivmodsi4
+ .text.libgcc   0x00000aa4        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000aa4                __tablejump2__
+                0x00000ab0                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000862        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000862                _exit
-                0x00000862                exit
+ .fini9         0x00000ab0        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000ab0                _exit
+                0x00000ab0                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -675,54 +640,52 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000862        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000ab0        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000866                _etext = .
+                0x00000ab4                _etext = .
 
-.data           0x00800060        0x8 load address 0x00000866
-                0x00800060                PROVIDE (__data_start, .)
+.data           0x00800060        0x0 load address 0x00000ab4
+                [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
  *(.gnu.linkonce.d*)
  *(.rodata)
- .rodata        0x00800060        0x7 main.o
  *(.rodata*)
  *(.gnu.linkonce.r*)
-                0x00800068                . = ALIGN (0x2)
- *fill*         0x00800067        0x1 
-                0x00800068                _edata = .
-                0x00800068                PROVIDE (__data_end, .)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                [!provide]                PROVIDE (__data_end, .)
 
-.bss            0x00800068       0x14
-                0x00800068                PROVIDE (__bss_start, .)
+.bss            0x00800060       0x14
+                0x00800060                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.g_I2C_Config
-                0x00800068        0x2 ATMEGA32_Driver/I2C_Driver.o
-                0x00800068                g_I2C_Config
+                0x00800060        0x2 ATMEGA32_Driver/I2C_Driver.o
+                0x00800060                g_I2C_Config
  .bss.g_PWM_Config
-                0x0080006a        0x2 ATMEGA32_Driver/PWM_Driver.o
-                0x0080006a                g_PWM_Config
+                0x00800062        0x2 ATMEGA32_Driver/PWM_Driver.o
+                0x00800062                g_PWM_Config
  .bss.g_SPI_Config
-                0x0080006c        0x2 ATMEGA32_Driver/SPI_Driver.o
-                0x0080006c                g_SPI_Config
+                0x00800064        0x2 ATMEGA32_Driver/SPI_Driver.o
+                0x00800064                g_SPI_Config
  .bss.g_TIM0_Config
-                0x0080006e        0x2 ATMEGA32_Driver/TIMER0_Driver.o
-                0x0080006e                g_TIM0_Config
+                0x00800066        0x2 ATMEGA32_Driver/TIMER0_Driver.o
+                0x00800066                g_TIM0_Config
  *(COMMON)
- COMMON         0x00800070        0x6 ATMEGA32_Driver/EXTI_Driver.o
-                0x00800070                GP_IRQ_CALL
- COMMON         0x00800076        0x6 ATMEGA32_Driver/USART_Driver.o
-                0x00800076                GPU_IRQ_CALL
-                0x0080007c                PROVIDE (__bss_end, .)
-                0x00000866                __data_load_start = LOADADDR (.data)
-                0x0000086e                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800068        0x6 ATMEGA32_Driver/EXTI_Driver.o
+                0x00800068                GP_IRQ_CALL
+ COMMON         0x0080006e        0x6 ATMEGA32_Driver/USART_Driver.o
+                0x0080006e                GPU_IRQ_CALL
+                0x00800074                PROVIDE (__bss_end, .)
+                0x00000ab4                __data_load_start = LOADADDR (.data)
+                0x00000ab4                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080007c        0x0
+.noinit         0x00800074        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x0080007c                _end = .
+                0x00800074                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -766,12 +729,14 @@ END GROUP
  *(.comment)
  .comment       0x00000000       0x30 ATMEGA32_Driver/EXTI_Driver.o
                                  0x31 (size before relaxing)
+ .comment       0x00000030       0x31 ATMEGA32_Driver/GPIO_Driver.o
  .comment       0x00000030       0x31 ATMEGA32_Driver/I2C_Driver.o
  .comment       0x00000030       0x31 ATMEGA32_Driver/PWM_Driver.o
  .comment       0x00000030       0x31 ATMEGA32_Driver/SPI_Driver.o
  .comment       0x00000030       0x31 ATMEGA32_Driver/TIMER0_Driver.o
  .comment       0x00000030       0x31 ATMEGA32_Driver/USART_Driver.o
  .comment       0x00000030       0x31 HAL/EEPROM.o
+ .comment       0x00000030       0x31 HAL/LCD.o
  .comment       0x00000030       0x31 main.o
 
 .note.gnu.avr.deviceinfo
@@ -794,105 +759,123 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x248
+.debug_aranges  0x00000000      0x2e0
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x40 ATMEGA32_Driver/EXTI_Driver.o
  .debug_aranges
-                0x00000040       0x60 ATMEGA32_Driver/I2C_Driver.o
+                0x00000040       0x50 ATMEGA32_Driver/GPIO_Driver.o
  .debug_aranges
-                0x000000a0       0x50 ATMEGA32_Driver/PWM_Driver.o
+                0x00000090       0x60 ATMEGA32_Driver/I2C_Driver.o
  .debug_aranges
-                0x000000f0       0x58 ATMEGA32_Driver/SPI_Driver.o
+                0x000000f0       0x50 ATMEGA32_Driver/PWM_Driver.o
  .debug_aranges
-                0x00000148       0x48 ATMEGA32_Driver/TIMER0_Driver.o
+                0x00000140       0x58 ATMEGA32_Driver/SPI_Driver.o
  .debug_aranges
-                0x00000190       0x60 ATMEGA32_Driver/USART_Driver.o
+                0x00000198       0x48 ATMEGA32_Driver/TIMER0_Driver.o
  .debug_aranges
-                0x000001f0       0x30 HAL/EEPROM.o
+                0x000001e0       0x60 ATMEGA32_Driver/USART_Driver.o
  .debug_aranges
-                0x00000220       0x28 main.o
+                0x00000240       0x30 HAL/EEPROM.o
+ .debug_aranges
+                0x00000270       0x48 HAL/LCD.o
+ .debug_aranges
+                0x000002b8       0x28 main.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x2111
+.debug_info     0x00000000     0x2e2d
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_info    0x000004e6      0x293 ATMEGA32_Driver/EXTI_Driver.o
- .debug_info    0x00000779      0x4fa ATMEGA32_Driver/I2C_Driver.o
- .debug_info    0x00000c73      0x40f ATMEGA32_Driver/PWM_Driver.o
- .debug_info    0x00001082      0x4a9 ATMEGA32_Driver/SPI_Driver.o
- .debug_info    0x0000152b      0x297 ATMEGA32_Driver/TIMER0_Driver.o
- .debug_info    0x000017c2      0x44c ATMEGA32_Driver/USART_Driver.o
- .debug_info    0x00001c0e      0x2c1 HAL/EEPROM.o
- .debug_info    0x00001ecf      0x242 main.o
+ .debug_info    0x00000779      0x28c ATMEGA32_Driver/GPIO_Driver.o
+ .debug_info    0x00000a05      0x4fa ATMEGA32_Driver/I2C_Driver.o
+ .debug_info    0x00000eff      0x40f ATMEGA32_Driver/PWM_Driver.o
+ .debug_info    0x0000130e      0x4a9 ATMEGA32_Driver/SPI_Driver.o
+ .debug_info    0x000017b7      0x297 ATMEGA32_Driver/TIMER0_Driver.o
+ .debug_info    0x00001a4e      0x44c ATMEGA32_Driver/USART_Driver.o
+ .debug_info    0x00001e9a      0x2c1 HAL/EEPROM.o
+ .debug_info    0x0000215b      0xa7a HAL/LCD.o
+ .debug_info    0x00002bd5      0x258 main.o
 
-.debug_abbrev   0x00000000     0x104a
+.debug_abbrev   0x00000000     0x12df
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_abbrev  0x000004a3      0x135 ATMEGA32_Driver/EXTI_Driver.o
- .debug_abbrev  0x000005d8      0x1bd ATMEGA32_Driver/I2C_Driver.o
- .debug_abbrev  0x00000795      0x17f ATMEGA32_Driver/PWM_Driver.o
- .debug_abbrev  0x00000914      0x17a ATMEGA32_Driver/SPI_Driver.o
- .debug_abbrev  0x00000a8e      0x15c ATMEGA32_Driver/TIMER0_Driver.o
- .debug_abbrev  0x00000bea      0x1d9 ATMEGA32_Driver/USART_Driver.o
- .debug_abbrev  0x00000dc3      0x120 HAL/EEPROM.o
- .debug_abbrev  0x00000ee3      0x167 main.o
+ .debug_abbrev  0x000005d8       0xe8 ATMEGA32_Driver/GPIO_Driver.o
+ .debug_abbrev  0x000006c0      0x1bd ATMEGA32_Driver/I2C_Driver.o
+ .debug_abbrev  0x0000087d      0x17f ATMEGA32_Driver/PWM_Driver.o
+ .debug_abbrev  0x000009fc      0x17a ATMEGA32_Driver/SPI_Driver.o
+ .debug_abbrev  0x00000b76      0x15c ATMEGA32_Driver/TIMER0_Driver.o
+ .debug_abbrev  0x00000cd2      0x1d9 ATMEGA32_Driver/USART_Driver.o
+ .debug_abbrev  0x00000eab      0x120 HAL/EEPROM.o
+ .debug_abbrev  0x00000fcb      0x1ad HAL/LCD.o
+ .debug_abbrev  0x00001178      0x167 main.o
 
-.debug_line     0x00000000     0x1700
+.debug_line     0x00000000     0x1ce8
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_line    0x00000116      0x298 ATMEGA32_Driver/EXTI_Driver.o
- .debug_line    0x000003ae      0x3ca ATMEGA32_Driver/I2C_Driver.o
- .debug_line    0x00000778      0x2b7 ATMEGA32_Driver/PWM_Driver.o
- .debug_line    0x00000a2f      0x326 ATMEGA32_Driver/SPI_Driver.o
- .debug_line    0x00000d55      0x216 ATMEGA32_Driver/TIMER0_Driver.o
- .debug_line    0x00000f6b      0x4a1 ATMEGA32_Driver/USART_Driver.o
- .debug_line    0x0000140c      0x166 HAL/EEPROM.o
- .debug_line    0x00001572      0x18e main.o
+ .debug_line    0x000003ae      0x1c8 ATMEGA32_Driver/GPIO_Driver.o
+ .debug_line    0x00000576      0x3d6 ATMEGA32_Driver/I2C_Driver.o
+ .debug_line    0x0000094c      0x2b7 ATMEGA32_Driver/PWM_Driver.o
+ .debug_line    0x00000c03      0x326 ATMEGA32_Driver/SPI_Driver.o
+ .debug_line    0x00000f29      0x216 ATMEGA32_Driver/TIMER0_Driver.o
+ .debug_line    0x0000113f      0x4a1 ATMEGA32_Driver/USART_Driver.o
+ .debug_line    0x000015e0      0x166 HAL/EEPROM.o
+ .debug_line    0x00001746      0x405 HAL/LCD.o
+ .debug_line    0x00001b4b      0x19d main.o
 
-.debug_frame    0x00000000      0x8c4
+.debug_frame    0x00000000      0xa04
  *(.debug_frame)
  .debug_frame   0x00000000      0x158 ATMEGA32_Driver/EXTI_Driver.o
- .debug_frame   0x00000158      0x124 ATMEGA32_Driver/I2C_Driver.o
- .debug_frame   0x0000027c      0x180 ATMEGA32_Driver/PWM_Driver.o
- .debug_frame   0x000003fc      0x120 ATMEGA32_Driver/SPI_Driver.o
- .debug_frame   0x0000051c      0x124 ATMEGA32_Driver/TIMER0_Driver.o
- .debug_frame   0x00000640      0x1b8 ATMEGA32_Driver/USART_Driver.o
- .debug_frame   0x000007f8       0x88 HAL/EEPROM.o
- .debug_frame   0x00000880       0x44 main.o
+ .debug_frame   0x00000158       0x84 ATMEGA32_Driver/GPIO_Driver.o
+ .debug_frame   0x000001dc      0x124 ATMEGA32_Driver/I2C_Driver.o
+ .debug_frame   0x00000300      0x180 ATMEGA32_Driver/PWM_Driver.o
+ .debug_frame   0x00000480      0x120 ATMEGA32_Driver/SPI_Driver.o
+ .debug_frame   0x000005a0      0x124 ATMEGA32_Driver/TIMER0_Driver.o
+ .debug_frame   0x000006c4      0x1b8 ATMEGA32_Driver/USART_Driver.o
+ .debug_frame   0x0000087c       0x88 HAL/EEPROM.o
+ .debug_frame   0x00000904       0xbc HAL/LCD.o
+ .debug_frame   0x000009c0       0x44 main.o
 
-.debug_str      0x00000000      0xce4
+.debug_str      0x00000000      0xe0f
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_str     0x00000196      0x22f ATMEGA32_Driver/EXTI_Driver.o
                                 0x26e (size before relaxing)
- .debug_str     0x000003c5      0x254 ATMEGA32_Driver/I2C_Driver.o
+ .debug_str     0x000003c5       0xb6 ATMEGA32_Driver/GPIO_Driver.o
+                                0x246 (size before relaxing)
+ .debug_str     0x0000047b      0x254 ATMEGA32_Driver/I2C_Driver.o
                                 0x398 (size before relaxing)
- .debug_str     0x00000619      0x1ca ATMEGA32_Driver/PWM_Driver.o
+ .debug_str     0x000006cf      0x1b7 ATMEGA32_Driver/PWM_Driver.o
                                 0x385 (size before relaxing)
- .debug_str     0x000007e3      0x185 ATMEGA32_Driver/SPI_Driver.o
+ .debug_str     0x00000886      0x172 ATMEGA32_Driver/SPI_Driver.o
                                 0x358 (size before relaxing)
- .debug_str     0x00000968      0x135 ATMEGA32_Driver/TIMER0_Driver.o
+ .debug_str     0x000009f8      0x135 ATMEGA32_Driver/TIMER0_Driver.o
                                 0x2e4 (size before relaxing)
- .debug_str     0x00000a9d      0x16a ATMEGA32_Driver/USART_Driver.o
+ .debug_str     0x00000b2d      0x16a ATMEGA32_Driver/USART_Driver.o
                                 0x365 (size before relaxing)
- .debug_str     0x00000c07       0x55 HAL/EEPROM.o
+ .debug_str     0x00000c97       0x87 HAL/EEPROM.o
                                 0x264 (size before relaxing)
- .debug_str     0x00000c5c       0x88 main.o
-                                0x21e (size before relaxing)
+ .debug_str     0x00000d1e       0xc8 HAL/LCD.o
+                                0x285 (size before relaxing)
+ .debug_str     0x00000de6       0x29 main.o
+                                0x227 (size before relaxing)
 
-.debug_loc      0x00000000     0x175a
+.debug_loc      0x00000000     0x1d4e
  *(.debug_loc)
  .debug_loc     0x00000000      0x2fb ATMEGA32_Driver/EXTI_Driver.o
- .debug_loc     0x000002fb      0x476 ATMEGA32_Driver/I2C_Driver.o
- .debug_loc     0x00000771      0x36a ATMEGA32_Driver/PWM_Driver.o
- .debug_loc     0x00000adb      0x268 ATMEGA32_Driver/SPI_Driver.o
- .debug_loc     0x00000d43      0x286 ATMEGA32_Driver/TIMER0_Driver.o
- .debug_loc     0x00000fc9      0x4b7 ATMEGA32_Driver/USART_Driver.o
- .debug_loc     0x00001480      0x24b HAL/EEPROM.o
- .debug_loc     0x000016cb       0x8f main.o
+ .debug_loc     0x000002fb       0xe1 ATMEGA32_Driver/GPIO_Driver.o
+ .debug_loc     0x000003dc      0x48c ATMEGA32_Driver/I2C_Driver.o
+ .debug_loc     0x00000868      0x36a ATMEGA32_Driver/PWM_Driver.o
+ .debug_loc     0x00000bd2      0x268 ATMEGA32_Driver/SPI_Driver.o
+ .debug_loc     0x00000e3a      0x286 ATMEGA32_Driver/TIMER0_Driver.o
+ .debug_loc     0x000010c0      0x4b7 ATMEGA32_Driver/USART_Driver.o
+ .debug_loc     0x00001577      0x24b HAL/EEPROM.o
+ .debug_loc     0x000017c2      0x4fd HAL/LCD.o
+ .debug_loc     0x00001cbf       0x8f main.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -912,16 +895,18 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x1c8
+.debug_ranges   0x00000000      0x240
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x30 ATMEGA32_Driver/EXTI_Driver.o
- .debug_ranges  0x00000030       0x50 ATMEGA32_Driver/I2C_Driver.o
- .debug_ranges  0x00000080       0x40 ATMEGA32_Driver/PWM_Driver.o
- .debug_ranges  0x000000c0       0x48 ATMEGA32_Driver/SPI_Driver.o
- .debug_ranges  0x00000108       0x38 ATMEGA32_Driver/TIMER0_Driver.o
- .debug_ranges  0x00000140       0x50 ATMEGA32_Driver/USART_Driver.o
- .debug_ranges  0x00000190       0x20 HAL/EEPROM.o
- .debug_ranges  0x000001b0       0x18 main.o
+ .debug_ranges  0x00000030       0x40 ATMEGA32_Driver/GPIO_Driver.o
+ .debug_ranges  0x00000070       0x50 ATMEGA32_Driver/I2C_Driver.o
+ .debug_ranges  0x000000c0       0x40 ATMEGA32_Driver/PWM_Driver.o
+ .debug_ranges  0x00000100       0x48 ATMEGA32_Driver/SPI_Driver.o
+ .debug_ranges  0x00000148       0x38 ATMEGA32_Driver/TIMER0_Driver.o
+ .debug_ranges  0x00000180       0x50 ATMEGA32_Driver/USART_Driver.o
+ .debug_ranges  0x000001d0       0x20 HAL/EEPROM.o
+ .debug_ranges  0x000001f0       0x38 HAL/LCD.o
+ .debug_ranges  0x00000228       0x18 main.o
 
 .debug_macro
  *(.debug_macro)

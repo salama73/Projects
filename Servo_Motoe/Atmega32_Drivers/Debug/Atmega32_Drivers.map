@@ -851,7 +851,7 @@ END GROUP
  .debug_frame   0x00000870       0x54 HAL/Servo_Motor.o
  .debug_frame   0x000008c4       0x24 main.o
 
-.debug_str      0x00000000      0xcfa
+.debug_str      0x00000000      0xd28
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_str     0x00000196      0x22f ATMEGA32_Driver/EXTI_Driver.o
@@ -860,17 +860,17 @@ END GROUP
                                 0x246 (size before relaxing)
  .debug_str     0x0000047b      0x216 ATMEGA32_Driver/I2C_Driver.o
                                 0x384 (size before relaxing)
- .debug_str     0x00000691      0x1b7 ATMEGA32_Driver/PWM_Driver.o
-                                0x385 (size before relaxing)
- .debug_str     0x00000848      0x17c ATMEGA32_Driver/SPI_Driver.o
+ .debug_str     0x00000691      0x1e5 ATMEGA32_Driver/PWM_Driver.o
+                                0x389 (size before relaxing)
+ .debug_str     0x00000876      0x17c ATMEGA32_Driver/SPI_Driver.o
                                 0x358 (size before relaxing)
- .debug_str     0x000009c4      0x135 ATMEGA32_Driver/TIMER0_Driver.o
+ .debug_str     0x000009f2      0x135 ATMEGA32_Driver/TIMER0_Driver.o
                                 0x2e4 (size before relaxing)
- .debug_str     0x00000af9      0x16a ATMEGA32_Driver/USART_Driver.o
+ .debug_str     0x00000b27      0x16a ATMEGA32_Driver/USART_Driver.o
                                 0x365 (size before relaxing)
- .debug_str     0x00000c63       0x44 HAL/Servo_Motor.o
-                                0x29c (size before relaxing)
- .debug_str     0x00000ca7       0x53 main.o
+ .debug_str     0x00000c91       0x44 HAL/Servo_Motor.o
+                                0x2a0 (size before relaxing)
+ .debug_str     0x00000cd5       0x53 main.o
                                 0x1ac (size before relaxing)
 
 .debug_loc      0x00000000     0x160e

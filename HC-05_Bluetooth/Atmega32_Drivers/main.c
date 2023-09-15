@@ -18,6 +18,7 @@
 #include "HC_05_Bluetooth.h"
 
 uint8_t Data;
+char DATA[10];
 
 void ISR_Bluetooth (void)
 {
@@ -25,7 +26,8 @@ void ISR_Bluetooth (void)
 			if(Data =='1')
 			{
 				MCAL_GPIO_WritePin(GPIOB , GPIO_PIN_0 , SET) ;			
-				Bluetooth_TX_Str("LED_ON#");					
+				Bluetooth_TX_Str("LED_ON#");	
+				MCAL_USART_Receive_String(DATA,Enable);			
 			}
 			else if(Data =='2')
 			{
@@ -33,6 +35,8 @@ void ISR_Bluetooth (void)
 				Bluetooth_TX_Str("LED_OFF#"); 				
 			}
 }
+
+
 
 int main(void)
 {	
@@ -43,6 +47,7 @@ int main(void)
 	
 	Bluetooth_Init( INT_Enable) ;
 	
+
     while (1) 
     {
 		

@@ -23,11 +23,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  000008e8  00000000  00000000  00005a9c  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00000cfa  00000000  00000000  00006384  2**0
+ 10 .debug_str    00000d28  00000000  00000000  00006384  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    0000160e  00000000  00000000  0000707e  2**0
+ 11 .debug_loc    0000160e  00000000  00000000  000070ac  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000200  00000000  00000000  0000868c  2**0
+ 12 .debug_ranges 00000200  00000000  00000000  000086ba  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -83,12 +83,6 @@ Disassembly of section .text:
   78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
 0000007c <__vector_1>:
- */
-
-
-void __vector_1 (void) __attribute__((signal));
-void __vector_1 (void)
-{
   7c:	1f 92       	push	r1
   7e:	0f 92       	push	r0
   80:	0f b6       	in	r0, 0x3f	; 63
@@ -106,12 +100,9 @@ void __vector_1 (void)
   98:	bf 93       	push	r27
   9a:	ef 93       	push	r30
   9c:	ff 93       	push	r31
-	//Call function
-	GP_IRQ_CALL[0]();
   9e:	e0 91 68 00 	lds	r30, 0x0068	; 0x800068 <GP_IRQ_CALL>
   a2:	f0 91 69 00 	lds	r31, 0x0069	; 0x800069 <GP_IRQ_CALL+0x1>
   a6:	09 95       	icall
-}
   a8:	ff 91       	pop	r31
   aa:	ef 91       	pop	r30
   ac:	bf 91       	pop	r27
@@ -131,11 +122,6 @@ void __vector_1 (void)
   c8:	18 95       	reti
 
 000000ca <__vector_2>:
-
-
-void __vector_2 (void) __attribute__((signal));
-void __vector_2 (void)
-{
   ca:	1f 92       	push	r1
   cc:	0f 92       	push	r0
   ce:	0f b6       	in	r0, 0x3f	; 63
@@ -153,12 +139,9 @@ void __vector_2 (void)
   e6:	bf 93       	push	r27
   e8:	ef 93       	push	r30
   ea:	ff 93       	push	r31
-	//Call function
-	GP_IRQ_CALL[1]();
   ec:	e0 91 6a 00 	lds	r30, 0x006A	; 0x80006a <GP_IRQ_CALL+0x2>
   f0:	f0 91 6b 00 	lds	r31, 0x006B	; 0x80006b <GP_IRQ_CALL+0x3>
   f4:	09 95       	icall
-}
   f6:	ff 91       	pop	r31
   f8:	ef 91       	pop	r30
   fa:	bf 91       	pop	r27
@@ -178,11 +161,6 @@ void __vector_2 (void)
  116:	18 95       	reti
 
 00000118 <__vector_3>:
-
-
-void __vector_3 (void) __attribute__((signal));
-void __vector_3 (void)
-{
  118:	1f 92       	push	r1
  11a:	0f 92       	push	r0
  11c:	0f b6       	in	r0, 0x3f	; 63
@@ -200,12 +178,9 @@ void __vector_3 (void)
  134:	bf 93       	push	r27
  136:	ef 93       	push	r30
  138:	ff 93       	push	r31
-	//Call function
-	GP_IRQ_CALL[2]();
  13a:	e0 91 6c 00 	lds	r30, 0x006C	; 0x80006c <GP_IRQ_CALL+0x4>
  13e:	f0 91 6d 00 	lds	r31, 0x006D	; 0x80006d <GP_IRQ_CALL+0x5>
  142:	09 95       	icall
-}
  144:	ff 91       	pop	r31
  146:	ef 91       	pop	r30
  148:	bf 91       	pop	r27
@@ -225,60 +200,40 @@ void __vector_3 (void)
  164:	18 95       	reti
 
 00000166 <MCAL_GPIO_Init>:
-* @param [in] 		-configuration information for the specified pin
-* @retval 			-none
-* Note				-none
-*/
-void MCAL_GPIO_Init(GPIO_TypeDef *GPIOx , GPIO_Pinconfig_t *pinconfig )
-{
  166:	fc 01       	movw	r30, r24
  168:	db 01       	movw	r26, r22
-	if ( pinconfig->GPIO_MODE == GPIO_MODE_INPUT_FLO )
  16a:	11 96       	adiw	r26, 0x01	; 1
  16c:	8c 91       	ld	r24, X
  16e:	11 97       	sbiw	r26, 0x01	; 1
  170:	81 30       	cpi	r24, 0x01	; 1
  172:	59 f4       	brne	.+22     	; 0x18a <MCAL_GPIO_Init+0x24>
-	{
-		GPIOx->DDR &= ~(pinconfig->pinNumber);
  174:	8c 91       	ld	r24, X
  176:	80 95       	com	r24
  178:	91 81       	ldd	r25, Z+1	; 0x01
  17a:	89 23       	and	r24, r25
  17c:	81 83       	std	Z+1, r24	; 0x01
-		GPIOx->PORT &= ~(pinconfig->pinNumber);
  17e:	8c 91       	ld	r24, X
  180:	80 95       	com	r24
  182:	92 81       	ldd	r25, Z+2	; 0x02
  184:	89 23       	and	r24, r25
  186:	82 83       	std	Z+2, r24	; 0x02
  188:	08 95       	ret
-	}
-	else if ( pinconfig->GPIO_MODE == GPIO_MODE_INPUT_PU )
  18a:	82 30       	cpi	r24, 0x02	; 2
  18c:	51 f4       	brne	.+20     	; 0x1a2 <MCAL_GPIO_Init+0x3c>
-	{
-		GPIOx->DDR &= ~(pinconfig->pinNumber);
  18e:	8c 91       	ld	r24, X
  190:	80 95       	com	r24
  192:	91 81       	ldd	r25, Z+1	; 0x01
  194:	89 23       	and	r24, r25
  196:	81 83       	std	Z+1, r24	; 0x01
-		GPIOx->PORT |= pinconfig->pinNumber;
  198:	8c 91       	ld	r24, X
  19a:	92 81       	ldd	r25, Z+2	; 0x02
  19c:	89 2b       	or	r24, r25
  19e:	82 83       	std	Z+2, r24	; 0x02
  1a0:	08 95       	ret
-	}
-	else
-	{
-		GPIOx->DDR |= pinconfig->pinNumber;
  1a2:	8c 91       	ld	r24, X
  1a4:	91 81       	ldd	r25, Z+1	; 0x01
  1a6:	89 2b       	or	r24, r25
  1a8:	81 83       	std	Z+1, r24	; 0x01
-		GPIOx->PORT &= ~(pinconfig->pinNumber);
  1aa:	8c 91       	ld	r24, X
  1ac:	80 95       	com	r24
  1ae:	92 81       	ldd	r25, Z+2	; 0x02
@@ -287,12 +242,6 @@ void MCAL_GPIO_Init(GPIO_TypeDef *GPIOx , GPIO_Pinconfig_t *pinconfig )
  1b4:	08 95       	ret
 
 000001b6 <__vector_19>:
- */
-
-
-void __vector_19 (void) __attribute__((signal));
-void __vector_19 (void)
-{
  1b6:	1f 92       	push	r1
  1b8:	0f 92       	push	r0
  1ba:	0f b6       	in	r0, 0x3f	; 63
@@ -310,14 +259,12 @@ void __vector_19 (void)
  1d2:	bf 93       	push	r27
  1d4:	ef 93       	push	r30
  1d6:	ff 93       	push	r31
-	g_I2C_Config->P_IRQ_CALL() ;
  1d8:	e0 91 60 00 	lds	r30, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
  1dc:	f0 91 61 00 	lds	r31, 0x0061	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
  1e0:	04 80       	ldd	r0, Z+4	; 0x04
  1e2:	f5 81       	ldd	r31, Z+5	; 0x05
  1e4:	e0 2d       	mov	r30, r0
  1e6:	09 95       	icall
-}
  1e8:	ff 91       	pop	r31
  1ea:	ef 91       	pop	r30
  1ec:	bf 91       	pop	r27
@@ -624,12 +571,6 @@ void __vector_8 (void)
  412:	18 95       	reti
 
 00000414 <__vector_12>:
- */
-
-
-void __vector_12 (void) __attribute__((signal));
-void __vector_12 (void)
-{
  414:	1f 92       	push	r1
  416:	0f 92       	push	r0
  418:	0f b6       	in	r0, 0x3f	; 63
@@ -647,14 +588,12 @@ void __vector_12 (void)
  430:	bf 93       	push	r27
  432:	ef 93       	push	r30
  434:	ff 93       	push	r31
-	g_SPI_Config->P_IRQ_CALL() ;
  436:	e0 91 64 00 	lds	r30, 0x0064	; 0x800064 <g_SPI_Config>
  43a:	f0 91 65 00 	lds	r31, 0x0065	; 0x800065 <g_SPI_Config+0x1>
  43e:	07 80       	ldd	r0, Z+7	; 0x07
  440:	f0 85       	ldd	r31, Z+8	; 0x08
  442:	e0 2d       	mov	r30, r0
  444:	09 95       	icall
-}
  446:	ff 91       	pop	r31
  448:	ef 91       	pop	r30
  44a:	bf 91       	pop	r27
@@ -674,12 +613,6 @@ void __vector_12 (void)
  466:	18 95       	reti
 
 00000468 <__vector_10>:
- * ===============================================================
- */
-
-void __vector_10 (void) __attribute__((signal));
-void __vector_10 (void)
-{
  468:	1f 92       	push	r1
  46a:	0f 92       	push	r0
  46c:	0f b6       	in	r0, 0x3f	; 63
@@ -697,14 +630,12 @@ void __vector_10 (void)
  484:	bf 93       	push	r27
  486:	ef 93       	push	r30
  488:	ff 93       	push	r31
-	g_TIM0_Config->P_OCIE0_CALL();
  48a:	e0 91 66 00 	lds	r30, 0x0066	; 0x800066 <g_TIM0_Config>
  48e:	f0 91 67 00 	lds	r31, 0x0067	; 0x800067 <g_TIM0_Config+0x1>
  492:	00 84       	ldd	r0, Z+8	; 0x08
  494:	f1 85       	ldd	r31, Z+9	; 0x09
  496:	e0 2d       	mov	r30, r0
  498:	09 95       	icall
-}
  49a:	ff 91       	pop	r31
  49c:	ef 91       	pop	r30
  49e:	bf 91       	pop	r27
@@ -724,10 +655,6 @@ void __vector_10 (void)
  4ba:	18 95       	reti
 
 000004bc <__vector_11>:
-
-void __vector_11 (void) __attribute__((signal));
-void __vector_11 (void)
-{
  4bc:	1f 92       	push	r1
  4be:	0f 92       	push	r0
  4c0:	0f b6       	in	r0, 0x3f	; 63
@@ -745,14 +672,12 @@ void __vector_11 (void)
  4d8:	bf 93       	push	r27
  4da:	ef 93       	push	r30
  4dc:	ff 93       	push	r31
-	g_TIM0_Config->P_TOIE0_CALL();
  4de:	e0 91 66 00 	lds	r30, 0x0066	; 0x800066 <g_TIM0_Config>
  4e2:	f0 91 67 00 	lds	r31, 0x0067	; 0x800067 <g_TIM0_Config+0x1>
  4e6:	06 80       	ldd	r0, Z+6	; 0x06
  4e8:	f7 81       	ldd	r31, Z+7	; 0x07
  4ea:	e0 2d       	mov	r30, r0
  4ec:	09 95       	icall
-}
  4ee:	ff 91       	pop	r31
  4f0:	ef 91       	pop	r30
  4f2:	bf 91       	pop	r27
@@ -772,12 +697,6 @@ void __vector_11 (void)
  50e:	18 95       	reti
 
 00000510 <__vector_13>:
- *
- * ===============================================================
- */
-void __vector_13 (void) __attribute__((signal));
-void __vector_13 (void)
-{
  510:	1f 92       	push	r1
  512:	0f 92       	push	r0
  514:	0f b6       	in	r0, 0x3f	; 63
@@ -795,12 +714,9 @@ void __vector_13 (void)
  52c:	bf 93       	push	r27
  52e:	ef 93       	push	r30
  530:	ff 93       	push	r31
-	//Call function
-	GPU_IRQ_CALL[2]();
  532:	e0 91 72 00 	lds	r30, 0x0072	; 0x800072 <GPU_IRQ_CALL+0x4>
  536:	f0 91 73 00 	lds	r31, 0x0073	; 0x800073 <GPU_IRQ_CALL+0x5>
  53a:	09 95       	icall
-}
  53c:	ff 91       	pop	r31
  53e:	ef 91       	pop	r30
  540:	bf 91       	pop	r27
@@ -820,10 +736,6 @@ void __vector_13 (void)
  55c:	18 95       	reti
 
 0000055e <__vector_14>:
-
-void __vector_14 (void) __attribute__((signal));
-void __vector_14 (void)
-{
  55e:	1f 92       	push	r1
  560:	0f 92       	push	r0
  562:	0f b6       	in	r0, 0x3f	; 63
@@ -841,12 +753,9 @@ void __vector_14 (void)
  57a:	bf 93       	push	r27
  57c:	ef 93       	push	r30
  57e:	ff 93       	push	r31
-	//Call function
-	GPU_IRQ_CALL[1]();
  580:	e0 91 70 00 	lds	r30, 0x0070	; 0x800070 <GPU_IRQ_CALL+0x2>
  584:	f0 91 71 00 	lds	r31, 0x0071	; 0x800071 <GPU_IRQ_CALL+0x3>
  588:	09 95       	icall
-}
  58a:	ff 91       	pop	r31
  58c:	ef 91       	pop	r30
  58e:	bf 91       	pop	r27
@@ -866,10 +775,6 @@ void __vector_14 (void)
  5aa:	18 95       	reti
 
 000005ac <__vector_15>:
-
-void __vector_15 (void) __attribute__((signal));
-void __vector_15 (void)
-{
  5ac:	1f 92       	push	r1
  5ae:	0f 92       	push	r0
  5b0:	0f b6       	in	r0, 0x3f	; 63
@@ -887,12 +792,9 @@ void __vector_15 (void)
  5c8:	bf 93       	push	r27
  5ca:	ef 93       	push	r30
  5cc:	ff 93       	push	r31
-	//Call function
-	GPU_IRQ_CALL[0]();
  5ce:	e0 91 6e 00 	lds	r30, 0x006E	; 0x80006e <GPU_IRQ_CALL>
  5d2:	f0 91 6f 00 	lds	r31, 0x006F	; 0x80006f <GPU_IRQ_CALL+0x1>
  5d6:	09 95       	icall
-}
  5d8:	ff 91       	pop	r31
  5da:	ef 91       	pop	r30
  5dc:	bf 91       	pop	r27
@@ -1019,16 +921,7 @@ void My_Servo(uint8_t angle)
  69e:	08 95       	ret
 
 000006a0 <main>:
-#include "PWM_Driver.h"
-#include "Servo_Motor.h"
-
-int main(void)
-{
-	Servo_Init();
  6a0:	0e 94 fd 02 	call	0x5fa	; 0x5fa <Servo_Init>
-    while (1) 
-    {
-		My_Servo(0) ;
  6a4:	80 e0       	ldi	r24, 0x00	; 0
  6a6:	0e 94 2a 03 	call	0x654	; 0x654 <My_Servo>
 	#else
@@ -1046,8 +939,6 @@ int main(void)
  6b6:	e1 f7       	brne	.-8      	; 0x6b0 <main+0x10>
  6b8:	00 c0       	rjmp	.+0      	; 0x6ba <main+0x1a>
  6ba:	00 00       	nop
-		_delay_ms(1500);
-		My_Servo(90)  ;
  6bc:	8a e5       	ldi	r24, 0x5A	; 90
  6be:	0e 94 2a 03 	call	0x654	; 0x654 <My_Servo>
  6c2:	2f ef       	ldi	r18, 0xFF	; 255
@@ -1059,8 +950,6 @@ int main(void)
  6ce:	e1 f7       	brne	.-8      	; 0x6c8 <main+0x28>
  6d0:	00 c0       	rjmp	.+0      	; 0x6d2 <main+0x32>
  6d2:	00 00       	nop
-		_delay_ms(1500);
-		My_Servo(180)  ;
  6d4:	84 eb       	ldi	r24, 0xB4	; 180
  6d6:	0e 94 2a 03 	call	0x654	; 0x654 <My_Servo>
  6da:	2f ef       	ldi	r18, 0xFF	; 255

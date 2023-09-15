@@ -103,7 +103,7 @@ void MCAL_I2C_Master_TX( uint8_t Address , uint8_t* PTXBuffer , uint8_t Datalen 
 
 /**================================================================
 * @Fn				-MCAL_I2C_Master_RX
-* @brief		  	-Receive  data by I2C from slave tto master , data must be 8 .
+* @brief		  	-Receive  data by I2C from slave to master , data must be 8 .
 * @param [in] 		-Address: slave address
 * @retval 			-none
 * Note				-this function contains the I2C_Generate_Start and I2C_Generate_Stop function .
@@ -124,6 +124,8 @@ void MCAL_I2C_Master_RX( uint8_t Address , uint8_t* PRXBuffer , uint8_t Dataln )
 	
 	for( i=0 ; i<Dataln ;i++ )
 	{
+		if(i==(Dataln-1))
+		TWCR &=~(1<<6) ;
 		// receive data from slave
 		TWCR |=(1<<7) ;
 		while(!(Get_flag_stutus(TWINT))); // Wait until receive ACK from Slave ( complete receive data )
@@ -133,7 +135,9 @@ void MCAL_I2C_Master_RX( uint8_t Address , uint8_t* PRXBuffer , uint8_t Dataln )
 		}
 		// return data and generate stop
 		PRXBuffer[i]= I2C->TWDR ;
+		
 	}
+	
 	I2C_Generate_Stop();
 }
 

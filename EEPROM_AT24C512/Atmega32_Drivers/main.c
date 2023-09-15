@@ -23,17 +23,18 @@ void TIMER0_CALL(void)
 }
 int main(void)
 {	
-	uint8_t Data1[] = {0x1,0x2,0x3,0x4,0x5,0x6,0x7};
-	uint8_t Data2[7]= {0};
+	LCD_init();
+	uint8_t Data1[] = {0x1,0x2,0x3,0x4};
+	uint8_t Data2[4]= {0};
 
 	EEPROM_Init();
-	EEPROM_Write_Data(0xAF, Data1, 7);
+	EEPROM_Write_Data(0xAF, Data1, 4);
 	_delay_ms(100);
-	EEPROM_Read_Data(0xAF, Data2, 7);
-	
+	EEPROM_Read_Data(0xAF, Data2, 4);
+
     while (1) 
     {
-		
+			
     }
 }
 
