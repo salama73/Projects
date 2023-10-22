@@ -1,0 +1,10 @@
+Pwm.c:37:6:Mutex_Lock	16	static
+Pwm.c:41:6:Mutex_Unlock	16	static
+Pwm.c:60:6:Pwm_Init	56	static
+Pwm.c:287:6:Pwm_DeInit	16	static
+Pwm.c:330:6:Pwm_SetDutyCycle	32	static
+Pwm.c:405:6:Pwm_SetPeriodAndDuty	16	static
+Pwm.c:422:6:Pwm_SetOutputToIdle	16	static
+Pwm.c:447:21:Pwm_GetOutputState	16	static
+Pwm.c:463:6:Pwm_DisableNotification	16	static
+Pwm.c:485:6:Pwm_EnableNotification	16	static

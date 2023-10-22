@@ -1,0 +1,1830 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-errno.o)
+                              Src/syscalls.o (__errno)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+                              c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (exit)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+                              c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+                              c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (__libc_init_array)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memcpy-stub.o)
+                              PWM_Module/Pwm.o (memcpy)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+                              c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o (memset)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-strcmp.o)
+                              RTOS/Scheduler.o (strcmp)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_addsubdf3.o)
+                              PWM_Module/Pwm.o (__aeabi_ui2d)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivdf3.o)
+                              PWM_Module/Pwm.o (__aeabi_dmul)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunsdfsi.o)
+                              PWM_Module/Pwm.o (__aeabi_d2uiz)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivsf3.o)
+                              PWM_Module/Pwm.o (__aeabi_fmul)
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunssfsi.o)
+                              PWM_Module/Pwm.o (__aeabi_f2uiz)
+
+Allocating common symbols
+Common symbol       size              file
+
+_15ms_Task          0x40              Src/main.o
+DoorLock_indication_PP_SR_LED_State_LED_State
+                    0x1               RTE/Rte_LED_Actuator.o
+Pwm_Config          0x50              PWM_Module/Pwm.o
+SysTickLED          0x1               RTOS/Cortex_Mx_Porting.o
+_12ms_Task          0x40              Src/main.o
+OS_Control          0x1ac             RTOS/Scheduler.o
+Ready_QUEUE         0x14              RTOS/Scheduler.o
+MYRTOS_idleTask     0x40              RTOS/Scheduler.o
+_10ms_Task          0x40              Src/main.o
+Error               0x1               Src/main.o
+IdleTaskLED         0x1               RTOS/Scheduler.o
+_18ms_Task          0x40              Src/main.o
+Read_Door_Sensor_PP_SR_DOOR_State_Sensor_Reading
+                    0x1               RTE/Rte_Read_Door_State.o
+Read_Door_State_PP_DOOR_State_Door_State
+                    0x1               RTE/Rte_DoorLock_indication.o
+Ready_QUEUE_FIFO    0x190             RTOS/Scheduler.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+ .data          0x0000000000000000        0x4 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+ .text          0x0000000000000000       0x74 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1b c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+ .group         0x0000000000000000        0xc Common_Module/Det.o
+ .group         0x0000000000000000        0xc Common_Module/Det.o
+ .group         0x0000000000000000        0xc Common_Module/Det.o
+ .group         0x0000000000000000        0xc Common_Module/Det.o
+ .text          0x0000000000000000        0x0 Common_Module/Det.o
+ .data          0x0000000000000000        0x0 Common_Module/Det.o
+ .bss           0x0000000000000000        0x0 Common_Module/Det.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc DIO_Module/Dio.o
+ .text          0x0000000000000000        0x0 DIO_Module/Dio.o
+ .data          0x0000000000000000        0x0 DIO_Module/Dio.o
+ .bss           0x0000000000000000        0x0 DIO_Module/Dio.o
+ .text.Dio_ReadPort
+                0x0000000000000000       0x60 DIO_Module/Dio.o
+ .text.Dio_WritePort
+                0x0000000000000000      0x298 DIO_Module/Dio.o
+ .text.Dio_GetVersionInfo
+                0x0000000000000000       0x40 DIO_Module/Dio.o
+ .debug_macro   0x0000000000000000      0xa60 DIO_Module/Dio.o
+ .debug_macro   0x0000000000000000       0x90 DIO_Module/Dio.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port.o
+ .text          0x0000000000000000        0x0 PORT_Module/Port.o
+ .data          0x0000000000000000        0x0 PORT_Module/Port.o
+ .bss           0x0000000000000000        0x0 PORT_Module/Port.o
+ .bss.Flag_Mode_Change
+                0x0000000000000000       0x20 PORT_Module/Port.o
+ .bss.Flag_DIR_Change
+                0x0000000000000000       0x20 PORT_Module/Port.o
+ .text.get_Index
+                0x0000000000000000       0x4c PORT_Module/Port.o
+ .text.Port_SetPinDirection
+                0x0000000000000000      0x1cc PORT_Module/Port.o
+ .text.Port_RefreshPortDirection
+                0x0000000000000000        0xc PORT_Module/Port.o
+ .text.Port_GetVersionInfo
+                0x0000000000000000       0x40 PORT_Module/Port.o
+ .text.Port_SetPinMode
+                0x0000000000000000      0x3a0 PORT_Module/Port.o
+ .debug_macro   0x0000000000000000      0xa60 PORT_Module/Port.o
+ .debug_macro   0x0000000000000000       0x34 PORT_Module/Port.o
+ .debug_macro   0x0000000000000000       0x34 PORT_Module/Port.o
+ .debug_macro   0x0000000000000000       0x90 PORT_Module/Port.o
+ .debug_macro   0x0000000000000000       0x40 PORT_Module/Port.o
+ .debug_macro   0x0000000000000000      0x2ab PORT_Module/Port.o
+ .group         0x0000000000000000        0xc PORT_Module/Port_PBcfg.o
+ .group         0x0000000000000000        0xc PORT_Module/Port_PBcfg.o
+ .group         0x0000000000000000        0xc PORT_Module/Port_PBcfg.o
+ .group         0x0000000000000000        0xc PORT_Module/Port_PBcfg.o
+ .group         0x0000000000000000        0xc PORT_Module/Port_PBcfg.o
+ .group         0x0000000000000000        0xc PORT_Module/Port_PBcfg.o
+ .group         0x0000000000000000        0xc PORT_Module/Port_PBcfg.o
+ .group         0x0000000000000000        0xc PORT_Module/Port_PBcfg.o
+ .text          0x0000000000000000        0x0 PORT_Module/Port_PBcfg.o
+ .data          0x0000000000000000        0x0 PORT_Module/Port_PBcfg.o
+ .bss           0x0000000000000000        0x0 PORT_Module/Port_PBcfg.o
+ .debug_macro   0x0000000000000000      0xa60 PORT_Module/Port_PBcfg.o
+ .debug_macro   0x0000000000000000       0x3a PORT_Module/Port_PBcfg.o
+ .debug_macro   0x0000000000000000      0x14e PORT_Module/Port_PBcfg.o
+ .debug_macro   0x0000000000000000       0x34 PORT_Module/Port_PBcfg.o
+ .debug_macro   0x0000000000000000       0x34 PORT_Module/Port_PBcfg.o
+ .debug_macro   0x0000000000000000       0x90 PORT_Module/Port_PBcfg.o
+ .debug_macro   0x0000000000000000       0x40 PORT_Module/Port_PBcfg.o
+ .debug_macro   0x0000000000000000       0x58 PORT_Module/Port_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm.o
+ .text          0x0000000000000000        0x0 PWM_Module/Pwm.o
+ .data          0x0000000000000000        0x0 PWM_Module/Pwm.o
+ .bss           0x0000000000000000        0x0 PWM_Module/Pwm.o
+ .bss.PWM_State
+                0x0000000000000000        0x1 PWM_Module/Pwm.o
+ .bss.Flag_Mutex
+                0x0000000000000000        0x1 PWM_Module/Pwm.o
+ .text.Mutex_Lock
+                0x0000000000000000       0x14 PWM_Module/Pwm.o
+ .text.Mutex_Unlock
+                0x0000000000000000       0x14 PWM_Module/Pwm.o
+ .text.Pwm_Init
+                0x0000000000000000      0x50c PWM_Module/Pwm.o
+ .text.Pwm_DeInit
+                0x0000000000000000       0xc8 PWM_Module/Pwm.o
+ .text.Pwm_SetDutyCycle
+                0x0000000000000000       0xfc PWM_Module/Pwm.o
+ .text.Pwm_SetPeriodAndDuty
+                0x0000000000000000       0x1a PWM_Module/Pwm.o
+ .text.Pwm_SetOutputToIdle
+                0x0000000000000000       0x30 PWM_Module/Pwm.o
+ .text.Pwm_GetOutputState
+                0x0000000000000000       0x16 PWM_Module/Pwm.o
+ .text.Pwm_DisableNotification
+                0x0000000000000000       0x34 PWM_Module/Pwm.o
+ .text.Pwm_EnableNotification
+                0x0000000000000000       0x74 PWM_Module/Pwm.o
+ .debug_macro   0x0000000000000000      0xa60 PWM_Module/Pwm.o
+ .debug_macro   0x0000000000000000       0x34 PWM_Module/Pwm.o
+ .debug_macro   0x0000000000000000       0x34 PWM_Module/Pwm.o
+ .debug_macro   0x0000000000000000       0x90 PWM_Module/Pwm.o
+ .debug_macro   0x0000000000000000       0x40 PWM_Module/Pwm.o
+ .debug_macro   0x0000000000000000      0x2ab PWM_Module/Pwm.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_Irq.o
+ .text          0x0000000000000000        0x0 PWM_Module/Pwm_Irq.o
+ .data          0x0000000000000000        0x0 PWM_Module/Pwm_Irq.o
+ .bss           0x0000000000000000        0x0 PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000      0xa60 PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000       0x3a PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000       0x34 PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000       0x34 PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000       0x90 PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000       0x40 PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000       0x3a PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000       0x6a PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000       0x94 PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000000000      0x2ab PWM_Module/Pwm_Irq.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc PWM_Module/Pwm_PBcfg.o
+ .text          0x0000000000000000        0x0 PWM_Module/Pwm_PBcfg.o
+ .data          0x0000000000000000        0x0 PWM_Module/Pwm_PBcfg.o
+ .bss           0x0000000000000000        0x0 PWM_Module/Pwm_PBcfg.o
+ .text.CH3      0x0000000000000000       0x14 PWM_Module/Pwm_PBcfg.o
+ .data.PWM_Config
+                0x0000000000000000       0x50 PWM_Module/Pwm_PBcfg.o
+ .debug_info    0x0000000000000000      0x1ed PWM_Module/Pwm_PBcfg.o
+ .debug_abbrev  0x0000000000000000       0xcc PWM_Module/Pwm_PBcfg.o
+ .debug_aranges
+                0x0000000000000000       0x20 PWM_Module/Pwm_PBcfg.o
+ .debug_ranges  0x0000000000000000       0x10 PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x51 PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000      0xa60 PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x3a PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x34 PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x34 PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x90 PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x40 PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x3a PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x6a PWM_Module/Pwm_PBcfg.o
+ .debug_macro   0x0000000000000000       0x94 PWM_Module/Pwm_PBcfg.o
+ .debug_line    0x0000000000000000       0xe4 PWM_Module/Pwm_PBcfg.o
+ .debug_str     0x0000000000000000     0x39b2 PWM_Module/Pwm_PBcfg.o
+ .comment       0x0000000000000000       0x7c PWM_Module/Pwm_PBcfg.o
+ .debug_frame   0x0000000000000000       0x38 PWM_Module/Pwm_PBcfg.o
+ .ARM.attributes
+                0x0000000000000000       0x33 PWM_Module/Pwm_PBcfg.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_DoorLock_indication.o
+ .text          0x0000000000000000        0x0 RTE/Rte_DoorLock_indication.o
+ .data          0x0000000000000000        0x0 RTE/Rte_DoorLock_indication.o
+ .bss           0x0000000000000000        0x0 RTE/Rte_DoorLock_indication.o
+ .rodata.Rte_Inst_DoorLock_indication
+                0x0000000000000000        0x4 RTE/Rte_DoorLock_indication.o
+ .text.Rte_IWriteRef_DoorLock_indication_DoorLock_indication_PP_SR_LED_State_LED_State
+                0x0000000000000000       0x14 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000000000      0xa60 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000000000       0x34 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_DoorLock_indication.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_ECU_Abstraction_SWC.o
+ .text          0x0000000000000000        0x0 RTE/Rte_ECU_Abstraction_SWC.o
+ .data          0x0000000000000000        0x0 RTE/Rte_ECU_Abstraction_SWC.o
+ .bss           0x0000000000000000        0x0 RTE/Rte_ECU_Abstraction_SWC.o
+ .rodata.Rte_Inst_ECU_Abstraction_SWC
+                0x0000000000000000        0x4 RTE/Rte_ECU_Abstraction_SWC.o
+ .text.Rte_IWriteRef_ECU_Abstraction_SWC_Read_Door_Sensor_PP_SR_DOOR_State_Sensor_Reading
+                0x0000000000000000       0x14 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000      0xa60 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x22 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x18 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x94 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x3c RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x34 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000      0x174 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x57 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x52 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x1f RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x43 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x20 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000      0x1a3 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000      0x330 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x10 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x35 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x20 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x34 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x90 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_LED_Actuator.o
+ .text          0x0000000000000000        0x0 RTE/Rte_LED_Actuator.o
+ .data          0x0000000000000000        0x0 RTE/Rte_LED_Actuator.o
+ .bss           0x0000000000000000        0x0 RTE/Rte_LED_Actuator.o
+ .rodata.Rte_Inst_LED_Actuator
+                0x0000000000000000        0x4 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000      0xa60 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x22 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x18 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x94 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x3c RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x34 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000      0x174 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x57 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x52 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x1f RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x43 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x20 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000      0x1a3 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000      0x330 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x10 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x35 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x20 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x34 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x90 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_LED_Actuator.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTE/Rte_Read_Door_State.o
+ .text          0x0000000000000000        0x0 RTE/Rte_Read_Door_State.o
+ .data          0x0000000000000000        0x0 RTE/Rte_Read_Door_State.o
+ .bss           0x0000000000000000        0x0 RTE/Rte_Read_Door_State.o
+ .rodata.Rte_Inst_Read_Door_State
+                0x0000000000000000        0x4 RTE/Rte_Read_Door_State.o
+ .text.Rte_IWriteRef_Read_Door_State_Read_Door_State_PP_DOOR_State_Door_State
+                0x0000000000000000       0x14 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000      0xa60 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x22 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x18 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x94 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x3c RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x34 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000      0x174 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x57 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x52 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x1f RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x43 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x20 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000      0x1a3 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000      0x330 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x10 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x35 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x20 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x34 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x90 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x40 RTE/Rte_Read_Door_State.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/Cortex_Mx_Porting.o
+ .text          0x0000000000000000        0x0 RTOS/Cortex_Mx_Porting.o
+ .data          0x0000000000000000        0x0 RTOS/Cortex_Mx_Porting.o
+ .bss           0x0000000000000000        0x0 RTOS/Cortex_Mx_Porting.o
+ .text.vBusFault_Handler
+                0x0000000000000000        0x6 RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000000000      0xa60 RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000000000       0x22 RTOS/Cortex_Mx_Porting.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/MY_RTOS_FIFO.o
+ .text          0x0000000000000000        0x0 RTOS/MY_RTOS_FIFO.o
+ .data          0x0000000000000000        0x0 RTOS/MY_RTOS_FIFO.o
+ .bss           0x0000000000000000        0x0 RTOS/MY_RTOS_FIFO.o
+ .text.FIFO_is_full
+                0x0000000000000000       0x40 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000      0xa60 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x22 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x40 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x18 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x94 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x3c RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x34 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x57 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000      0x330 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x52 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x1f RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x43 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x20 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000      0x1a3 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x6a RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0xef RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000      0x1df RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x28 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x1c RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x22 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000      0xe3c RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000000000       0x2e RTOS/MY_RTOS_FIFO.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc RTOS/Scheduler.o
+ .text          0x0000000000000000        0x0 RTOS/Scheduler.o
+ .data          0x0000000000000000        0x0 RTOS/Scheduler.o
+ .bss           0x0000000000000000        0x0 RTOS/Scheduler.o
+ .text.MYRTOS_TerminateTask
+                0x0000000000000000       0x1e RTOS/Scheduler.o
+ .text.MYRTOS_AcquireMutex
+                0x0000000000000000       0x64 RTOS/Scheduler.o
+ .text.MYRTOS_ReleaseMutex
+                0x0000000000000000       0x56 RTOS/Scheduler.o
+ .text.MYRTOS_AcquireSemaphore
+                0x0000000000000000       0x4c RTOS/Scheduler.o
+ .text.MYRTOS_ReleaseSemaphore
+                0x0000000000000000       0x48 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000      0xa60 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x28 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x22 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x8e RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x51 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0xef RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x6a RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000      0x1df RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x1c RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x22 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0xe5 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000      0xe3c RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x2e RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x18 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x3c RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x34 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x16 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x97 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0xfd RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x10 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x52 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x1f RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x43 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x20 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000      0x1a3 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x10 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x1c RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x52 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x40 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x10 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x40 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0xd7 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x1c RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x3d RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000       0x16 RTOS/Scheduler.o
+ .debug_macro   0x0000000000000000      0x145 RTOS/Scheduler.o
+ .group         0x0000000000000000        0xc SWCs/DoorLock_indication.o
+ .group         0x0000000000000000        0xc SWCs/DoorLock_indication.o
+ .group         0x0000000000000000        0xc SWCs/DoorLock_indication.o
+ .group         0x0000000000000000        0xc SWCs/DoorLock_indication.o
+ .group         0x0000000000000000        0xc SWCs/DoorLock_indication.o
+ .group         0x0000000000000000        0xc SWCs/DoorLock_indication.o
+ .group         0x0000000000000000        0xc SWCs/DoorLock_indication.o
+ .text          0x0000000000000000        0x0 SWCs/DoorLock_indication.o
+ .data          0x0000000000000000        0x0 SWCs/DoorLock_indication.o
+ .bss           0x0000000000000000        0x0 SWCs/DoorLock_indication.o
+ .debug_macro   0x0000000000000000      0xa60 SWCs/DoorLock_indication.o
+ .debug_macro   0x0000000000000000       0x34 SWCs/DoorLock_indication.o
+ .debug_macro   0x0000000000000000       0x90 SWCs/DoorLock_indication.o
+ .debug_macro   0x0000000000000000       0x40 SWCs/DoorLock_indication.o
+ .debug_macro   0x0000000000000000       0x40 SWCs/DoorLock_indication.o
+ .debug_macro   0x0000000000000000       0x10 SWCs/DoorLock_indication.o
+ .debug_macro   0x0000000000000000       0x16 SWCs/DoorLock_indication.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/ECU_Abstraction_SWC.o
+ .text          0x0000000000000000        0x0 SWCs/ECU_Abstraction_SWC.o
+ .data          0x0000000000000000        0x0 SWCs/ECU_Abstraction_SWC.o
+ .bss           0x0000000000000000        0x0 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000      0xa60 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x34 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x90 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x40 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x40 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x10 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x1c SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x3a SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000      0x118 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000000000       0x52 SWCs/ECU_Abstraction_SWC.o
+ .group         0x0000000000000000        0xc SWCs/LED_Actuator.o
+ .group         0x0000000000000000        0xc SWCs/LED_Actuator.o
+ .group         0x0000000000000000        0xc SWCs/LED_Actuator.o
+ .group         0x0000000000000000        0xc SWCs/LED_Actuator.o
+ .group         0x0000000000000000        0xc SWCs/LED_Actuator.o
+ .group         0x0000000000000000        0xc SWCs/LED_Actuator.o
+ .group         0x0000000000000000        0xc SWCs/LED_Actuator.o
+ .text          0x0000000000000000        0x0 SWCs/LED_Actuator.o
+ .data          0x0000000000000000        0x0 SWCs/LED_Actuator.o
+ .bss           0x0000000000000000        0x0 SWCs/LED_Actuator.o
+ .debug_macro   0x0000000000000000      0xa60 SWCs/LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x34 SWCs/LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x90 SWCs/LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x40 SWCs/LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x40 SWCs/LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x10 SWCs/LED_Actuator.o
+ .debug_macro   0x0000000000000000       0x1c SWCs/LED_Actuator.o
+ .group         0x0000000000000000        0xc SWCs/Read_Door_State.o
+ .group         0x0000000000000000        0xc SWCs/Read_Door_State.o
+ .group         0x0000000000000000        0xc SWCs/Read_Door_State.o
+ .group         0x0000000000000000        0xc SWCs/Read_Door_State.o
+ .group         0x0000000000000000        0xc SWCs/Read_Door_State.o
+ .group         0x0000000000000000        0xc SWCs/Read_Door_State.o
+ .group         0x0000000000000000        0xc SWCs/Read_Door_State.o
+ .text          0x0000000000000000        0x0 SWCs/Read_Door_State.o
+ .data          0x0000000000000000        0x0 SWCs/Read_Door_State.o
+ .bss           0x0000000000000000        0x0 SWCs/Read_Door_State.o
+ .debug_macro   0x0000000000000000      0xa60 SWCs/Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x34 SWCs/Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x90 SWCs/Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x40 SWCs/Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x40 SWCs/Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x10 SWCs/Read_Door_State.o
+ .debug_macro   0x0000000000000000       0x16 SWCs/Read_Door_State.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .group         0x0000000000000000        0xc Src/main.o
+ .text          0x0000000000000000        0x0 Src/main.o
+ .data          0x0000000000000000        0x0 Src/main.o
+ .bss           0x0000000000000000        0x0 Src/main.o
+ .debug_macro   0x0000000000000000      0xa60 Src/main.o
+ .debug_macro   0x0000000000000000       0x28 Src/main.o
+ .debug_macro   0x0000000000000000       0x22 Src/main.o
+ .debug_macro   0x0000000000000000       0x8e Src/main.o
+ .debug_macro   0x0000000000000000       0x51 Src/main.o
+ .debug_macro   0x0000000000000000       0xef Src/main.o
+ .debug_macro   0x0000000000000000       0x6a Src/main.o
+ .debug_macro   0x0000000000000000      0x1df Src/main.o
+ .debug_macro   0x0000000000000000       0x1c Src/main.o
+ .debug_macro   0x0000000000000000       0x22 Src/main.o
+ .debug_macro   0x0000000000000000       0xe5 Src/main.o
+ .debug_macro   0x0000000000000000      0xe3c Src/main.o
+ .debug_macro   0x0000000000000000       0x2e Src/main.o
+ .debug_macro   0x0000000000000000       0x3a Src/main.o
+ .debug_macro   0x0000000000000000      0x14e Src/main.o
+ .debug_macro   0x0000000000000000       0x34 Src/main.o
+ .debug_macro   0x0000000000000000       0x34 Src/main.o
+ .debug_macro   0x0000000000000000       0x90 Src/main.o
+ .debug_macro   0x0000000000000000       0x40 Src/main.o
+ .debug_macro   0x0000000000000000       0x58 Src/main.o
+ .debug_macro   0x0000000000000000       0x3a Src/main.o
+ .debug_macro   0x0000000000000000       0x3a Src/main.o
+ .debug_macro   0x0000000000000000       0x6a Src/main.o
+ .debug_macro   0x0000000000000000       0x94 Src/main.o
+ .debug_macro   0x0000000000000000       0x3a Src/main.o
+ .debug_macro   0x0000000000000000      0x118 Src/main.o
+ .debug_macro   0x0000000000000000       0x52 Src/main.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/syscalls.o
+ .text          0x0000000000000000        0x0 Src/syscalls.o
+ .data          0x0000000000000000        0x0 Src/syscalls.o
+ .bss           0x0000000000000000        0x0 Src/syscalls.o
+ .bss.__env     0x0000000000000000        0x4 Src/syscalls.o
+ .data.environ  0x0000000000000000        0x4 Src/syscalls.o
+ .text.initialise_monitor_handles
+                0x0000000000000000        0xc Src/syscalls.o
+ .text._getpid  0x0000000000000000        0xe Src/syscalls.o
+ .text._kill    0x0000000000000000       0x20 Src/syscalls.o
+ .text._exit    0x0000000000000000       0x14 Src/syscalls.o
+ .text._read    0x0000000000000000       0x3a Src/syscalls.o
+ .text._write   0x0000000000000000       0x38 Src/syscalls.o
+ .text._close   0x0000000000000000       0x16 Src/syscalls.o
+ .text._fstat   0x0000000000000000       0x1e Src/syscalls.o
+ .text._isatty  0x0000000000000000       0x14 Src/syscalls.o
+ .text._lseek   0x0000000000000000       0x18 Src/syscalls.o
+ .text._open    0x0000000000000000       0x1a Src/syscalls.o
+ .text._wait    0x0000000000000000       0x1e Src/syscalls.o
+ .text._unlink  0x0000000000000000       0x1e Src/syscalls.o
+ .text._times   0x0000000000000000       0x16 Src/syscalls.o
+ .text._stat    0x0000000000000000       0x1e Src/syscalls.o
+ .text._link    0x0000000000000000       0x20 Src/syscalls.o
+ .text._fork    0x0000000000000000       0x16 Src/syscalls.o
+ .text._execve  0x0000000000000000       0x22 Src/syscalls.o
+ .debug_info    0x0000000000000000      0xebd Src/syscalls.o
+ .debug_abbrev  0x0000000000000000      0x261 Src/syscalls.o
+ .debug_aranges
+                0x0000000000000000       0xa8 Src/syscalls.o
+ .debug_ranges  0x0000000000000000       0x98 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x243 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0xa60 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x22 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x40 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x18 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x94 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x3c Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x34 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x57 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x174 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x330 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x52 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x1f Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x43 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x20 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x1a3 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x35 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x6a Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x1c Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x52 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x40 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x40 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0xd7 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x1c Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x3d Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x35 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x122 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x16 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x16 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x29 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x241 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x1c Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x16 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x145 Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x189 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x16 Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x88 Src/syscalls.o
+ .debug_line    0x0000000000000000      0x739 Src/syscalls.o
+ .debug_str     0x0000000000000000     0x8857 Src/syscalls.o
+ .comment       0x0000000000000000       0x7c Src/syscalls.o
+ .debug_frame   0x0000000000000000      0x2ac Src/syscalls.o
+ .ARM.attributes
+                0x0000000000000000       0x33 Src/syscalls.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .group         0x0000000000000000        0xc Src/sysmem.o
+ .text          0x0000000000000000        0x0 Src/sysmem.o
+ .data          0x0000000000000000        0x0 Src/sysmem.o
+ .bss           0x0000000000000000        0x0 Src/sysmem.o
+ .bss.__sbrk_heap_end
+                0x0000000000000000        0x4 Src/sysmem.o
+ .text._sbrk    0x0000000000000000       0x6c Src/sysmem.o
+ .debug_info    0x0000000000000000      0x985 Src/sysmem.o
+ .debug_abbrev  0x0000000000000000      0x19b Src/sysmem.o
+ .debug_aranges
+                0x0000000000000000       0x20 Src/sysmem.o
+ .debug_ranges  0x0000000000000000       0x10 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0xee Src/sysmem.o
+ .debug_macro   0x0000000000000000      0xa60 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x22 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x40 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x18 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x94 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x3c Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x34 Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x174 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x57 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x52 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x1f Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x43 Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x20 Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x1a3 Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x23b Src/sysmem.o
+ .debug_macro   0x0000000000000000       0xef Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x6a Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x1df Src/sysmem.o
+ .debug_line    0x0000000000000000      0x4c2 Src/sysmem.o
+ .debug_str     0x0000000000000000     0x5f25 Src/sysmem.o
+ .comment       0x0000000000000000       0x7c Src/sysmem.o
+ .debug_frame   0x0000000000000000       0x34 Src/sysmem.o
+ .ARM.attributes
+                0x0000000000000000       0x33 Src/sysmem.o
+ .text          0x0000000000000000       0x14 Startup/startup_stm32f103c8tx.o
+ .data          0x0000000000000000        0x0 Startup/startup_stm32f103c8tx.o
+ .bss           0x0000000000000000        0x0 Startup/startup_stm32f103c8tx.o
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-errno.o)
+ .text.__errno  0x0000000000000000        0xc c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000000       0x20 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x28 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x0000000000000000       0x16 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000000       0x28 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .text.memset   0x0000000000000000       0x10 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000000       0x20 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-strcmp.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-strcmp.o)
+ .text          0x0000000000000000      0x378 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x0000000000000000       0xac c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_addsubdf3.o)
+ .text          0x0000000000000000      0x424 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000000000000000       0x50 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivdf3.o)
+ .text          0x0000000000000000       0x40 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x0000000000000000       0x24 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x0000000000000000       0x1d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunsdfsi.o)
+ .text          0x0000000000000000      0x2a0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivsf3.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivsf3.o)
+ .debug_frame   0x0000000000000000       0x38 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_muldivsf3.o)
+ .text          0x0000000000000000       0x40 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunssfsi.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunssfsi.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunssfsi.o)
+ .debug_frame   0x0000000000000000       0x24 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunssfsi.o)
+ .ARM.attributes
+                0x0000000000000000       0x1d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a(_arm_fixunssfsi.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtend.o
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtend.o
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtend.o
+ .eh_frame      0x0000000000000000        0x4 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x2d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtend.o
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x0000000020000000 0x0000000000005000 xrw
+ROM              0x0000000008000000 0x0000000000010000 xr
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/crt0.o
+LOAD Common_Module/Det.o
+LOAD DIO_Module/Dio.o
+LOAD PORT_Module/Port.o
+LOAD PORT_Module/Port_PBcfg.o
+LOAD PWM_Module/Pwm.o
+LOAD PWM_Module/Pwm_Irq.o
+LOAD PWM_Module/Pwm_PBcfg.o
+LOAD RTE/Rte_DoorLock_indication.o
+LOAD RTE/Rte_ECU_Abstraction_SWC.o
+LOAD RTE/Rte_LED_Actuator.o
+LOAD RTE/Rte_Read_Door_State.o
+LOAD RTOS/Cortex_Mx_Porting.o
+LOAD RTOS/MY_RTOS_FIFO.o
+LOAD RTOS/Scheduler.o
+LOAD SWCs/DoorLock_indication.o
+LOAD SWCs/ECU_Abstraction_SWC.o
+LOAD SWCs/LED_Actuator.o
+LOAD SWCs/Read_Door_State.o
+LOAD Src/main.o
+LOAD Src/syscalls.o
+LOAD Src/sysmem.o
+LOAD Startup/startup_stm32f103c8tx.o
+START GROUP
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libm.a
+END GROUP
+START GROUP
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a
+END GROUP
+START GROUP
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m\libgcc.a
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libnosys.a
+END GROUP
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtend.o
+LOAD c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+                0x0000000020005000                _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x0000000000000200                _Min_Heap_Size = 0x200
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000      0x130
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x130 Startup/startup_stm32f103c8tx.o
+                0x0000000008000000                g_pfnVectors
+                0x0000000008000130                . = ALIGN (0x4)
+
+.text           0x0000000008000130     0x1c88
+                0x0000000008000130                . = ALIGN (0x4)
+ *(.text)
+ .text          0x0000000008000130       0x40 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+ .text          0x0000000008000170       0x14 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-strcmp.o)
+                0x0000000008000170                strcmp
+ *(.text*)
+ .text.Det_ReportError
+                0x0000000008000184       0x20 Common_Module/Det.o
+                0x0000000008000184                Det_ReportError
+ .text.Dio_ReadChannel
+                0x00000000080001a4       0xb0 DIO_Module/Dio.o
+                0x00000000080001a4                Dio_ReadChannel
+ .text.Dio_WriteChannel
+                0x0000000008000254      0x1fc DIO_Module/Dio.o
+                0x0000000008000254                Dio_WriteChannel
+ .text.get_position
+                0x0000000008000450       0x6c PORT_Module/Port.o
+                0x0000000008000450                get_position
+ .text.Port_Init
+                0x00000000080004bc      0x490 PORT_Module/Port.o
+                0x00000000080004bc                Port_Init
+ .text.TIM2_IRQHandler
+                0x000000000800094c      0x604 PWM_Module/Pwm_Irq.o
+                0x000000000800094c                TIM2_IRQHandler
+ .text.Rte_IWrite_DoorLock_indication_DoorLock_indication_PP_SR_LED_State_LED_State
+                0x0000000008000f50       0x20 RTE/Rte_DoorLock_indication.o
+                0x0000000008000f50                Rte_IWrite_DoorLock_indication_DoorLock_indication_PP_SR_LED_State_LED_State
+ .text.Rte_IRead_DoorLock_indication_DoorLock_indication_RP_SR_DOOR_State_Door_State
+                0x0000000008000f70       0x18 RTE/Rte_DoorLock_indication.o
+                0x0000000008000f70                Rte_IRead_DoorLock_indication_DoorLock_indication_RP_SR_DOOR_State_Door_State
+ .text.Rte_IWrite_ECU_Abstraction_SWC_Read_Door_Sensor_PP_SR_DOOR_State_Sensor_Reading
+                0x0000000008000f88       0x20 RTE/Rte_ECU_Abstraction_SWC.o
+                0x0000000008000f88                Rte_IWrite_ECU_Abstraction_SWC_Read_Door_Sensor_PP_SR_DOOR_State_Sensor_Reading
+ .text.Rte_IRead_LED_Actuator_Read_LED_State_RP_SR_LED_State_LED_State
+                0x0000000008000fa8       0x18 RTE/Rte_LED_Actuator.o
+                0x0000000008000fa8                Rte_IRead_LED_Actuator_Read_LED_State_RP_SR_LED_State_LED_State
+ .text.Rte_Call_LED_Actuator_RP_CS_LED_Switch_LED_Switch
+                0x0000000008000fc0       0x44 RTE/Rte_LED_Actuator.o
+                0x0000000008000fc0                Rte_Call_LED_Actuator_RP_CS_LED_Switch_LED_Switch
+ .text.Rte_IWrite_Read_Door_State_Read_Door_State_PP_DOOR_State_Door_State
+                0x0000000008001004       0x20 RTE/Rte_Read_Door_State.o
+                0x0000000008001004                Rte_IWrite_Read_Door_State_Read_Door_State_PP_DOOR_State_Door_State
+ .text.Rte_IRead_Read_Door_State_Read_Door_State_RP_DOOR_State_Sensor_Reading
+                0x0000000008001024       0x18 RTE/Rte_Read_Door_State.o
+                0x0000000008001024                Rte_IRead_Read_Door_State_Read_Door_State_RP_DOOR_State_Sensor_Reading
+ .text.__NVIC_SetPriority
+                0x000000000800103c       0x54 RTOS/Cortex_Mx_Porting.o
+ .text.SysTick_Config
+                0x0000000008001090       0x44 RTOS/Cortex_Mx_Porting.o
+ .text.HardFault_Handler
+                0x00000000080010d4        0x6 RTOS/Cortex_Mx_Porting.o
+                0x00000000080010d4                HardFault_Handler
+ .text.MemManage_Handler
+                0x00000000080010da        0x6 RTOS/Cortex_Mx_Porting.o
+                0x00000000080010da                MemManage_Handler
+ .text.UsageFault_Handler
+                0x00000000080010e0        0x6 RTOS/Cortex_Mx_Porting.o
+                0x00000000080010e0                UsageFault_Handler
+ .text.SVC_Handler
+                0x00000000080010e6       0x14 RTOS/Cortex_Mx_Porting.o
+                0x00000000080010e6                SVC_Handler
+ .text.HW_init  0x00000000080010fa       0x12 RTOS/Cortex_Mx_Porting.o
+                0x00000000080010fa                HW_init
+ .text.trigger_OS_PendSV
+                0x000000000800110c       0x1c RTOS/Cortex_Mx_Porting.o
+                0x000000000800110c                trigger_OS_PendSV
+ .text.Start_Ticker
+                0x0000000008001128       0x10 RTOS/Cortex_Mx_Porting.o
+                0x0000000008001128                Start_Ticker
+ .text.SysTick_Handler
+                0x0000000008001138       0x28 RTOS/Cortex_Mx_Porting.o
+                0x0000000008001138                SysTick_Handler
+ .text.FIFO_init
+                0x0000000008001160       0x44 RTOS/MY_RTOS_FIFO.o
+                0x0000000008001160                FIFO_init
+ .text.FIFO_enqueue
+                0x00000000080011a4       0x84 RTOS/MY_RTOS_FIFO.o
+                0x00000000080011a4                FIFO_enqueue
+ .text.FIFO_dequeue
+                0x0000000008001228       0x82 RTOS/MY_RTOS_FIFO.o
+                0x0000000008001228                FIFO_dequeue
+ *fill*         0x00000000080012aa        0x2 
+ .text.MYRTOS_IdleTask
+                0x00000000080012ac       0x1c RTOS/Scheduler.o
+                0x00000000080012ac                MYRTOS_IdleTask
+ .text.PendSV_Handler
+                0x00000000080012c8      0x1c4 RTOS/Scheduler.o
+                0x00000000080012c8                PendSV_Handler
+ .text.MYRTOS_Create_MainStack
+                0x000000000800148c       0x3c RTOS/Scheduler.o
+                0x000000000800148c                MYRTOS_Create_MainStack
+ .text.MYRTOS_Init
+                0x00000000080014c8       0x78 RTOS/Scheduler.o
+                0x00000000080014c8                MYRTOS_Init
+ .text.MyRTOS_Create_TaskStack
+                0x0000000008001540       0x7c RTOS/Scheduler.o
+                0x0000000008001540                MyRTOS_Create_TaskStack
+ .text.MYRTOS_CreateTask
+                0x00000000080015bc       0x8c RTOS/Scheduler.o
+                0x00000000080015bc                MYRTOS_CreateTask
+ .text.bubbleSort
+                0x0000000008001648       0x90 RTOS/Scheduler.o
+                0x0000000008001648                bubbleSort
+ .text.MyRTOS_Update_Schadule_tables
+                0x00000000080016d8       0xe0 RTOS/Scheduler.o
+                0x00000000080016d8                MyRTOS_Update_Schadule_tables
+ .text.Decide_whatNext
+                0x00000000080017b8       0xa4 RTOS/Scheduler.o
+                0x00000000080017b8                Decide_whatNext
+ .text.OS_SV    0x000000000800185c       0x7c RTOS/Scheduler.o
+                0x000000000800185c                OS_SV
+ .text.MYRTOS_OS_SVC_Set
+                0x00000000080018d8       0x30 RTOS/Scheduler.o
+                0x00000000080018d8                MYRTOS_OS_SVC_Set
+ .text.MYRTOS_ActivateTask
+                0x0000000008001908       0x1e RTOS/Scheduler.o
+                0x0000000008001908                MYRTOS_ActivateTask
+ .text.MYRTOS_TaskWait
+                0x0000000008001926       0x2e RTOS/Scheduler.o
+                0x0000000008001926                MYRTOS_TaskWait
+ .text.MYRTOS_Update_TasksWaitingTime
+                0x0000000008001954       0x88 RTOS/Scheduler.o
+                0x0000000008001954                MYRTOS_Update_TasksWaitingTime
+ .text.MYRTOS_STARTOS
+                0x00000000080019dc       0x58 RTOS/Scheduler.o
+                0x00000000080019dc                MYRTOS_STARTOS
+ .text.IB_DoorLock_indication_Runnable
+                0x0000000008001a34       0x34 SWCs/DoorLock_indication.o
+                0x0000000008001a34                IB_DoorLock_indication_Runnable
+ .text.Switch_LED_State_Runnable
+                0x0000000008001a68       0x38 SWCs/ECU_Abstraction_SWC.o
+                0x0000000008001a68                Switch_LED_State_Runnable
+ .text.Read_Door_Sensor_Runnable
+                0x0000000008001aa0       0x24 SWCs/ECU_Abstraction_SWC.o
+                0x0000000008001aa0                Read_Door_Sensor_Runnable
+ .text.Read_LED_State_Runnable
+                0x0000000008001ac4       0x34 SWCs/LED_Actuator.o
+                0x0000000008001ac4                Read_LED_State_Runnable
+ .text.Read_Door_State_Runnable
+                0x0000000008001af8       0x22 SWCs/Read_Door_State.o
+                0x0000000008001af8                Read_Door_State_Runnable
+ *fill*         0x0000000008001b1a        0x2 
+ .text._10ms_task
+                0x0000000008001b1c       0x18 Src/main.o
+                0x0000000008001b1c                _10ms_task
+ .text._12ms_task
+                0x0000000008001b34       0x18 Src/main.o
+                0x0000000008001b34                _12ms_task
+ .text._15ms_task
+                0x0000000008001b4c       0x18 Src/main.o
+                0x0000000008001b4c                _15ms_task
+ .text._18ms_task
+                0x0000000008001b64       0x18 Src/main.o
+                0x0000000008001b64                _18ms_task
+ .text.OS       0x0000000008001b7c      0x120 Src/main.o
+                0x0000000008001b7c                OS
+ .text.MCU_init
+                0x0000000008001c9c       0x58 Src/main.o
+                0x0000000008001c9c                MCU_init
+ .text.main     0x0000000008001cf4        0xe Src/main.o
+                0x0000000008001cf4                main
+ *fill*         0x0000000008001d02        0x2 
+ .text.Reset_Handler
+                0x0000000008001d04       0x50 Startup/startup_stm32f103c8tx.o
+                0x0000000008001d04                Reset_Handler
+ .text.Default_Handler
+                0x0000000008001d54        0x2 Startup/startup_stm32f103c8tx.o
+                0x0000000008001d54                EXTI2_IRQHandler
+                0x0000000008001d54                TIM8_TRG_COM_IRQHandler
+                0x0000000008001d54                TIM8_CC_IRQHandler
+                0x0000000008001d54                DebugMon_Handler
+                0x0000000008001d54                TIM1_CC_IRQHandler
+                0x0000000008001d54                TIM6_IRQHandler
+                0x0000000008001d54                PVD_IRQHandler
+                0x0000000008001d54                SDIO_IRQHandler
+                0x0000000008001d54                NMI_Handler
+                0x0000000008001d54                EXTI3_IRQHandler
+                0x0000000008001d54                USB_HP_CAN_TX_IRQHandler
+                0x0000000008001d54                EXTI0_IRQHandler
+                0x0000000008001d54                I2C2_EV_IRQHandler
+                0x0000000008001d54                ADC1_2_IRQHandler
+                0x0000000008001d54                SPI1_IRQHandler
+                0x0000000008001d54                CAN_SCE_IRQHandler
+                0x0000000008001d54                TAMPER_IRQHandler
+                0x0000000008001d54                TIM8_UP_IRQHandler
+                0x0000000008001d54                DMA2_Channel2_IRQHandler
+                0x0000000008001d54                DMA1_Channel4_IRQHandler
+                0x0000000008001d54                USART3_IRQHandler
+                0x0000000008001d54                RTC_IRQHandler
+                0x0000000008001d54                DMA1_Channel7_IRQHandler
+                0x0000000008001d54                UART5_IRQHandler
+                0x0000000008001d54                ADC3_IRQHandler
+                0x0000000008001d54                TIM4_IRQHandler
+                0x0000000008001d54                CAN_RX1_IRQHandler
+                0x0000000008001d54                DMA2_Channel1_IRQHandler
+                0x0000000008001d54                I2C1_EV_IRQHandler
+                0x0000000008001d54                DMA1_Channel6_IRQHandler
+                0x0000000008001d54                UART4_IRQHandler
+                0x0000000008001d54                TIM3_IRQHandler
+                0x0000000008001d54                RCC_IRQHandler
+                0x0000000008001d54                TIM1_TRG_COM_IRQHandler
+                0x0000000008001d54                DMA1_Channel1_IRQHandler
+                0x0000000008001d54                Default_Handler
+                0x0000000008001d54                EXTI15_10_IRQHandler
+                0x0000000008001d54                TIM7_IRQHandler
+                0x0000000008001d54                TIM5_IRQHandler
+                0x0000000008001d54                EXTI9_5_IRQHandler
+                0x0000000008001d54                SPI2_IRQHandler
+                0x0000000008001d54                USB_LP_CAN_RX0_IRQHandler
+                0x0000000008001d54                DMA1_Channel5_IRQHandler
+                0x0000000008001d54                EXTI4_IRQHandler
+                0x0000000008001d54                DMA1_Channel3_IRQHandler
+                0x0000000008001d54                FSMC_IRQHandler
+                0x0000000008001d54                TIM1_UP_IRQHandler
+                0x0000000008001d54                WWDG_IRQHandler
+                0x0000000008001d54                TIM1_BRK_IRQHandler
+                0x0000000008001d54                EXTI1_IRQHandler
+                0x0000000008001d54                RTCAlarm_IRQHandler
+                0x0000000008001d54                DMA2_Channel4_5_IRQHandler
+                0x0000000008001d54                USART2_IRQHandler
+                0x0000000008001d54                I2C2_ER_IRQHandler
+                0x0000000008001d54                DMA1_Channel2_IRQHandler
+                0x0000000008001d54                TIM8_BRK_IRQHandler
+                0x0000000008001d54                FLASH_IRQHandler
+                0x0000000008001d54                BusFault_Handler
+                0x0000000008001d54                USART1_IRQHandler
+                0x0000000008001d54                SPI3_IRQHandler
+                0x0000000008001d54                I2C1_ER_IRQHandler
+                0x0000000008001d54                DMA2_Channel3_IRQHandler
+ *fill*         0x0000000008001d56        0x2 
+ .text.__libc_init_array
+                0x0000000008001d58       0x48 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+                0x0000000008001d58                __libc_init_array
+ *(.glue_7)
+ .glue_7        0x0000000008001da0        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008001da0        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x0000000008001da0        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+ *(.init)
+ .init          0x0000000008001da0        0x4 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+                0x0000000008001da0                _init
+ .init          0x0000000008001da4        0x8 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+ *(.fini)
+ .fini          0x0000000008001dac        0x4 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+                0x0000000008001dac                _fini
+ .fini          0x0000000008001db0        0x8 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+                0x0000000008001db8                . = ALIGN (0x4)
+                0x0000000008001db8                _etext = .
+
+.vfp11_veneer   0x0000000008001db8        0x0
+ .vfp11_veneer  0x0000000008001db8        0x0 linker stubs
+
+.v4_bx          0x0000000008001db8        0x0
+ .v4_bx         0x0000000008001db8        0x0 linker stubs
+
+.iplt           0x0000000008001db8        0x0
+ .iplt          0x0000000008001db8        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+
+.rodata         0x0000000008001db8      0x194
+                0x0000000008001db8                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x0000000008001db8        0x9 RTOS/Scheduler.o
+ *fill*         0x0000000008001dc1        0x3 
+ .rodata        0x0000000008001dc4       0x2e Src/main.o
+ *(.rodata*)
+ *fill*         0x0000000008001df2        0x2 
+ .rodata.Port   0x0000000008001df4      0x140 PORT_Module/Port_PBcfg.o
+                0x0000000008001df4                Port
+ .rodata.Rte_Instance_DoorLock_indication
+                0x0000000008001f34        0x8 RTE/Rte_DoorLock_indication.o
+                0x0000000008001f34                Rte_Instance_DoorLock_indication
+ .rodata.Rte_Instance_ECU_Abstraction_SWC
+                0x0000000008001f3c        0x4 RTE/Rte_ECU_Abstraction_SWC.o
+                0x0000000008001f3c                Rte_Instance_ECU_Abstraction_SWC
+ .rodata.Rte_Instance_LED_Actuator
+                0x0000000008001f40        0x4 RTE/Rte_LED_Actuator.o
+                0x0000000008001f40                Rte_Instance_LED_Actuator
+ .rodata.Rte_Instance_Read_Door_State
+                0x0000000008001f44        0x8 RTE/Rte_Read_Door_State.o
+                0x0000000008001f44                Rte_Instance_Read_Door_State
+                0x0000000008001f4c                . = ALIGN (0x4)
+
+.rel.dyn        0x0000000008001f4c        0x0
+ .rel.iplt      0x0000000008001f4c        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+
+.ARM.extab      0x0000000008001f4c        0x0
+                0x0000000008001f4c                . = ALIGN (0x4)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000008001f4c                . = ALIGN (0x4)
+
+.ARM            0x0000000008001f4c        0x0
+                0x0000000008001f4c                . = ALIGN (0x4)
+                0x0000000008001f4c                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008001f4c                __exidx_end = .
+                0x0000000008001f4c                . = ALIGN (0x4)
+
+.preinit_array  0x0000000008001f4c        0x0
+                0x0000000008001f4c                . = ALIGN (0x4)
+                0x0000000008001f4c                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x0000000008001f4c                PROVIDE (__preinit_array_end = .)
+                0x0000000008001f4c                . = ALIGN (0x4)
+
+.init_array     0x0000000008001f4c        0x4
+                0x0000000008001f4c                . = ALIGN (0x4)
+                0x0000000008001f4c                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x0000000008001f4c        0x4 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+                0x0000000008001f50                PROVIDE (__init_array_end = .)
+                0x0000000008001f50                . = ALIGN (0x4)
+
+.fini_array     0x0000000008001f50        0x4
+                0x0000000008001f50                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x0000000008001f50        0x4 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x0000000008001f54                . = ALIGN (0x4)
+                0x0000000008001f54                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000        0x0 load address 0x0000000008001f54
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ *(.data*)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _edata = .
+
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008001f54
+ .igot.plt      0x0000000020000000        0x0 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+                0x0000000020000000                . = ALIGN (0x4)
+
+.bss            0x0000000020000000      0x520 load address 0x0000000008001f54
+                0x0000000020000000                _sbss = .
+                0x0000000020000000                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x0000000020000000       0x1c c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+ *(.bss*)
+ .bss.Port_Status
+                0x000000002000001c        0x1 PORT_Module/Port.o
+                0x000000002000001c                Port_Status
+ *fill*         0x000000002000001d        0x3 
+ .bss.Port_Config
+                0x0000000020000020        0x4 PORT_Module/Port.o
+                0x0000000020000020                Port_Config
+ .bss.Flag_Notifications
+                0x0000000020000024        0x1 PWM_Module/Pwm.o
+                0x0000000020000024                Flag_Notifications
+ .bss.LED_Actuator_RP_CS_LED_Switch_LED_Switch_Buffer_retcode
+                0x0000000020000025        0x1 RTE/Rte_LED_Actuator.o
+                0x0000000020000025                LED_Actuator_RP_CS_LED_Switch_LED_Switch_Buffer_retcode
+ *fill*         0x0000000020000026        0x2 
+ .bss.Rte_Call_LED_Actuator_RP_CS_LED_Switch_LED_Switch_Delegate
+                0x0000000020000028        0x4 RTE/Rte_LED_Actuator.o
+                0x0000000020000028                Rte_Call_LED_Actuator_RP_CS_LED_Switch_LED_Switch_Delegate
+ *(COMMON)
+ COMMON         0x000000002000002c       0x50 PWM_Module/Pwm.o
+                0x000000002000002c                Pwm_Config
+ COMMON         0x000000002000007c        0x1 RTE/Rte_DoorLock_indication.o
+                0x000000002000007c                Read_Door_State_PP_DOOR_State_Door_State
+ *fill*         0x000000002000007d        0x3 
+ COMMON         0x0000000020000080        0x1 RTE/Rte_LED_Actuator.o
+                0x0000000020000080                DoorLock_indication_PP_SR_LED_State_LED_State
+ *fill*         0x0000000020000081        0x3 
+ COMMON         0x0000000020000084        0x1 RTE/Rte_Read_Door_State.o
+                0x0000000020000084                Read_Door_Sensor_PP_SR_DOOR_State_Sensor_Reading
+ COMMON         0x0000000020000085        0x1 RTOS/Cortex_Mx_Porting.o
+                0x0000000020000085                SysTickLED
+ *fill*         0x0000000020000086        0x2 
+ COMMON         0x0000000020000088      0x394 RTOS/Scheduler.o
+                0x0000000020000088                OS_Control
+                0x0000000020000234                Ready_QUEUE
+                0x0000000020000248                MYRTOS_idleTask
+                0x0000000020000288                IdleTaskLED
+                0x000000002000028c                Ready_QUEUE_FIFO
+ COMMON         0x000000002000041c      0x104 Src/main.o
+                0x000000002000041c                _15ms_Task
+                0x000000002000045c                _12ms_Task
+                0x000000002000049c                _10ms_Task
+                0x00000000200004dc                Error
+                0x00000000200004e0                _18ms_Task
+                0x0000000020000520                . = ALIGN (0x4)
+                0x0000000020000520                _ebss = .
+                0x0000000020000520                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x0000000020000520      0x600 load address 0x0000000008001f54
+                0x0000000020000520                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (end = .)
+                0x0000000020000520                PROVIDE (_end = .)
+                0x0000000020000720                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000520      0x200 
+                0x0000000020000b20                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000720      0x400 
+                0x0000000020000b20                . = ALIGN (0x8)
+                0x0000000020000b20                _eheap = .
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+ .ARM.attributes
+                0x000000000000001d       0x2d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x33 Common_Module/Det.o
+ .ARM.attributes
+                0x000000000000007d       0x33 DIO_Module/Dio.o
+ .ARM.attributes
+                0x00000000000000b0       0x33 PORT_Module/Port.o
+ .ARM.attributes
+                0x00000000000000e3       0x33 PORT_Module/Port_PBcfg.o
+ .ARM.attributes
+                0x0000000000000116       0x33 PWM_Module/Pwm.o
+ .ARM.attributes
+                0x0000000000000149       0x33 PWM_Module/Pwm_Irq.o
+ .ARM.attributes
+                0x000000000000017c       0x33 RTE/Rte_DoorLock_indication.o
+ .ARM.attributes
+                0x00000000000001af       0x33 RTE/Rte_ECU_Abstraction_SWC.o
+ .ARM.attributes
+                0x00000000000001e2       0x33 RTE/Rte_LED_Actuator.o
+ .ARM.attributes
+                0x0000000000000215       0x33 RTE/Rte_Read_Door_State.o
+ .ARM.attributes
+                0x0000000000000248       0x33 RTOS/Cortex_Mx_Porting.o
+ .ARM.attributes
+                0x000000000000027b       0x33 RTOS/MY_RTOS_FIFO.o
+ .ARM.attributes
+                0x00000000000002ae       0x33 RTOS/Scheduler.o
+ .ARM.attributes
+                0x00000000000002e1       0x33 SWCs/DoorLock_indication.o
+ .ARM.attributes
+                0x0000000000000314       0x33 SWCs/ECU_Abstraction_SWC.o
+ .ARM.attributes
+                0x0000000000000347       0x33 SWCs/LED_Actuator.o
+ .ARM.attributes
+                0x000000000000037a       0x33 SWCs/Read_Door_State.o
+ .ARM.attributes
+                0x00000000000003ad       0x33 Src/main.o
+ .ARM.attributes
+                0x00000000000003e0       0x21 Startup/startup_stm32f103c8tx.o
+ .ARM.attributes
+                0x0000000000000401       0x2d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x000000000000042e       0x1b c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x0000000000000449       0x1d c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+OUTPUT(Door_Lock_Indication_Project.axf elf32-littlearm)
+
+.debug_info     0x0000000000000000     0x676f
+ .debug_info    0x0000000000000000       0xdf Common_Module/Det.o
+ .debug_info    0x00000000000000df      0x2f9 DIO_Module/Dio.o
+ .debug_info    0x00000000000003d8      0x4f2 PORT_Module/Port.o
+ .debug_info    0x00000000000008ca      0x1c0 PORT_Module/Port_PBcfg.o
+ .debug_info    0x0000000000000a8a      0x5ff PWM_Module/Pwm.o
+ .debug_info    0x0000000000001089      0x31c PWM_Module/Pwm_Irq.o
+ .debug_info    0x00000000000013a5      0x99d RTE/Rte_DoorLock_indication.o
+ .debug_info    0x0000000000001d42      0x96b RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_info    0x00000000000026ad      0x9e6 RTE/Rte_LED_Actuator.o
+ .debug_info    0x0000000000003093      0x99d RTE/Rte_Read_Door_State.o
+ .debug_info    0x0000000000003a30      0x5b1 RTOS/Cortex_Mx_Porting.o
+ .debug_info    0x0000000000003fe1      0xb97 RTOS/MY_RTOS_FIFO.o
+ .debug_info    0x0000000000004b78     0x1080 RTOS/Scheduler.o
+ .debug_info    0x0000000000005bf8      0x10c SWCs/DoorLock_indication.o
+ .debug_info    0x0000000000005d04      0x154 SWCs/ECU_Abstraction_SWC.o
+ .debug_info    0x0000000000005e58      0x100 SWCs/LED_Actuator.o
+ .debug_info    0x0000000000005f58      0x10c SWCs/Read_Door_State.o
+ .debug_info    0x0000000000006064      0x6e9 Src/main.o
+ .debug_info    0x000000000000674d       0x22 Startup/startup_stm32f103c8tx.o
+
+.debug_abbrev   0x0000000000000000     0x1904
+ .debug_abbrev  0x0000000000000000       0x58 Common_Module/Det.o
+ .debug_abbrev  0x0000000000000058      0x149 DIO_Module/Dio.o
+ .debug_abbrev  0x00000000000001a1      0x1cb PORT_Module/Port.o
+ .debug_abbrev  0x000000000000036c       0xa5 PORT_Module/Port_PBcfg.o
+ .debug_abbrev  0x0000000000000411      0x1bd PWM_Module/Pwm.o
+ .debug_abbrev  0x00000000000005ce       0xc6 PWM_Module/Pwm_Irq.o
+ .debug_abbrev  0x0000000000000694      0x1bb RTE/Rte_DoorLock_indication.o
+ .debug_abbrev  0x000000000000084f      0x1bb RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_abbrev  0x0000000000000a0a      0x1e4 RTE/Rte_LED_Actuator.o
+ .debug_abbrev  0x0000000000000bee      0x1bb RTE/Rte_Read_Door_State.o
+ .debug_abbrev  0x0000000000000da9      0x1e4 RTOS/Cortex_Mx_Porting.o
+ .debug_abbrev  0x0000000000000f8d      0x1c2 RTOS/MY_RTOS_FIFO.o
+ .debug_abbrev  0x000000000000114f      0x34c RTOS/Scheduler.o
+ .debug_abbrev  0x000000000000149b       0xa2 SWCs/DoorLock_indication.o
+ .debug_abbrev  0x000000000000153d       0xcd SWCs/ECU_Abstraction_SWC.o
+ .debug_abbrev  0x000000000000160a       0xa2 SWCs/LED_Actuator.o
+ .debug_abbrev  0x00000000000016ac       0xa2 SWCs/Read_Door_State.o
+ .debug_abbrev  0x000000000000174e      0x1a4 Src/main.o
+ .debug_abbrev  0x00000000000018f2       0x12 Startup/startup_stm32f103c8tx.o
+
+.debug_aranges  0x0000000000000000      0x460
+ .debug_aranges
+                0x0000000000000000       0x20 Common_Module/Det.o
+ .debug_aranges
+                0x0000000000000020       0x40 DIO_Module/Dio.o
+ .debug_aranges
+                0x0000000000000060       0x50 PORT_Module/Port.o
+ .debug_aranges
+                0x00000000000000b0       0x18 PORT_Module/Port_PBcfg.o
+ .debug_aranges
+                0x00000000000000c8       0x68 PWM_Module/Pwm.o
+ .debug_aranges
+                0x0000000000000130       0x20 PWM_Module/Pwm_Irq.o
+ .debug_aranges
+                0x0000000000000150       0x30 RTE/Rte_DoorLock_indication.o
+ .debug_aranges
+                0x0000000000000180       0x28 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_aranges
+                0x00000000000001a8       0x28 RTE/Rte_LED_Actuator.o
+ .debug_aranges
+                0x00000000000001d0       0x30 RTE/Rte_Read_Door_State.o
+ .debug_aranges
+                0x0000000000000200       0x70 RTOS/Cortex_Mx_Porting.o
+ .debug_aranges
+                0x0000000000000270       0x38 RTOS/MY_RTOS_FIFO.o
+ .debug_aranges
+                0x00000000000002a8       0xb8 RTOS/Scheduler.o
+ .debug_aranges
+                0x0000000000000360       0x20 SWCs/DoorLock_indication.o
+ .debug_aranges
+                0x0000000000000380       0x28 SWCs/ECU_Abstraction_SWC.o
+ .debug_aranges
+                0x00000000000003a8       0x20 SWCs/LED_Actuator.o
+ .debug_aranges
+                0x00000000000003c8       0x20 SWCs/Read_Door_State.o
+ .debug_aranges
+                0x00000000000003e8       0x50 Src/main.o
+ .debug_aranges
+                0x0000000000000438       0x28 Startup/startup_stm32f103c8tx.o
+
+.debug_ranges   0x0000000000000000      0x330
+ .debug_ranges  0x0000000000000000       0x10 Common_Module/Det.o
+ .debug_ranges  0x0000000000000010       0x30 DIO_Module/Dio.o
+ .debug_ranges  0x0000000000000040       0x40 PORT_Module/Port.o
+ .debug_ranges  0x0000000000000080       0x58 PWM_Module/Pwm.o
+ .debug_ranges  0x00000000000000d8       0x10 PWM_Module/Pwm_Irq.o
+ .debug_ranges  0x00000000000000e8       0x20 RTE/Rte_DoorLock_indication.o
+ .debug_ranges  0x0000000000000108       0x18 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_ranges  0x0000000000000120       0x18 RTE/Rte_LED_Actuator.o
+ .debug_ranges  0x0000000000000138       0x20 RTE/Rte_Read_Door_State.o
+ .debug_ranges  0x0000000000000158       0x60 RTOS/Cortex_Mx_Porting.o
+ .debug_ranges  0x00000000000001b8       0x28 RTOS/MY_RTOS_FIFO.o
+ .debug_ranges  0x00000000000001e0       0xa8 RTOS/Scheduler.o
+ .debug_ranges  0x0000000000000288       0x10 SWCs/DoorLock_indication.o
+ .debug_ranges  0x0000000000000298       0x18 SWCs/ECU_Abstraction_SWC.o
+ .debug_ranges  0x00000000000002b0       0x10 SWCs/LED_Actuator.o
+ .debug_ranges  0x00000000000002c0       0x10 SWCs/Read_Door_State.o
+ .debug_ranges  0x00000000000002d0       0x40 Src/main.o
+ .debug_ranges  0x0000000000000310       0x20 Startup/startup_stm32f103c8tx.o
+
+.debug_macro    0x0000000000000000     0x4e7c
+ .debug_macro   0x0000000000000000       0x52 Common_Module/Det.o
+ .debug_macro   0x0000000000000052      0xa60 Common_Module/Det.o
+ .debug_macro   0x0000000000000ab2       0x34 Common_Module/Det.o
+ .debug_macro   0x0000000000000ae6       0x90 Common_Module/Det.o
+ .debug_macro   0x0000000000000b76       0x40 Common_Module/Det.o
+ .debug_macro   0x0000000000000bb6       0x55 DIO_Module/Dio.o
+ .debug_macro   0x0000000000000c0b       0x3a DIO_Module/Dio.o
+ .debug_macro   0x0000000000000c45      0x118 DIO_Module/Dio.o
+ .debug_macro   0x0000000000000d5d       0x34 DIO_Module/Dio.o
+ .debug_macro   0x0000000000000d91       0x34 DIO_Module/Dio.o
+ .debug_macro   0x0000000000000dc5       0x40 DIO_Module/Dio.o
+ .debug_macro   0x0000000000000e05       0x52 DIO_Module/Dio.o
+ .debug_macro   0x0000000000000e57      0x2ab DIO_Module/Dio.o
+ .debug_macro   0x0000000000001102       0x85 PORT_Module/Port.o
+ .debug_macro   0x0000000000001187       0x3a PORT_Module/Port.o
+ .debug_macro   0x00000000000011c1      0x14e PORT_Module/Port.o
+ .debug_macro   0x000000000000130f       0x58 PORT_Module/Port.o
+ .debug_macro   0x0000000000001367       0x7c PORT_Module/Port_PBcfg.o
+ .debug_macro   0x00000000000013e3       0x5a PWM_Module/Pwm.o
+ .debug_macro   0x000000000000143d       0x3a PWM_Module/Pwm.o
+ .debug_macro   0x0000000000001477       0x3a PWM_Module/Pwm.o
+ .debug_macro   0x00000000000014b1       0x6a PWM_Module/Pwm.o
+ .debug_macro   0x000000000000151b       0x94 PWM_Module/Pwm.o
+ .debug_macro   0x00000000000015af       0x5a PWM_Module/Pwm_Irq.o
+ .debug_macro   0x0000000000001609      0x146 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x000000000000174f       0x22 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001771       0x40 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x00000000000017b1       0x18 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x00000000000017c9       0x94 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x000000000000185d       0x3c RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001899       0x34 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x00000000000018cd      0x174 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001a41       0x57 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001a98       0x52 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001aea       0x1f RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001b09       0x43 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001b4c       0x20 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001b6c      0x1a3 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000001d0f      0x330 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x000000000000203f       0x10 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x000000000000204f       0x35 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000002084       0x20 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x00000000000020a4       0x90 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000002134       0x40 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000002174       0x10 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x0000000000002184       0x16 RTE/Rte_DoorLock_indication.o
+ .debug_macro   0x000000000000219a      0x146 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x00000000000022e0       0x10 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x00000000000022f0       0x1c RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_macro   0x000000000000230c      0x146 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000002452       0x10 RTE/Rte_LED_Actuator.o
+ .debug_macro   0x0000000000002462       0x1c RTE/Rte_LED_Actuator.o
+ .debug_macro   0x000000000000247e      0x146 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x00000000000025c4       0x10 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x00000000000025d4       0x16 RTE/Rte_Read_Door_State.o
+ .debug_macro   0x00000000000025ea       0xbd RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x00000000000026a7       0x28 RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x00000000000026cf       0x8e RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x000000000000275d       0x51 RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x00000000000027ae       0xef RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x000000000000289d       0x6a RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000002907      0x1df RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000002ae6       0x1c RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000002b02       0x22 RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000002b24       0xe5 RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000002c09      0xe3c RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000003a45       0x2e RTOS/Cortex_Mx_Porting.o
+ .debug_macro   0x0000000000003a73      0x22c RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003c9f       0x16 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003cb5       0x97 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003d4c       0xfd RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003e49       0x10 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003e59       0x10 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003e69       0x1c RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003e85       0x52 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003ed7       0x40 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003f17       0x10 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003f27       0x40 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000003f67       0xd7 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x000000000000403e       0x1c RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x000000000000405a       0x3d RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x0000000000004097       0x16 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x00000000000040ad      0x145 RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x00000000000041f2       0xdf RTOS/MY_RTOS_FIFO.o
+ .debug_macro   0x00000000000042d1      0x236 RTOS/Scheduler.o
+ .debug_macro   0x0000000000004507       0x46 RTOS/Scheduler.o
+ .debug_macro   0x000000000000454d      0x32a RTOS/Scheduler.o
+ .debug_macro   0x0000000000004877       0x77 SWCs/DoorLock_indication.o
+ .debug_macro   0x00000000000048ee       0x93 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x0000000000004981       0x34 SWCs/ECU_Abstraction_SWC.o
+ .debug_macro   0x00000000000049b5       0x6b SWCs/LED_Actuator.o
+ .debug_macro   0x0000000000004a20       0x5f SWCs/Read_Door_State.o
+ .debug_macro   0x0000000000004a7f      0x158 Src/main.o
+ .debug_macro   0x0000000000004bd7      0x2a5 Src/main.o
+
+.debug_line     0x0000000000000000     0x40ed
+ .debug_line    0x0000000000000000       0xb9 Common_Module/Det.o
+ .debug_line    0x00000000000000b9      0x221 DIO_Module/Dio.o
+ .debug_line    0x00000000000002da      0x255 PORT_Module/Port.o
+ .debug_line    0x000000000000052f       0xd8 PORT_Module/Port_PBcfg.o
+ .debug_line    0x0000000000000607      0x296 PWM_Module/Pwm.o
+ .debug_line    0x000000000000089d      0x210 PWM_Module/Pwm_Irq.o
+ .debug_line    0x0000000000000aad      0x59b RTE/Rte_DoorLock_indication.o
+ .debug_line    0x0000000000001048      0x58a RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_line    0x00000000000015d2      0x579 RTE/Rte_LED_Actuator.o
+ .debug_line    0x0000000000001b4b      0x58f RTE/Rte_Read_Door_State.o
+ .debug_line    0x00000000000020da      0x527 RTOS/Cortex_Mx_Porting.o
+ .debug_line    0x0000000000002601      0x6be RTOS/MY_RTOS_FIFO.o
+ .debug_line    0x0000000000002cbf      0x8d8 RTOS/Scheduler.o
+ .debug_line    0x0000000000003597      0x11a SWCs/DoorLock_indication.o
+ .debug_line    0x00000000000036b1      0x16e SWCs/ECU_Abstraction_SWC.o
+ .debug_line    0x000000000000381f      0x105 SWCs/LED_Actuator.o
+ .debug_line    0x0000000000003924      0x106 SWCs/Read_Door_State.o
+ .debug_line    0x0000000000003a2a      0x63f Src/main.o
+ .debug_line    0x0000000000004069       0x84 Startup/startup_stm32f103c8tx.o
+
+.debug_str      0x0000000000000000    0x125c8
+ .debug_str     0x0000000000000000     0x3194 Common_Module/Det.o
+                                       0x3218 (size before relaxing)
+ .debug_str     0x0000000000003194     0x1adc DIO_Module/Dio.o
+                                       0x4cc0 (size before relaxing)
+ .debug_str     0x0000000000004c70      0xb46 PORT_Module/Port.o
+                                       0x4f74 (size before relaxing)
+ .debug_str     0x00000000000057b6      0x100 PORT_Module/Port_PBcfg.o
+                                       0x3d1b (size before relaxing)
+ .debug_str     0x00000000000058b6      0x97d PWM_Module/Pwm.o
+                                       0x4d34 (size before relaxing)
+ .debug_str     0x0000000000006233       0x28 PWM_Module/Pwm_Irq.o
+                                       0x4c16 (size before relaxing)
+ .debug_str     0x000000000000625b     0x39a8 RTE/Rte_DoorLock_indication.o
+                                       0x6c24 (size before relaxing)
+ .debug_str     0x0000000000009c03      0x2e9 RTE/Rte_ECU_Abstraction_SWC.o
+                                       0x6b67 (size before relaxing)
+ .debug_str     0x0000000000009eec      0x2ad RTE/Rte_LED_Actuator.o
+                                       0x6bbd (size before relaxing)
+ .debug_str     0x000000000000a199      0x2fe RTE/Rte_Read_Door_State.o
+                                       0x6bce (size before relaxing)
+ .debug_str     0x000000000000a497     0x67f2 RTOS/Cortex_Mx_Porting.o
+                                       0x99a1 (size before relaxing)
+ .debug_str     0x0000000000010c89     0x1374 RTOS/MY_RTOS_FIFO.o
+                                       0xdc5e (size before relaxing)
+ .debug_str     0x0000000000011ffd      0x3b2 RTOS/Scheduler.o
+                                       0xdfeb (size before relaxing)
+ .debug_str     0x00000000000123af       0x8e SWCs/DoorLock_indication.o
+                                       0x3522 (size before relaxing)
+ .debug_str     0x000000000001243d       0x45 SWCs/ECU_Abstraction_SWC.o
+                                       0x3da5 (size before relaxing)
+ .debug_str     0x0000000000012482       0x2f SWCs/LED_Actuator.o
+                                       0x3422 (size before relaxing)
+ .debug_str     0x00000000000124b1       0x33 SWCs/Read_Door_State.o
+                                       0x3489 (size before relaxing)
+ .debug_str     0x00000000000124e4       0xb3 Src/main.o
+                                       0xc94e (size before relaxing)
+ .debug_str     0x0000000000012597       0x31 Startup/startup_stm32f103c8tx.o
+                                         0x52 (size before relaxing)
+
+.comment        0x0000000000000000       0x7b
+ .comment       0x0000000000000000       0x7b Common_Module/Det.o
+                                         0x7c (size before relaxing)
+ .comment       0x000000000000007b       0x7c DIO_Module/Dio.o
+ .comment       0x000000000000007b       0x7c PORT_Module/Port.o
+ .comment       0x000000000000007b       0x7c PORT_Module/Port_PBcfg.o
+ .comment       0x000000000000007b       0x7c PWM_Module/Pwm.o
+ .comment       0x000000000000007b       0x7c PWM_Module/Pwm_Irq.o
+ .comment       0x000000000000007b       0x7c RTE/Rte_DoorLock_indication.o
+ .comment       0x000000000000007b       0x7c RTE/Rte_ECU_Abstraction_SWC.o
+ .comment       0x000000000000007b       0x7c RTE/Rte_LED_Actuator.o
+ .comment       0x000000000000007b       0x7c RTE/Rte_Read_Door_State.o
+ .comment       0x000000000000007b       0x7c RTOS/Cortex_Mx_Porting.o
+ .comment       0x000000000000007b       0x7c RTOS/MY_RTOS_FIFO.o
+ .comment       0x000000000000007b       0x7c RTOS/Scheduler.o
+ .comment       0x000000000000007b       0x7c SWCs/DoorLock_indication.o
+ .comment       0x000000000000007b       0x7c SWCs/ECU_Abstraction_SWC.o
+ .comment       0x000000000000007b       0x7c SWCs/LED_Actuator.o
+ .comment       0x000000000000007b       0x7c SWCs/Read_Door_State.o
+ .comment       0x000000000000007b       0x7c Src/main.o
+
+.debug_frame    0x0000000000000000      0xc3c
+ .debug_frame   0x0000000000000000       0x30 Common_Module/Det.o
+ .debug_frame   0x0000000000000030       0xcc DIO_Module/Dio.o
+ .debug_frame   0x00000000000000fc      0x118 PORT_Module/Port.o
+ .debug_frame   0x0000000000000214      0x1a4 PWM_Module/Pwm.o
+ .debug_frame   0x00000000000003b8       0x2c PWM_Module/Pwm_Irq.o
+ .debug_frame   0x00000000000003e4       0x78 RTE/Rte_DoorLock_indication.o
+ .debug_frame   0x000000000000045c       0x58 RTE/Rte_ECU_Abstraction_SWC.o
+ .debug_frame   0x00000000000004b4       0x54 RTE/Rte_LED_Actuator.o
+ .debug_frame   0x0000000000000508       0x78 RTE/Rte_Read_Door_State.o
+ .debug_frame   0x0000000000000580      0x140 RTOS/Cortex_Mx_Porting.o
+ .debug_frame   0x00000000000006c0       0xb0 RTOS/MY_RTOS_FIFO.o
+ .debug_frame   0x0000000000000770      0x2b8 RTOS/Scheduler.o
+ .debug_frame   0x0000000000000a28       0x34 SWCs/DoorLock_indication.o
+ .debug_frame   0x0000000000000a5c       0x58 SWCs/ECU_Abstraction_SWC.o
+ .debug_frame   0x0000000000000ab4       0x34 SWCs/LED_Actuator.o
+ .debug_frame   0x0000000000000ae8       0x34 SWCs/Read_Door_State.o
+ .debug_frame   0x0000000000000b1c       0xd4 Src/main.o
+ .debug_frame   0x0000000000000bf0       0x2c c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000c1c       0x20 c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-strcmp.o)

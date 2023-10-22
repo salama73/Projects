@@ -1,0 +1,3 @@
+Rte_Read_Door_State.c:25:6:Rte_IWrite_Read_Door_State_Read_Door_State_PP_DOOR_State_Door_State	16	static
+Rte_Read_Door_State.c:29:10:Rte_IWriteRef_Read_Door_State_Read_Door_State_PP_DOOR_State_Door_State	4	static
+Rte_Read_Door_State.c:33:9:Rte_IRead_Read_Door_State_Read_Door_State_RP_DOOR_State_Sensor_Reading	4	static

@@ -1,6 +1,6 @@
 /*
  * RC_Car.c
- * Created: 25/07/2023
+ * Created: 14/09/2023
  * Author : Salama Mohamed
  */ 
 /*********************************************************************************
@@ -88,14 +88,14 @@ void Task_init(void)
 	GPIO_Init();
 	//timer0 init to Traffic signal lights
 	Timer0_init();
-	//Set speed 1
-	MOTOR_Speed(1);
 	//init 7 segment
 	SEG_Init();
 	//lcd init
 	LCD_init();
 	//DC MOTOR Init
 	MOTOR_Init();
+	//Set speed 1
+	MOTOR_Speed(1);
 	//Bluetooth module init
 	Bluetooth_Init( INT_Disable);
 	//Create Tasks
@@ -258,7 +258,7 @@ void Print_State(void *pvparam)
 			else if(CMD_Data =='S')
 			{
 				lcd_Clear();
-				LCD_String("STOB");
+				LCD_String("STOP");
 			}
 		}
 		vTaskPrioritySet(Print_State_Handle,1);
@@ -309,7 +309,7 @@ void Set_Speed(void *pvparam)
 	uint8_t speed;
 	while(1)
 	{
-		speed=CMD_Data-48;
+		speed=CMD_Data-'0';
 		if (xSemaphoreTake(Speed_Sem,0))
 		{
 			SEG_Display(speed);

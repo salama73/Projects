@@ -1,0 +1,2 @@
+ECU_Abstraction_SWC.c:16:16:Switch_LED_State_Runnable	16	static
+ECU_Abstraction_SWC.c:37:6:Read_Door_Sensor_Runnable	16	static

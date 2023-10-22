@@ -1,0 +1,2 @@
+Rte_ECU_Abstraction_SWC.c:23:6:Rte_IWrite_ECU_Abstraction_SWC_Read_Door_Sensor_PP_SR_DOOR_State_Sensor_Reading	16	static
+Rte_ECU_Abstraction_SWC.c:27:10:Rte_IWriteRef_ECU_Abstraction_SWC_Read_Door_Sensor_PP_SR_DOOR_State_Sensor_Reading	4	static

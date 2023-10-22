@@ -23,11 +23,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  00001524  00000000  00000000  00011f34  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    000020de  00000000  00000000  00013458  2**0
+ 10 .debug_str    0000211d  00000000  00000000  00013458  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00005726  00000000  00000000  00015536  2**0
+ 11 .debug_loc    00005726  00000000  00000000  00015575  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000660  00000000  00000000  0001ac5c  2**0
+ 12 .debug_ranges 00000660  00000000  00000000  0001ac9b  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -169,12 +169,6 @@ Disassembly of section .text:
      120:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
 00000124 <__vector_1>:
- */
-
-
-void __vector_1 (void) __attribute__((signal));
-void __vector_1 (void)
-{
      124:	1f 92       	push	r1
      126:	0f 92       	push	r0
      128:	0f b6       	in	r0, 0x3f	; 63
@@ -192,12 +186,9 @@ void __vector_1 (void)
      140:	bf 93       	push	r27
      142:	ef 93       	push	r30
      144:	ff 93       	push	r31
-	//Call function
-	GP_IRQ_CALL[0]();
      146:	e0 91 b8 05 	lds	r30, 0x05B8	; 0x8005b8 <GP_IRQ_CALL>
      14a:	f0 91 b9 05 	lds	r31, 0x05B9	; 0x8005b9 <GP_IRQ_CALL+0x1>
      14e:	09 95       	icall
-}
      150:	ff 91       	pop	r31
      152:	ef 91       	pop	r30
      154:	bf 91       	pop	r27
@@ -217,11 +208,6 @@ void __vector_1 (void)
      170:	18 95       	reti
 
 00000172 <__vector_2>:
-
-
-void __vector_2 (void) __attribute__((signal));
-void __vector_2 (void)
-{
      172:	1f 92       	push	r1
      174:	0f 92       	push	r0
      176:	0f b6       	in	r0, 0x3f	; 63
@@ -239,12 +225,9 @@ void __vector_2 (void)
      18e:	bf 93       	push	r27
      190:	ef 93       	push	r30
      192:	ff 93       	push	r31
-	//Call function
-	GP_IRQ_CALL[1]();
      194:	e0 91 ba 05 	lds	r30, 0x05BA	; 0x8005ba <GP_IRQ_CALL+0x2>
      198:	f0 91 bb 05 	lds	r31, 0x05BB	; 0x8005bb <GP_IRQ_CALL+0x3>
      19c:	09 95       	icall
-}
      19e:	ff 91       	pop	r31
      1a0:	ef 91       	pop	r30
      1a2:	bf 91       	pop	r27
@@ -264,11 +247,6 @@ void __vector_2 (void)
      1be:	18 95       	reti
 
 000001c0 <__vector_3>:
-
-
-void __vector_3 (void) __attribute__((signal));
-void __vector_3 (void)
-{
      1c0:	1f 92       	push	r1
      1c2:	0f 92       	push	r0
      1c4:	0f b6       	in	r0, 0x3f	; 63
@@ -286,12 +264,9 @@ void __vector_3 (void)
      1dc:	bf 93       	push	r27
      1de:	ef 93       	push	r30
      1e0:	ff 93       	push	r31
-	//Call function
-	GP_IRQ_CALL[2]();
      1e2:	e0 91 bc 05 	lds	r30, 0x05BC	; 0x8005bc <GP_IRQ_CALL+0x4>
      1e6:	f0 91 bd 05 	lds	r31, 0x05BD	; 0x8005bd <GP_IRQ_CALL+0x5>
      1ea:	09 95       	icall
-}
      1ec:	ff 91       	pop	r31
      1ee:	ef 91       	pop	r30
      1f0:	bf 91       	pop	r27
@@ -311,12 +286,6 @@ void __vector_3 (void)
      20c:	18 95       	reti
 
 0000020e <MCAL_GPIO_Init>:
-uint16_t MCAL_GPIO_ReadPort(GPIO_TypeDef *GPIOx )
-{
-	uint8_t port_value;
-	port_value= (uint8_t) (GPIOx->PIN);
-	return port_value;
-}
      20e:	fc 01       	movw	r30, r24
      210:	db 01       	movw	r26, r22
      212:	11 96       	adiw	r26, 0x01	; 1
@@ -359,27 +328,15 @@ uint16_t MCAL_GPIO_ReadPort(GPIO_TypeDef *GPIOx )
      25c:	08 95       	ret
 
 0000025e <MCAL_GPIO_WritePin>:
-* @retval 			-none
-* Note				-none
-*/
-void MCAL_GPIO_WritePin(GPIO_TypeDef *GPIOx ,uint8_t pinNumber ,uint8_t value)
-{
-	if ( value == GPIO_PIN_SET )
      25e:	41 30       	cpi	r20, 0x01	; 1
      260:	29 f4       	brne	.+10     	; 0x26c <MCAL_GPIO_WritePin+0xe>
-	{
-		GPIOx->PORT |= pinNumber ;
      262:	fc 01       	movw	r30, r24
      264:	22 81       	ldd	r18, Z+2	; 0x02
      266:	62 2b       	or	r22, r18
      268:	62 83       	std	Z+2, r22	; 0x02
      26a:	08 95       	ret
-	}
-	else if(  value == GPIO_PIN_RESET)
      26c:	41 11       	cpse	r20, r1
      26e:	05 c0       	rjmp	.+10     	; 0x27a <MCAL_GPIO_WritePin+0x1c>
-	{
-		GPIOx->PORT &= ~( pinNumber ) ;
      270:	60 95       	com	r22
      272:	fc 01       	movw	r30, r24
      274:	22 81       	ldd	r18, Z+2	; 0x02
@@ -388,23 +345,11 @@ void MCAL_GPIO_WritePin(GPIO_TypeDef *GPIOx ,uint8_t pinNumber ,uint8_t value)
      27a:	08 95       	ret
 
 0000027c <MCAL_GPIO_WritePort>:
-* @retval 			-none
-* Note				-none
-*/
-void MCAL_GPIO_WritePort(GPIO_TypeDef *GPIOx ,uint8_t value)
-{
-	GPIOx->PORT=  value;
      27c:	fc 01       	movw	r30, r24
      27e:	62 83       	std	Z+2, r22	; 0x02
      280:	08 95       	ret
 
 00000282 <__vector_19>:
- */
-
-
-void __vector_19 (void) __attribute__((signal));
-void __vector_19 (void)
-{
      282:	1f 92       	push	r1
      284:	0f 92       	push	r0
      286:	0f b6       	in	r0, 0x3f	; 63
@@ -422,14 +367,12 @@ void __vector_19 (void)
      29e:	bf 93       	push	r27
      2a0:	ef 93       	push	r30
      2a2:	ff 93       	push	r31
-	g_I2C_Config->P_IRQ_CALL() ;
      2a4:	e0 91 0e 01 	lds	r30, 0x010E	; 0x80010e <__data_end>
      2a8:	f0 91 0f 01 	lds	r31, 0x010F	; 0x80010f <__data_end+0x1>
      2ac:	04 80       	ldd	r0, Z+4	; 0x04
      2ae:	f5 81       	ldd	r31, Z+5	; 0x05
      2b0:	e0 2d       	mov	r30, r0
      2b2:	09 95       	icall
-}
      2b4:	ff 91       	pop	r31
      2b6:	ef 91       	pop	r30
      2b8:	bf 91       	pop	r27
@@ -449,12 +392,6 @@ void __vector_19 (void)
      2d4:	18 95       	reti
 
 000002d6 <MCAL_PWM_Init>:
-*/
-void MCAL_PWM_Set_TOP_Value(uint16_t TOP_Value ) 
-{
-	//Set TOP Value
-	TIMER1->ICR1H = (uint8_t)(TOP_Value>>8);
-	TIMER1->ICR1L = (uint8_t)(TOP_Value);
      2d6:	ff 92       	push	r15
      2d8:	0f 93       	push	r16
      2da:	1f 93       	push	r17
@@ -586,12 +523,6 @@ void MCAL_PWM_Set_TOP_Value(uint16_t TOP_Value )
      3da:	08 95       	ret
 
 000003dc <__vector_8>:
-	g_PWM_Config->P_OCIE1A_CALL();
-}
-*/
-void __vector_8 (void) __attribute__((signal));
-void __vector_8 (void)
-{
      3dc:	1f 92       	push	r1
      3de:	0f 92       	push	r0
      3e0:	0f b6       	in	r0, 0x3f	; 63
@@ -609,14 +540,12 @@ void __vector_8 (void)
      3f8:	bf 93       	push	r27
      3fa:	ef 93       	push	r30
      3fc:	ff 93       	push	r31
-	g_PWM_Config->P_OCIE1B_CALL();
      3fe:	e0 91 10 01 	lds	r30, 0x0110	; 0x800110 <g_PWM_Config>
      402:	f0 91 11 01 	lds	r31, 0x0111	; 0x800111 <g_PWM_Config+0x1>
      406:	00 88       	ldd	r0, Z+16	; 0x10
      408:	f1 89       	ldd	r31, Z+17	; 0x11
      40a:	e0 2d       	mov	r30, r0
      40c:	09 95       	icall
-}
      40e:	ff 91       	pop	r31
      410:	ef 91       	pop	r30
      412:	bf 91       	pop	r27
@@ -636,12 +565,6 @@ void __vector_8 (void)
      42e:	18 95       	reti
 
 00000430 <__vector_12>:
- */
-
-
-void __vector_12 (void) __attribute__((signal));
-void __vector_12 (void)
-{
      430:	1f 92       	push	r1
      432:	0f 92       	push	r0
      434:	0f b6       	in	r0, 0x3f	; 63
@@ -659,14 +582,12 @@ void __vector_12 (void)
      44c:	bf 93       	push	r27
      44e:	ef 93       	push	r30
      450:	ff 93       	push	r31
-	g_SPI_Config->P_IRQ_CALL() ;
      452:	e0 91 12 01 	lds	r30, 0x0112	; 0x800112 <g_SPI_Config>
      456:	f0 91 13 01 	lds	r31, 0x0113	; 0x800113 <g_SPI_Config+0x1>
      45a:	07 80       	ldd	r0, Z+7	; 0x07
      45c:	f0 85       	ldd	r31, Z+8	; 0x08
      45e:	e0 2d       	mov	r30, r0
      460:	09 95       	icall
-}
      462:	ff 91       	pop	r31
      464:	ef 91       	pop	r30
      466:	bf 91       	pop	r27
@@ -686,12 +607,6 @@ void __vector_12 (void)
      482:	18 95       	reti
 
 00000484 <MCAL_TIMER0_Init>:
-* Note				-Support Normal mode and CTC
-*/
-uint8_t MCAL_TIMER0_Read_Counter_Value() 
-{
-	return TCNT0 ;
-}
      484:	ff 92       	push	r15
      486:	0f 93       	push	r16
      488:	1f 93       	push	r17
@@ -778,29 +693,18 @@ uint8_t MCAL_TIMER0_Read_Counter_Value()
      52c:	08 95       	ret
 
 0000052e <MCAL_TIMER0_Stop>:
-
-void MCAL_TIMER0_Stop(void)
-{
-	TCCR0 &=~(7<<0);
      52e:	83 b7       	in	r24, 0x33	; 51
      530:	88 7f       	andi	r24, 0xF8	; 248
      532:	83 bf       	out	0x33, r24	; 51
-	TCCR0 &=~(3<<4);
      534:	83 b7       	in	r24, 0x33	; 51
      536:	8f 7c       	andi	r24, 0xCF	; 207
      538:	83 bf       	out	0x33, r24	; 51
      53a:	08 95       	ret
 
 0000053c <MCAL_TIMER0_Start>:
-}
-
-void MCAL_TIMER0_Start(void)
-{
-	TCCR0 |=(5<<0);
      53c:	83 b7       	in	r24, 0x33	; 51
      53e:	85 60       	ori	r24, 0x05	; 5
      540:	83 bf       	out	0x33, r24	; 51
-	TCCR0 |= g_TIM0_Config.Output_Compare_pin;
      542:	93 b7       	in	r25, 0x33	; 51
      544:	80 91 bf 05 	lds	r24, 0x05BF	; 0x8005bf <g_TIM0_Config+0x1>
      548:	89 2b       	or	r24, r25
@@ -808,12 +712,6 @@ void MCAL_TIMER0_Start(void)
      54c:	08 95       	ret
 
 0000054e <__vector_11>:
-	g_TIM0_Config->P_OCIE0_CALL();
-}
-*/
-void __vector_11 (void) __attribute__((signal));
-void __vector_11 (void)
-{
      54e:	1f 92       	push	r1
      550:	0f 92       	push	r0
      552:	0f b6       	in	r0, 0x3f	; 63
@@ -831,11 +729,9 @@ void __vector_11 (void)
      56a:	bf 93       	push	r27
      56c:	ef 93       	push	r30
      56e:	ff 93       	push	r31
-	g_TIM0_Config.P_TOIE0_CALL();
      570:	e0 91 c4 05 	lds	r30, 0x05C4	; 0x8005c4 <g_TIM0_Config+0x6>
      574:	f0 91 c5 05 	lds	r31, 0x05C5	; 0x8005c5 <g_TIM0_Config+0x7>
      578:	09 95       	icall
-}
      57a:	ff 91       	pop	r31
      57c:	ef 91       	pop	r30
      57e:	bf 91       	pop	r27
@@ -855,12 +751,6 @@ void __vector_11 (void)
      59a:	18 95       	reti
 
 0000059c <MCAL_USART_Init>:
-	EXTI_GLOBAL_Disable()  ;
-	USART->UBRRL = 0 ;
-	USART->UCSRB = 0 ;
-	UCSRC = 0b10000110;
-	UBRRH = 0;
-	USART->UCSRA &=~(1<<1)	;
      59c:	0f 93       	push	r16
      59e:	1f 93       	push	r17
      5a0:	cf 93       	push	r28
@@ -1264,12 +1154,6 @@ void __vector_11 (void)
      8f6:	08 95       	ret
 
 000008f8 <__vector_13>:
- *
- * ===============================================================
- */
-void __vector_13 (void) __attribute__((signal));
-void __vector_13 (void)
-{
      8f8:	1f 92       	push	r1
      8fa:	0f 92       	push	r0
      8fc:	0f b6       	in	r0, 0x3f	; 63
@@ -1287,12 +1171,9 @@ void __vector_13 (void)
      914:	bf 93       	push	r27
      916:	ef 93       	push	r30
      918:	ff 93       	push	r31
-	//Call function
-	GPU_IRQ_CALL[2]();
      91a:	e0 91 cc 05 	lds	r30, 0x05CC	; 0x8005cc <GPU_IRQ_CALL+0x4>
      91e:	f0 91 cd 05 	lds	r31, 0x05CD	; 0x8005cd <GPU_IRQ_CALL+0x5>
      922:	09 95       	icall
-}
      924:	ff 91       	pop	r31
      926:	ef 91       	pop	r30
      928:	bf 91       	pop	r27
@@ -1312,10 +1193,6 @@ void __vector_13 (void)
      944:	18 95       	reti
 
 00000946 <__vector_14>:
-
-void __vector_14 (void) __attribute__((signal));
-void __vector_14 (void)
-{
      946:	1f 92       	push	r1
      948:	0f 92       	push	r0
      94a:	0f b6       	in	r0, 0x3f	; 63
@@ -1333,12 +1210,9 @@ void __vector_14 (void)
      962:	bf 93       	push	r27
      964:	ef 93       	push	r30
      966:	ff 93       	push	r31
-	//Call function
-	GPU_IRQ_CALL[1]();
      968:	e0 91 ca 05 	lds	r30, 0x05CA	; 0x8005ca <GPU_IRQ_CALL+0x2>
      96c:	f0 91 cb 05 	lds	r31, 0x05CB	; 0x8005cb <GPU_IRQ_CALL+0x3>
      970:	09 95       	icall
-}
      972:	ff 91       	pop	r31
      974:	ef 91       	pop	r30
      976:	bf 91       	pop	r27
@@ -1358,10 +1232,6 @@ void __vector_14 (void)
      992:	18 95       	reti
 
 00000994 <__vector_15>:
-
-void __vector_15 (void) __attribute__((signal));
-void __vector_15 (void)
-{
      994:	1f 92       	push	r1
      996:	0f 92       	push	r0
      998:	0f b6       	in	r0, 0x3f	; 63
@@ -1379,12 +1249,9 @@ void __vector_15 (void)
      9b0:	bf 93       	push	r27
      9b2:	ef 93       	push	r30
      9b4:	ff 93       	push	r31
-	//Call function
-	GPU_IRQ_CALL[0]();
      9b6:	e0 91 c8 05 	lds	r30, 0x05C8	; 0x8005c8 <GPU_IRQ_CALL>
      9ba:	f0 91 c9 05 	lds	r31, 0x05C9	; 0x8005c9 <GPU_IRQ_CALL+0x1>
      9be:	09 95       	icall
-}
      9c0:	ff 91       	pop	r31
      9c2:	ef 91       	pop	r30
      9c4:	bf 91       	pop	r27
@@ -1404,45 +1271,28 @@ void __vector_15 (void)
      9e0:	18 95       	reti
 
 000009e2 <prvHeapInit>:
-	/* Ensure the heap starts on a correctly aligned boundary. */
-	pucAlignedHeap = ( uint8_t * ) ( ( ( portPOINTER_SIZE_TYPE ) &ucHeap[ portBYTE_ALIGNMENT ] ) & ( ~( ( portPOINTER_SIZE_TYPE ) portBYTE_ALIGNMENT_MASK ) ) );
-
-	/* xStart is used to hold a pointer to the first item in the list of free
-	blocks.  The void cast is used to prevent compiler warnings. */
-	xStart.pxNextFreeBlock = ( void * ) pucAlignedHeap;
      9e2:	eb e1       	ldi	r30, 0x1B	; 27
      9e4:	f1 e0       	ldi	r31, 0x01	; 1
      9e6:	80 e2       	ldi	r24, 0x20	; 32
      9e8:	91 e0       	ldi	r25, 0x01	; 1
      9ea:	91 83       	std	Z+1, r25	; 0x01
      9ec:	80 83       	st	Z, r24
-	xStart.xBlockSize = ( size_t ) 0;
      9ee:	13 82       	std	Z+3, r1	; 0x03
      9f0:	12 82       	std	Z+2, r1	; 0x02
-
-	/* xEnd is used to mark the end of the list of free blocks. */
-	xEnd.xBlockSize = configADJUSTED_HEAP_SIZE;
      9f2:	e7 e1       	ldi	r30, 0x17	; 23
      9f4:	f1 e0       	ldi	r31, 0x01	; 1
      9f6:	87 ee       	ldi	r24, 0xE7	; 231
      9f8:	93 e0       	ldi	r25, 0x03	; 3
      9fa:	93 83       	std	Z+3, r25	; 0x03
      9fc:	82 83       	std	Z+2, r24	; 0x02
-	xEnd.pxNextFreeBlock = NULL;
      9fe:	11 82       	std	Z+1, r1	; 0x01
      a00:	10 82       	st	Z, r1
-
-	/* To start with there is a single free block that is sized to take up the
-	entire heap space. */
-	pxFirstFreeBlock = ( void * ) pucAlignedHeap;
-	pxFirstFreeBlock->xBlockSize = configADJUSTED_HEAP_SIZE;
      a02:	af e1       	ldi	r26, 0x1F	; 31
      a04:	b1 e0       	ldi	r27, 0x01	; 1
      a06:	14 96       	adiw	r26, 0x04	; 4
      a08:	9c 93       	st	X, r25
      a0a:	8e 93       	st	-X, r24
      a0c:	13 97       	sbiw	r26, 0x03	; 3
-	pxFirstFreeBlock->pxNextFreeBlock = &xEnd;
      a0e:	12 96       	adiw	r26, 0x02	; 2
      a10:	fc 93       	st	X, r31
      a12:	ee 93       	st	-X, r30
@@ -1450,87 +1300,34 @@ void __vector_15 (void)
      a16:	08 95       	ret
 
 00000a18 <pvPortMalloc>:
-	pxIterator->pxNextFreeBlock = pxBlockToInsert;									\
-}
-/*-----------------------------------------------------------*/
-
-void *pvPortMalloc( size_t xWantedSize )
-{
      a18:	0f 93       	push	r16
      a1a:	1f 93       	push	r17
      a1c:	cf 93       	push	r28
      a1e:	df 93       	push	r29
      a20:	ec 01       	movw	r28, r24
-BlockLink_t *pxBlock, *pxPreviousBlock, *pxNewBlockLink;
-static BaseType_t xHeapHasBeenInitialised = pdFALSE;
-void *pvReturn = NULL;
-
-	vTaskSuspendAll();
      a22:	0e 94 bc 0c 	call	0x1978	; 0x1978 <vTaskSuspendAll>
-	{
-		/* If this is the first call to malloc then the heap will require
-		initialisation to setup the list of free blocks. */
-		if( xHeapHasBeenInitialised == pdFALSE )
      a26:	80 91 16 01 	lds	r24, 0x0116	; 0x800116 <xHeapHasBeenInitialised.2079>
      a2a:	81 11       	cpse	r24, r1
      a2c:	05 c0       	rjmp	.+10     	; 0xa38 <pvPortMalloc+0x20>
-		{
-			prvHeapInit();
      a2e:	0e 94 f1 04 	call	0x9e2	; 0x9e2 <prvHeapInit>
-			xHeapHasBeenInitialised = pdTRUE;
      a32:	81 e0       	ldi	r24, 0x01	; 1
      a34:	80 93 16 01 	sts	0x0116, r24	; 0x800116 <xHeapHasBeenInitialised.2079>
-		}
-
-		/* The wanted size is increased so it can contain a BlockLink_t
-		structure in addition to the requested amount of bytes. */
-		if( xWantedSize > 0 )
      a38:	20 97       	sbiw	r28, 0x00	; 0
      a3a:	09 f0       	breq	.+2      	; 0xa3e <pvPortMalloc+0x26>
-		{
-			xWantedSize += heapSTRUCT_SIZE;
      a3c:	24 96       	adiw	r28, 0x04	; 4
-				/* Byte alignment required. */
-				xWantedSize += ( portBYTE_ALIGNMENT - ( xWantedSize & portBYTE_ALIGNMENT_MASK ) );
-			}
-		}
-
-		if( ( xWantedSize > 0 ) && ( xWantedSize < configADJUSTED_HEAP_SIZE ) )
      a3e:	ce 01       	movw	r24, r28
      a40:	01 97       	sbiw	r24, 0x01	; 1
      a42:	86 3e       	cpi	r24, 0xE6	; 230
      a44:	93 40       	sbci	r25, 0x03	; 3
      a46:	08 f0       	brcs	.+2      	; 0xa4a <pvPortMalloc+0x32>
      a48:	56 c0       	rjmp	.+172    	; 0xaf6 <pvPortMalloc+0xde>
-		{
-			/* Blocks are stored in byte order - traverse the list from the start
-			(smallest) block until one of adequate size is found. */
-			pxPreviousBlock = &xStart;
-			pxBlock = xStart.pxNextFreeBlock;
      a4a:	e0 91 1b 01 	lds	r30, 0x011B	; 0x80011b <xStart>
      a4e:	f0 91 1c 01 	lds	r31, 0x011C	; 0x80011c <xStart+0x1>
-
-		if( ( xWantedSize > 0 ) && ( xWantedSize < configADJUSTED_HEAP_SIZE ) )
-		{
-			/* Blocks are stored in byte order - traverse the list from the start
-			(smallest) block until one of adequate size is found. */
-			pxPreviousBlock = &xStart;
      a52:	ab e1       	ldi	r26, 0x1B	; 27
      a54:	b1 e0       	ldi	r27, 0x01	; 1
-			pxBlock = xStart.pxNextFreeBlock;
-			while( ( pxBlock->xBlockSize < xWantedSize ) && ( pxBlock->pxNextFreeBlock != NULL ) )
      a56:	02 c0       	rjmp	.+4      	; 0xa5c <pvPortMalloc+0x44>
-			{
-				pxPreviousBlock = pxBlock;
      a58:	df 01       	movw	r26, r30
-				pxBlock = pxBlock->pxNextFreeBlock;
      a5a:	fc 01       	movw	r30, r24
-		{
-			/* Blocks are stored in byte order - traverse the list from the start
-			(smallest) block until one of adequate size is found. */
-			pxPreviousBlock = &xStart;
-			pxBlock = xStart.pxNextFreeBlock;
-			while( ( pxBlock->xBlockSize < xWantedSize ) && ( pxBlock->pxNextFreeBlock != NULL ) )
      a5c:	82 81       	ldd	r24, Z+2	; 0x02
      a5e:	93 81       	ldd	r25, Z+3	; 0x03
      a60:	8c 17       	cp	r24, r28
@@ -1540,37 +1337,20 @@ void *pvReturn = NULL;
      a68:	91 81       	ldd	r25, Z+1	; 0x01
      a6a:	00 97       	sbiw	r24, 0x00	; 0
      a6c:	a9 f7       	brne	.-22     	; 0xa58 <pvPortMalloc+0x40>
-				pxPreviousBlock = pxBlock;
-				pxBlock = pxBlock->pxNextFreeBlock;
-			}
-
-			/* If we found the end marker then a block of adequate size was not found. */
-			if( pxBlock != &xEnd )
      a6e:	81 e0       	ldi	r24, 0x01	; 1
      a70:	e7 31       	cpi	r30, 0x17	; 23
      a72:	f8 07       	cpc	r31, r24
      a74:	09 f4       	brne	.+2      	; 0xa78 <pvPortMalloc+0x60>
      a76:	42 c0       	rjmp	.+132    	; 0xafc <pvPortMalloc+0xe4>
-			{
-				/* Return the memory space - jumping over the BlockLink_t structure
-				at its start. */
-				pvReturn = ( void * ) ( ( ( uint8_t * ) pxPreviousBlock->pxNextFreeBlock ) + heapSTRUCT_SIZE );
      a78:	0d 91       	ld	r16, X+
      a7a:	1c 91       	ld	r17, X
      a7c:	11 97       	sbiw	r26, 0x01	; 1
      a7e:	0c 5f       	subi	r16, 0xFC	; 252
      a80:	1f 4f       	sbci	r17, 0xFF	; 255
-
-				/* This block is being returned for use so must be taken out of the
-				list of free blocks. */
-				pxPreviousBlock->pxNextFreeBlock = pxBlock->pxNextFreeBlock;
      a82:	80 81       	ld	r24, Z
      a84:	91 81       	ldd	r25, Z+1	; 0x01
      a86:	8d 93       	st	X+, r24
      a88:	9c 93       	st	X, r25
-
-				/* If the block is larger than required it can be split into two. */
-				if( ( pxBlock->xBlockSize - xWantedSize ) > heapMINIMUM_BLOCK_SIZE )
      a8a:	82 81       	ldd	r24, Z+2	; 0x02
      a8c:	93 81       	ldd	r25, Z+3	; 0x03
      a8e:	8c 1b       	sub	r24, r28
@@ -1578,29 +1358,16 @@ void *pvReturn = NULL;
      a92:	89 30       	cpi	r24, 0x09	; 9
      a94:	91 05       	cpc	r25, r1
      a96:	10 f1       	brcs	.+68     	; 0xadc <pvPortMalloc+0xc4>
-				{
-					/* This block is to be split into two.  Create a new block
-					following the number of bytes requested. The void cast is
-					used to prevent byte alignment warnings from the compiler. */
-					pxNewBlockLink = ( void * ) ( ( ( uint8_t * ) pxBlock ) + xWantedSize );
      a98:	af 01       	movw	r20, r30
      a9a:	4c 0f       	add	r20, r28
      a9c:	5d 1f       	adc	r21, r29
-
-					/* Calculate the sizes of two blocks split from the single
-					block. */
-					pxNewBlockLink->xBlockSize = pxBlock->xBlockSize - xWantedSize;
      a9e:	da 01       	movw	r26, r20
      aa0:	13 96       	adiw	r26, 0x03	; 3
      aa2:	9c 93       	st	X, r25
      aa4:	8e 93       	st	-X, r24
      aa6:	12 97       	sbiw	r26, 0x02	; 2
-					pxBlock->xBlockSize = xWantedSize;
      aa8:	d3 83       	std	Z+3, r29	; 0x03
      aaa:	c2 83       	std	Z+2, r28	; 0x02
-
-					/* Insert the new block into the list of free blocks. */
-					prvInsertBlockIntoFreeList( ( pxNewBlockLink ) );
      aac:	12 96       	adiw	r26, 0x02	; 2
      aae:	2d 91       	ld	r18, X+
      ab0:	3c 91       	ld	r19, X
@@ -1625,9 +1392,6 @@ void *pvReturn = NULL;
      ad6:	db 01       	movw	r26, r22
      ad8:	4d 93       	st	X+, r20
      ada:	5c 93       	st	X, r21
-				}
-
-				xFreeBytesRemaining -= pxBlock->xBlockSize;
      adc:	22 81       	ldd	r18, Z+2	; 0x02
      ade:	33 81       	ldd	r19, Z+3	; 0x03
      ae0:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
@@ -1637,30 +1401,12 @@ void *pvReturn = NULL;
      aec:	90 93 61 00 	sts	0x0061, r25	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
      af0:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
      af4:	05 c0       	rjmp	.+10     	; 0xb00 <pvPortMalloc+0xe8>
-
-void *pvPortMalloc( size_t xWantedSize )
-{
-BlockLink_t *pxBlock, *pxPreviousBlock, *pxNewBlockLink;
-static BaseType_t xHeapHasBeenInitialised = pdFALSE;
-void *pvReturn = NULL;
      af6:	00 e0       	ldi	r16, 0x00	; 0
      af8:	10 e0       	ldi	r17, 0x00	; 0
      afa:	02 c0       	rjmp	.+4      	; 0xb00 <pvPortMalloc+0xe8>
      afc:	00 e0       	ldi	r16, 0x00	; 0
      afe:	10 e0       	ldi	r17, 0x00	; 0
-			}
-		}
-
-		traceMALLOC( pvReturn, xWantedSize );
-	}
-	( void ) xTaskResumeAll();
      b00:	0e 94 7c 0d 	call	0x1af8	; 0x1af8 <xTaskResumeAll>
-		}
-	}
-	#endif
-
-	return pvReturn;
-}
      b04:	c8 01       	movw	r24, r16
      b06:	df 91       	pop	r29
      b08:	cf 91       	pop	r28
@@ -1669,38 +1415,17 @@ void *pvReturn = NULL;
      b0e:	08 95       	ret
 
 00000b10 <vPortFree>:
-/*-----------------------------------------------------------*/
-
-void vPortFree( void *pv )
-{
      b10:	0f 93       	push	r16
      b12:	1f 93       	push	r17
      b14:	cf 93       	push	r28
      b16:	df 93       	push	r29
-uint8_t *puc = ( uint8_t * ) pv;
-BlockLink_t *pxLink;
-
-	if( pv != NULL )
      b18:	00 97       	sbiw	r24, 0x00	; 0
      b1a:	41 f1       	breq	.+80     	; 0xb6c <vPortFree+0x5c>
      b1c:	ec 01       	movw	r28, r24
-	{
-		/* The memory being freed will have an BlockLink_t structure immediately
-		before it. */
-		puc -= heapSTRUCT_SIZE;
      b1e:	8c 01       	movw	r16, r24
      b20:	04 50       	subi	r16, 0x04	; 4
      b22:	11 09       	sbc	r17, r1
-
-		/* This unexpected casting is to keep some compilers from issuing
-		byte alignment warnings. */
-		pxLink = ( void * ) puc;
-
-		vTaskSuspendAll();
      b24:	0e 94 bc 0c 	call	0x1978	; 0x1978 <vTaskSuspendAll>
-		{
-			/* Add this block to the list of free blocks. */
-			prvInsertBlockIntoFreeList( ( ( BlockLink_t * ) pxLink ) );
      b28:	f8 01       	movw	r30, r16
      b2a:	42 81       	ldd	r20, Z+2	; 0x02
      b2c:	53 81       	ldd	r21, Z+3	; 0x03
@@ -1721,7 +1446,6 @@ BlockLink_t *pxLink;
      b4a:	e8 83       	st	Y, r30
      b4c:	0d 93       	st	X+, r16
      b4e:	1c 93       	st	X, r17
-			xFreeBytesRemaining += pxLink->xBlockSize;
      b50:	8a 81       	ldd	r24, Y+2	; 0x02
      b52:	9b 81       	ldd	r25, Y+3	; 0x03
      b54:	20 91 60 00 	lds	r18, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
@@ -1730,12 +1454,7 @@ BlockLink_t *pxLink;
      b5e:	93 1f       	adc	r25, r19
      b60:	90 93 61 00 	sts	0x0061, r25	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
      b64:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
-			traceFREE( pv, pxLink->xBlockSize );
-		}
-		( void ) xTaskResumeAll();
      b68:	0e 94 7c 0d 	call	0x1af8	; 0x1af8 <xTaskResumeAll>
-	}
-}
      b6c:	df 91       	pop	r29
      b6e:	cf 91       	pop	r28
      b70:	1f 91       	pop	r17
@@ -1743,89 +1462,43 @@ BlockLink_t *pxLink;
      b74:	08 95       	ret
 
 00000b76 <vListInitialise>:
-/*-----------------------------------------------------------
- * PUBLIC LIST API documented in list.h
- *----------------------------------------------------------*/
-
-void vListInitialise( List_t * const pxList )
-{
      b76:	fc 01       	movw	r30, r24
-	/* The list structure contains a list item which is used to mark the
-	end of the list.  To initialise the list the list end is inserted
-	as the only list entry. */
-	pxList->pxIndex = ( ListItem_t * ) &( pxList->xListEnd );			/*lint !e826 !e740 The mini list structure is used as the list end to save RAM.  This is checked and valid. */
      b78:	03 96       	adiw	r24, 0x03	; 3
      b7a:	92 83       	std	Z+2, r25	; 0x02
      b7c:	81 83       	std	Z+1, r24	; 0x01
-
-	/* The list end value is the highest possible value in the list to
-	ensure it remains at the end of the list. */
-	pxList->xListEnd.xItemValue = portMAX_DELAY;
      b7e:	2f ef       	ldi	r18, 0xFF	; 255
      b80:	3f ef       	ldi	r19, 0xFF	; 255
      b82:	34 83       	std	Z+4, r19	; 0x04
      b84:	23 83       	std	Z+3, r18	; 0x03
-
-	/* The list end next and previous pointers point to itself so we know
-	when the list is empty. */
-	pxList->xListEnd.pxNext = ( ListItem_t * ) &( pxList->xListEnd );	/*lint !e826 !e740 The mini list structure is used as the list end to save RAM.  This is checked and valid. */
      b86:	96 83       	std	Z+6, r25	; 0x06
      b88:	85 83       	std	Z+5, r24	; 0x05
-	pxList->xListEnd.pxPrevious = ( ListItem_t * ) &( pxList->xListEnd );/*lint !e826 !e740 The mini list structure is used as the list end to save RAM.  This is checked and valid. */
      b8a:	90 87       	std	Z+8, r25	; 0x08
      b8c:	87 83       	std	Z+7, r24	; 0x07
-
-	pxList->uxNumberOfItems = ( UBaseType_t ) 0U;
      b8e:	10 82       	st	Z, r1
      b90:	08 95       	ret
 
 00000b92 <vListInitialiseItem>:
-/*-----------------------------------------------------------*/
-
-void vListInitialiseItem( ListItem_t * const pxItem )
-{
-	/* Make sure the list item is not recorded as being on a list. */
-	pxItem->pvContainer = NULL;
      b92:	fc 01       	movw	r30, r24
      b94:	11 86       	std	Z+9, r1	; 0x09
      b96:	10 86       	std	Z+8, r1	; 0x08
      b98:	08 95       	ret
 
 00000b9a <vListInsertEnd>:
-	listSET_SECOND_LIST_ITEM_INTEGRITY_CHECK_VALUE( pxItem );
-}
-/*-----------------------------------------------------------*/
-
-void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem )
-{
      b9a:	cf 93       	push	r28
      b9c:	df 93       	push	r29
      b9e:	9c 01       	movw	r18, r24
      ba0:	fb 01       	movw	r30, r22
-ListItem_t * const pxIndex = pxList->pxIndex;
      ba2:	dc 01       	movw	r26, r24
      ba4:	11 96       	adiw	r26, 0x01	; 1
      ba6:	cd 91       	ld	r28, X+
      ba8:	dc 91       	ld	r29, X
      baa:	12 97       	sbiw	r26, 0x02	; 2
-	listTEST_LIST_ITEM_INTEGRITY( pxNewListItem );
-
-	/* Insert a new list item into pxList, but rather than sort the list,
-	makes the new list item the last item to be removed by a call to
-	listGET_OWNER_OF_NEXT_ENTRY(). */
-	pxNewListItem->pxNext = pxIndex;
      bac:	d3 83       	std	Z+3, r29	; 0x03
      bae:	c2 83       	std	Z+2, r28	; 0x02
-	pxNewListItem->pxPrevious = pxIndex->pxPrevious;
      bb0:	8c 81       	ldd	r24, Y+4	; 0x04
      bb2:	9d 81       	ldd	r25, Y+5	; 0x05
      bb4:	95 83       	std	Z+5, r25	; 0x05
      bb6:	84 83       	std	Z+4, r24	; 0x04
-
-	/* Only used during decision coverage testing. */
-	mtCOVERAGE_TEST_DELAY();
-
-	pxIndex->pxPrevious->pxNext = pxNewListItem;
      bb8:	8c 81       	ldd	r24, Y+4	; 0x04
      bba:	9d 81       	ldd	r25, Y+5	; 0x05
      bbc:	dc 01       	movw	r26, r24
@@ -1833,59 +1506,32 @@ ListItem_t * const pxIndex = pxList->pxIndex;
      bc0:	7c 93       	st	X, r23
      bc2:	6e 93       	st	-X, r22
      bc4:	12 97       	sbiw	r26, 0x02	; 2
-	pxIndex->pxPrevious = pxNewListItem;
      bc6:	7d 83       	std	Y+5, r23	; 0x05
      bc8:	6c 83       	std	Y+4, r22	; 0x04
-
-	/* Remember which list the item is in. */
-	pxNewListItem->pvContainer = ( void * ) pxList;
      bca:	31 87       	std	Z+9, r19	; 0x09
      bcc:	20 87       	std	Z+8, r18	; 0x08
-
-	( pxList->uxNumberOfItems )++;
      bce:	f9 01       	movw	r30, r18
      bd0:	80 81       	ld	r24, Z
      bd2:	8f 5f       	subi	r24, 0xFF	; 255
      bd4:	80 83       	st	Z, r24
-}
      bd6:	df 91       	pop	r29
      bd8:	cf 91       	pop	r28
      bda:	08 95       	ret
 
 00000bdc <vListInsert>:
-/*-----------------------------------------------------------*/
-
-void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem )
-{
      bdc:	cf 93       	push	r28
      bde:	df 93       	push	r29
      be0:	eb 01       	movw	r28, r22
-ListItem_t *pxIterator;
-const TickType_t xValueOfInsertion = pxNewListItem->xItemValue;
      be2:	48 81       	ld	r20, Y
      be4:	59 81       	ldd	r21, Y+1	; 0x01
-	new list item should be placed after it.  This ensures that TCB's which are
-	stored in ready lists (all of which have the same xItemValue value) get a
-	share of the CPU.  However, if the xItemValue is the same as the back marker
-	the iteration loop below will not end.  Therefore the value is checked
-	first, and the algorithm slightly modified if necessary. */
-	if( xValueOfInsertion == portMAX_DELAY )
      be6:	4f 3f       	cpi	r20, 0xFF	; 255
      be8:	2f ef       	ldi	r18, 0xFF	; 255
      bea:	52 07       	cpc	r21, r18
      bec:	21 f4       	brne	.+8      	; 0xbf6 <vListInsert+0x1a>
-	{
-		pxIterator = pxList->xListEnd.pxPrevious;
      bee:	fc 01       	movw	r30, r24
      bf0:	a7 81       	ldd	r26, Z+7	; 0x07
      bf2:	b0 85       	ldd	r27, Z+8	; 0x08
      bf4:	0d c0       	rjmp	.+26     	; 0xc10 <vListInsert+0x34>
-			4) Using a queue or semaphore before it has been initialised or
-			   before the scheduler has been started (are interrupts firing
-			   before vTaskStartScheduler() has been called?).
-		**********************************************************************/
-
-		for( pxIterator = ( ListItem_t * ) &( pxList->xListEnd ); pxIterator->pxNext->xItemValue <= xValueOfInsertion; pxIterator = pxIterator->pxNext ) /*lint !e826 !e740 The mini list structure is used as the list end to save RAM.  This is checked and valid. */
      bf6:	dc 01       	movw	r26, r24
      bf8:	13 96       	adiw	r26, 0x03	; 3
      bfa:	01 c0       	rjmp	.+2      	; 0xbfe <vListInsert+0x22>
@@ -1899,80 +1545,48 @@ const TickType_t xValueOfInsertion = pxNewListItem->xItemValue;
      c0a:	42 17       	cp	r20, r18
      c0c:	53 07       	cpc	r21, r19
      c0e:	b0 f7       	brcc	.-20     	; 0xbfc <vListInsert+0x20>
-			/* There is nothing to do here, just iterating to the wanted
-			insertion position. */
-		}
-	}
-
-	pxNewListItem->pxNext = pxIterator->pxNext;
      c10:	12 96       	adiw	r26, 0x02	; 2
      c12:	ed 91       	ld	r30, X+
      c14:	fc 91       	ld	r31, X
      c16:	13 97       	sbiw	r26, 0x03	; 3
      c18:	fb 83       	std	Y+3, r31	; 0x03
      c1a:	ea 83       	std	Y+2, r30	; 0x02
-	pxNewListItem->pxNext->pxPrevious = pxNewListItem;
      c1c:	d5 83       	std	Z+5, r29	; 0x05
      c1e:	c4 83       	std	Z+4, r28	; 0x04
-	pxNewListItem->pxPrevious = pxIterator;
      c20:	bd 83       	std	Y+5, r27	; 0x05
      c22:	ac 83       	std	Y+4, r26	; 0x04
-	pxIterator->pxNext = pxNewListItem;
      c24:	13 96       	adiw	r26, 0x03	; 3
      c26:	dc 93       	st	X, r29
      c28:	ce 93       	st	-X, r28
      c2a:	12 97       	sbiw	r26, 0x02	; 2
-
-	/* Remember which list the item is in.  This allows fast removal of the
-	item later. */
-	pxNewListItem->pvContainer = ( void * ) pxList;
      c2c:	99 87       	std	Y+9, r25	; 0x09
      c2e:	88 87       	std	Y+8, r24	; 0x08
-
-	( pxList->uxNumberOfItems )++;
      c30:	fc 01       	movw	r30, r24
      c32:	20 81       	ld	r18, Z
      c34:	2f 5f       	subi	r18, 0xFF	; 255
      c36:	20 83       	st	Z, r18
-}
      c38:	df 91       	pop	r29
      c3a:	cf 91       	pop	r28
      c3c:	08 95       	ret
 
 00000c3e <uxListRemove>:
-/*-----------------------------------------------------------*/
-
-UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove )
-{
      c3e:	cf 93       	push	r28
      c40:	df 93       	push	r29
      c42:	fc 01       	movw	r30, r24
-/* The list item knows which list it is in.  Obtain the list from the list
-item. */
-List_t * const pxList = ( List_t * ) pxItemToRemove->pvContainer;
      c44:	a0 85       	ldd	r26, Z+8	; 0x08
      c46:	b1 85       	ldd	r27, Z+9	; 0x09
-
-	pxItemToRemove->pxNext->pxPrevious = pxItemToRemove->pxPrevious;
      c48:	c2 81       	ldd	r28, Z+2	; 0x02
      c4a:	d3 81       	ldd	r29, Z+3	; 0x03
      c4c:	84 81       	ldd	r24, Z+4	; 0x04
      c4e:	95 81       	ldd	r25, Z+5	; 0x05
      c50:	9d 83       	std	Y+5, r25	; 0x05
      c52:	8c 83       	std	Y+4, r24	; 0x04
-	pxItemToRemove->pxPrevious->pxNext = pxItemToRemove->pxNext;
      c54:	c4 81       	ldd	r28, Z+4	; 0x04
      c56:	d5 81       	ldd	r29, Z+5	; 0x05
      c58:	82 81       	ldd	r24, Z+2	; 0x02
      c5a:	93 81       	ldd	r25, Z+3	; 0x03
      c5c:	9b 83       	std	Y+3, r25	; 0x03
      c5e:	8a 83       	std	Y+2, r24	; 0x02
-
-	/* Only used during decision coverage testing. */
-	mtCOVERAGE_TEST_DELAY();
-
-	/* Make sure the index is left pointing to a valid item. */
-	if( pxList->pxIndex == pxItemToRemove )
      c60:	11 96       	adiw	r26, 0x01	; 1
      c62:	8d 91       	ld	r24, X+
      c64:	9c 91       	ld	r25, X
@@ -1980,40 +1594,22 @@ List_t * const pxList = ( List_t * ) pxItemToRemove->pvContainer;
      c68:	e8 17       	cp	r30, r24
      c6a:	f9 07       	cpc	r31, r25
      c6c:	31 f4       	brne	.+12     	; 0xc7a <uxListRemove+0x3c>
-	{
-		pxList->pxIndex = pxItemToRemove->pxPrevious;
      c6e:	84 81       	ldd	r24, Z+4	; 0x04
      c70:	95 81       	ldd	r25, Z+5	; 0x05
      c72:	12 96       	adiw	r26, 0x02	; 2
      c74:	9c 93       	st	X, r25
      c76:	8e 93       	st	-X, r24
      c78:	11 97       	sbiw	r26, 0x01	; 1
-	else
-	{
-		mtCOVERAGE_TEST_MARKER();
-	}
-
-	pxItemToRemove->pvContainer = NULL;
      c7a:	11 86       	std	Z+9, r1	; 0x09
      c7c:	10 86       	std	Z+8, r1	; 0x08
-	( pxList->uxNumberOfItems )--;
      c7e:	8c 91       	ld	r24, X
      c80:	81 50       	subi	r24, 0x01	; 1
      c82:	8c 93       	st	X, r24
-
-	return pxList->uxNumberOfItems;
-}
      c84:	df 91       	pop	r29
      c86:	cf 91       	pop	r28
      c88:	08 95       	ret
 
 00000c8a <prvSetupTimerInterrupt>:
-	return pdTRUE;
-}
-/*-----------------------------------------------------------*/
-
-void vPortEndScheduler( void )
-{
      c8a:	8c e7       	ldi	r24, 0x7C	; 124
      c8c:	83 bd       	out	0x23, r24	; 35
      c8e:	84 e4       	ldi	r24, 0x44	; 68
@@ -2180,12 +1776,6 @@ void vPortEndScheduler( void )
      dce:	08 95       	ret
 
 00000dd0 <vPortYield>:
- * can use a naked attribute.
- */
-void vPortYield( void ) __attribute__ ( ( naked ) );
-void vPortYield( void )
-{
-	portSAVE_CONTEXT();
      dd0:	0f 92       	push	r0
      dd2:	0f b6       	in	r0, 0x3f	; 63
      dd4:	f8 94       	cli
@@ -2228,9 +1818,7 @@ void vPortYield( void )
      e22:	0d 92       	st	X+, r0
      e24:	0e b6       	in	r0, 0x3e	; 62
      e26:	0d 92       	st	X+, r0
-	vTaskSwitchContext();
      e28:	0e 94 35 0e 	call	0x1c6a	; 0x1c6a <vTaskSwitchContext>
-	portRESTORE_CONTEXT();
      e2c:	a0 91 98 05 	lds	r26, 0x0598	; 0x800598 <pxCurrentTCB>
      e30:	b0 91 99 05 	lds	r27, 0x0599	; 0x800599 <pxCurrentTCB+0x1>
      e34:	cd 91       	ld	r28, X+
@@ -2271,17 +1859,9 @@ void vPortYield( void )
      e7a:	0f 90       	pop	r0
      e7c:	0f be       	out	0x3f, r0	; 63
      e7e:	0f 90       	pop	r0
-
-	asm volatile ( "ret" );
      e80:	08 95       	ret
 
 00000e82 <vPortYieldFromTick>:
- * call comes from the tick ISR.
- */
-void vPortYieldFromTick( void ) __attribute__ ( ( naked ) );
-void vPortYieldFromTick( void )
-{
-	portSAVE_CONTEXT();
      e82:	0f 92       	push	r0
      e84:	0f b6       	in	r0, 0x3f	; 63
      e86:	f8 94       	cli
@@ -2324,14 +1904,9 @@ void vPortYieldFromTick( void )
      ed4:	0d 92       	st	X+, r0
      ed6:	0e b6       	in	r0, 0x3e	; 62
      ed8:	0d 92       	st	X+, r0
-	if( xTaskIncrementTick() != pdFALSE )
      eda:	0e 94 c2 0c 	call	0x1984	; 0x1984 <xTaskIncrementTick>
      ede:	81 11       	cpse	r24, r1
-	{
-		vTaskSwitchContext();
      ee0:	0e 94 35 0e 	call	0x1c6a	; 0x1c6a <vTaskSwitchContext>
-	}
-	portRESTORE_CONTEXT();
      ee4:	a0 91 98 05 	lds	r26, 0x0598	; 0x800598 <pxCurrentTCB>
      ee8:	b0 91 99 05 	lds	r27, 0x0599	; 0x800599 <pxCurrentTCB+0x1>
      eec:	cd 91       	ld	r28, X+
@@ -2372,28 +1947,13 @@ void vPortYieldFromTick( void )
      f32:	0f 90       	pop	r0
      f34:	0f be       	out	0x3f, r0	; 63
      f36:	0f 90       	pop	r0
-
-	asm volatile ( "ret" );
      f38:	08 95       	ret
 
 00000f3a <__vector_4>:
-	 * count is incremented after the context is saved.
-	 */
-	void TIMER2_COMP_vect( void ) __attribute__ ( ( signal, naked ) );
-	void TIMER2_COMP_vect( void )
-	{
-		vPortYieldFromTick();
      f3a:	0e 94 41 07 	call	0xe82	; 0xe82 <vPortYieldFromTick>
-		asm volatile ( "reti" );
      f3e:	18 95       	reti
 
 00000f40 <prvIsQueueEmpty>:
-		}
-	}
-	portCLEAR_INTERRUPT_MASK_FROM_ISR( uxSavedInterruptStatus );
-
-	return xReturn;
-}
      f40:	0f b6       	in	r0, 0x3f	; 63
      f42:	f8 94       	cli
      f44:	0f 92       	push	r0
@@ -2858,10 +2418,6 @@ void vPortYieldFromTick( void )
     12f8:	08 95       	ret
 
 000012fa <xQueueGenericReceive>:
-/*-----------------------------------------------------------*/
-
-BaseType_t xQueueGenericReceive( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait, const BaseType_t xJustPeeking )
-{
     12fa:	8f 92       	push	r8
     12fc:	9f 92       	push	r9
     12fe:	bf 92       	push	r11
@@ -2883,171 +2439,76 @@ BaseType_t xQueueGenericReceive( QueueHandle_t xQueue, void * const pvBuffer, Ti
     131e:	5d 83       	std	Y+5, r21	; 0x05
     1320:	4c 83       	std	Y+4, r20	; 0x04
     1322:	b2 2e       	mov	r11, r18
-BaseType_t xEntryTimeSet = pdFALSE;
     1324:	e1 2c       	mov	r14, r1
-	statements within the function itself.  This is done in the interest
-	of execution time efficiency. */
-
-	for( ;; )
-	{
-		taskENTER_CRITICAL();
     1326:	0f b6       	in	r0, 0x3f	; 63
     1328:	f8 94       	cli
     132a:	0f 92       	push	r0
-		{
-			const UBaseType_t uxMessagesWaiting = pxQueue->uxMessagesWaiting;
     132c:	f8 01       	movw	r30, r16
     132e:	f2 8c       	ldd	r15, Z+26	; 0x1a
-
-			/* Is there data in the queue now?  To be running the calling task
-			must be the highest priority task wanting to access the queue. */
-			if( uxMessagesWaiting > ( UBaseType_t ) 0 )
     1330:	ff 20       	and	r15, r15
     1332:	91 f1       	breq	.+100    	; 0x1398 <xQueueGenericReceive+0x9e>
-			{
-				/* Remember the read position in case the queue is only being
-				peeked. */
-				pcOriginalReadPosition = pxQueue->u.pcReadFrom;
     1334:	86 80       	ldd	r8, Z+6	; 0x06
     1336:	97 80       	ldd	r9, Z+7	; 0x07
-
-				prvCopyDataFromQueue( pxQueue, pvBuffer );
     1338:	b6 01       	movw	r22, r12
     133a:	c8 01       	movw	r24, r16
     133c:	0e 94 1a 08 	call	0x1034	; 0x1034 <prvCopyDataFromQueue>
-
-				if( xJustPeeking == pdFALSE )
     1340:	b1 10       	cpse	r11, r1
     1342:	19 c0       	rjmp	.+50     	; 0x1376 <xQueueGenericReceive+0x7c>
-				{
-					traceQUEUE_RECEIVE( pxQueue );
-
-					/* Actually removing data, not just peeking. */
-					pxQueue->uxMessagesWaiting = uxMessagesWaiting - 1;
     1344:	fa 94       	dec	r15
     1346:	f8 01       	movw	r30, r16
     1348:	f2 8e       	std	Z+26, r15	; 0x1a
-
-					#if ( configUSE_MUTEXES == 1 )
-					{
-						if( pxQueue->uxQueueType == queueQUEUE_IS_MUTEX )
     134a:	80 81       	ld	r24, Z
     134c:	91 81       	ldd	r25, Z+1	; 0x01
     134e:	89 2b       	or	r24, r25
     1350:	29 f4       	brne	.+10     	; 0x135c <xQueueGenericReceive+0x62>
-						{
-							/* Record the information required to implement
-							priority inheritance should it become necessary. */
-							pxQueue->pxMutexHolder = ( int8_t * ) pvTaskIncrementMutexHeldCount(); /*lint !e961 Cast is not redundant as TaskHandle_t is a typedef. */
     1352:	0e 94 cd 0f 	call	0x1f9a	; 0x1f9a <pvTaskIncrementMutexHeldCount>
     1356:	f8 01       	movw	r30, r16
     1358:	93 83       	std	Z+3, r25	; 0x03
     135a:	82 83       	std	Z+2, r24	; 0x02
-							mtCOVERAGE_TEST_MARKER();
-						}
-					}
-					#endif /* configUSE_MUTEXES */
-
-					if( listLIST_IS_EMPTY( &( pxQueue->xTasksWaitingToSend ) ) == pdFALSE )
     135c:	f8 01       	movw	r30, r16
     135e:	80 85       	ldd	r24, Z+8	; 0x08
     1360:	88 23       	and	r24, r24
     1362:	b1 f0       	breq	.+44     	; 0x1390 <xQueueGenericReceive+0x96>
-					{
-						if( xTaskRemoveFromEventList( &( pxQueue->xTasksWaitingToSend ) ) != pdFALSE )
     1364:	c8 01       	movw	r24, r16
     1366:	08 96       	adiw	r24, 0x08	; 8
     1368:	0e 94 9b 0e 	call	0x1d36	; 0x1d36 <xTaskRemoveFromEventList>
     136c:	88 23       	and	r24, r24
     136e:	81 f0       	breq	.+32     	; 0x1390 <xQueueGenericReceive+0x96>
-						{
-							queueYIELD_IF_USING_PREEMPTION();
     1370:	0e 94 e8 06 	call	0xdd0	; 0xdd0 <vPortYield>
     1374:	0d c0       	rjmp	.+26     	; 0x1390 <xQueueGenericReceive+0x96>
-				{
-					traceQUEUE_PEEK( pxQueue );
-
-					/* The data is not being removed, so reset the read
-					pointer. */
-					pxQueue->u.pcReadFrom = pcOriginalReadPosition;
     1376:	f8 01       	movw	r30, r16
     1378:	97 82       	std	Z+7, r9	; 0x07
     137a:	86 82       	std	Z+6, r8	; 0x06
-
-					/* The data is being left in the queue, so see if there are
-					any other tasks waiting for the data. */
-					if( listLIST_IS_EMPTY( &( pxQueue->xTasksWaitingToReceive ) ) == pdFALSE )
     137c:	81 89       	ldd	r24, Z+17	; 0x11
     137e:	88 23       	and	r24, r24
     1380:	39 f0       	breq	.+14     	; 0x1390 <xQueueGenericReceive+0x96>
-					{
-						if( xTaskRemoveFromEventList( &( pxQueue->xTasksWaitingToReceive ) ) != pdFALSE )
     1382:	c8 01       	movw	r24, r16
     1384:	41 96       	adiw	r24, 0x11	; 17
     1386:	0e 94 9b 0e 	call	0x1d36	; 0x1d36 <xTaskRemoveFromEventList>
     138a:	81 11       	cpse	r24, r1
-						{
-							/* The task waiting has a higher priority than this task. */
-							queueYIELD_IF_USING_PREEMPTION();
     138c:	0e 94 e8 06 	call	0xdd0	; 0xdd0 <vPortYield>
-					{
-						mtCOVERAGE_TEST_MARKER();
-					}
-				}
-
-				taskEXIT_CRITICAL();
     1390:	0f 90       	pop	r0
     1392:	0f be       	out	0x3f, r0	; 63
-				return pdPASS;
     1394:	81 e0       	ldi	r24, 0x01	; 1
     1396:	61 c0       	rjmp	.+194    	; 0x145a <xQueueGenericReceive+0x160>
-			}
-			else
-			{
-				if( xTicksToWait == ( TickType_t ) 0 )
     1398:	8c 81       	ldd	r24, Y+4	; 0x04
     139a:	9d 81       	ldd	r25, Y+5	; 0x05
     139c:	89 2b       	or	r24, r25
     139e:	21 f4       	brne	.+8      	; 0x13a8 <xQueueGenericReceive+0xae>
-				{
-					/* The queue was empty and no block time is specified (or
-					the block time has expired) so leave now. */
-					taskEXIT_CRITICAL();
     13a0:	0f 90       	pop	r0
     13a2:	0f be       	out	0x3f, r0	; 63
-					traceQUEUE_RECEIVE_FAILED( pxQueue );
-					return errQUEUE_EMPTY;
     13a4:	80 e0       	ldi	r24, 0x00	; 0
     13a6:	59 c0       	rjmp	.+178    	; 0x145a <xQueueGenericReceive+0x160>
-				}
-				else if( xEntryTimeSet == pdFALSE )
     13a8:	e1 10       	cpse	r14, r1
     13aa:	06 c0       	rjmp	.+12     	; 0x13b8 <xQueueGenericReceive+0xbe>
-				{
-					/* The queue was empty and a block time was specified so
-					configure the timeout structure. */
-					vTaskSetTimeOutState( &xTimeOut );
     13ac:	ce 01       	movw	r24, r28
     13ae:	01 96       	adiw	r24, 0x01	; 1
     13b0:	0e 94 e3 0e 	call	0x1dc6	; 0x1dc6 <vTaskSetTimeOutState>
-					xEntryTimeSet = pdTRUE;
     13b4:	ee 24       	eor	r14, r14
     13b6:	e3 94       	inc	r14
-					/* Entry time was already set. */
-					mtCOVERAGE_TEST_MARKER();
-				}
-			}
-		}
-		taskEXIT_CRITICAL();
     13b8:	0f 90       	pop	r0
     13ba:	0f be       	out	0x3f, r0	; 63
-
-		/* Interrupts and other tasks can send to and receive from the queue
-		now the critical section has been exited. */
-
-		vTaskSuspendAll();
     13bc:	0e 94 bc 0c 	call	0x1978	; 0x1978 <vTaskSuspendAll>
-		prvLockQueue( pxQueue );
     13c0:	0f b6       	in	r0, 0x3f	; 63
     13c2:	f8 94       	cli
     13c4:	0f 92       	push	r0
@@ -3063,9 +2524,6 @@ BaseType_t xEntryTimeSet = pdFALSE;
     13d8:	16 8e       	std	Z+30, r1	; 0x1e
     13da:	0f 90       	pop	r0
     13dc:	0f be       	out	0x3f, r0	; 63
-
-		/* Update the timeout state to see if it has expired yet. */
-		if( xTaskCheckForTimeOut( &xTimeOut, &xTicksToWait ) == pdFALSE )
     13de:	be 01       	movw	r22, r28
     13e0:	6c 5f       	subi	r22, 0xFC	; 252
     13e2:	7f 4f       	sbci	r23, 0xFF	; 255
@@ -3074,96 +2532,48 @@ BaseType_t xEntryTimeSet = pdFALSE;
     13e8:	0e 94 ee 0e 	call	0x1ddc	; 0x1ddc <xTaskCheckForTimeOut>
     13ec:	81 11       	cpse	r24, r1
     13ee:	29 c0       	rjmp	.+82     	; 0x1442 <xQueueGenericReceive+0x148>
-		{
-			if( prvIsQueueEmpty( pxQueue ) != pdFALSE )
     13f0:	c8 01       	movw	r24, r16
     13f2:	0e 94 a0 07 	call	0xf40	; 0xf40 <prvIsQueueEmpty>
     13f6:	88 23       	and	r24, r24
     13f8:	f1 f0       	breq	.+60     	; 0x1436 <xQueueGenericReceive+0x13c>
-			{
-				traceBLOCKING_ON_QUEUE_RECEIVE( pxQueue );
-
-				#if ( configUSE_MUTEXES == 1 )
-				{
-					if( pxQueue->uxQueueType == queueQUEUE_IS_MUTEX )
     13fa:	f8 01       	movw	r30, r16
     13fc:	80 81       	ld	r24, Z
     13fe:	91 81       	ldd	r25, Z+1	; 0x01
     1400:	89 2b       	or	r24, r25
     1402:	49 f4       	brne	.+18     	; 0x1416 <xQueueGenericReceive+0x11c>
-					{
-						taskENTER_CRITICAL();
     1404:	0f b6       	in	r0, 0x3f	; 63
     1406:	f8 94       	cli
     1408:	0f 92       	push	r0
-						{
-							vTaskPriorityInherit( ( void * ) pxQueue->pxMutexHolder );
     140a:	82 81       	ldd	r24, Z+2	; 0x02
     140c:	93 81       	ldd	r25, Z+3	; 0x03
     140e:	0e 94 2b 0f 	call	0x1e56	; 0x1e56 <vTaskPriorityInherit>
-						}
-						taskEXIT_CRITICAL();
     1412:	0f 90       	pop	r0
     1414:	0f be       	out	0x3f, r0	; 63
-						mtCOVERAGE_TEST_MARKER();
-					}
-				}
-				#endif
-
-				vTaskPlaceOnEventList( &( pxQueue->xTasksWaitingToReceive ), xTicksToWait );
     1416:	6c 81       	ldd	r22, Y+4	; 0x04
     1418:	7d 81       	ldd	r23, Y+5	; 0x05
     141a:	c8 01       	movw	r24, r16
     141c:	41 96       	adiw	r24, 0x11	; 17
     141e:	0e 94 89 0e 	call	0x1d12	; 0x1d12 <vTaskPlaceOnEventList>
-				prvUnlockQueue( pxQueue );
     1422:	c8 01       	movw	r24, r16
     1424:	0e 94 34 08 	call	0x1068	; 0x1068 <prvUnlockQueue>
-				if( xTaskResumeAll() == pdFALSE )
     1428:	0e 94 7c 0d 	call	0x1af8	; 0x1af8 <xTaskResumeAll>
     142c:	81 11       	cpse	r24, r1
     142e:	7b cf       	rjmp	.-266    	; 0x1326 <xQueueGenericReceive+0x2c>
-				{
-					portYIELD_WITHIN_API();
     1430:	0e 94 e8 06 	call	0xdd0	; 0xdd0 <vPortYield>
     1434:	78 cf       	rjmp	.-272    	; 0x1326 <xQueueGenericReceive+0x2c>
-				}
-			}
-			else
-			{
-				/* Try again. */
-				prvUnlockQueue( pxQueue );
     1436:	c8 01       	movw	r24, r16
     1438:	0e 94 34 08 	call	0x1068	; 0x1068 <prvUnlockQueue>
-				( void ) xTaskResumeAll();
     143c:	0e 94 7c 0d 	call	0x1af8	; 0x1af8 <xTaskResumeAll>
     1440:	72 cf       	rjmp	.-284    	; 0x1326 <xQueueGenericReceive+0x2c>
-			}
-		}
-		else
-		{
-			prvUnlockQueue( pxQueue );
     1442:	c8 01       	movw	r24, r16
     1444:	0e 94 34 08 	call	0x1068	; 0x1068 <prvUnlockQueue>
-			( void ) xTaskResumeAll();
     1448:	0e 94 7c 0d 	call	0x1af8	; 0x1af8 <xTaskResumeAll>
-
-			if( prvIsQueueEmpty( pxQueue ) != pdFALSE )
     144c:	c8 01       	movw	r24, r16
     144e:	0e 94 a0 07 	call	0xf40	; 0xf40 <prvIsQueueEmpty>
     1452:	88 23       	and	r24, r24
     1454:	09 f4       	brne	.+2      	; 0x1458 <xQueueGenericReceive+0x15e>
     1456:	67 cf       	rjmp	.-306    	; 0x1326 <xQueueGenericReceive+0x2c>
-			{
-				traceQUEUE_RECEIVE_FAILED( pxQueue );
-				return errQUEUE_EMPTY;
     1458:	80 e0       	ldi	r24, 0x00	; 0
-			{
-				mtCOVERAGE_TEST_MARKER();
-			}
-		}
-	}
-}
     145a:	0f 90       	pop	r0
     145c:	0f 90       	pop	r0
     145e:	0f 90       	pop	r0
@@ -3183,12 +2593,6 @@ BaseType_t xEntryTimeSet = pdFALSE;
     147a:	08 95       	ret
 
 0000147c <prvResetNextTaskUnblockTime>:
-	/* Reset the event list item to its normal value - so it can be used with
-	queues and semaphores. */
-	listSET_LIST_ITEM_VALUE( &( pxCurrentTCB->xEventListItem ), ( ( TickType_t ) configMAX_PRIORITIES - ( TickType_t ) pxCurrentTCB->uxPriority ) ); /*lint !e961 MISRA exception as the casts are only redundant for some ports. */
-
-	return uxReturn;
-}
     147c:	e0 91 33 05 	lds	r30, 0x0533	; 0x800533 <pxDelayedTaskList>
     1480:	f0 91 34 05 	lds	r31, 0x0534	; 0x800534 <pxDelayedTaskList+0x1>
     1484:	80 81       	ld	r24, Z
@@ -4440,137 +3844,90 @@ BaseType_t xEntryTimeSet = pdFALSE;
     1f98:	08 95       	ret
 
 00001f9a <pvTaskIncrementMutexHeldCount>:
-
-	void *pvTaskIncrementMutexHeldCount( void )
-	{
-		/* If xSemaphoreCreateMutex() is called before any tasks have been created
-		then pxCurrentTCB will be NULL. */
-		if( pxCurrentTCB != NULL )
     1f9a:	80 91 98 05 	lds	r24, 0x0598	; 0x800598 <pxCurrentTCB>
     1f9e:	90 91 99 05 	lds	r25, 0x0599	; 0x800599 <pxCurrentTCB+0x1>
     1fa2:	89 2b       	or	r24, r25
     1fa4:	39 f0       	breq	.+14     	; 0x1fb4 <pvTaskIncrementMutexHeldCount+0x1a>
-		{
-			( pxCurrentTCB->uxMutexesHeld )++;
     1fa6:	e0 91 98 05 	lds	r30, 0x0598	; 0x800598 <pxCurrentTCB>
     1faa:	f0 91 99 05 	lds	r31, 0x0599	; 0x800599 <pxCurrentTCB+0x1>
     1fae:	82 a1       	ldd	r24, Z+34	; 0x22
     1fb0:	8f 5f       	subi	r24, 0xFF	; 255
     1fb2:	82 a3       	std	Z+34, r24	; 0x22
-		}
-
-		return pxCurrentTCB;
     1fb4:	80 91 98 05 	lds	r24, 0x0598	; 0x800598 <pxCurrentTCB>
     1fb8:	90 91 99 05 	lds	r25, 0x0599	; 0x800599 <pxCurrentTCB+0x1>
-	}
     1fbc:	08 95       	ret
 
 00001fbe <SEG_Init>:
-#include "SEG.h"
-
-uint8_t num[11]={126,96,182,158,204,218,250,14,254,222};
-
-void SEG_Init(void)
-{
     1fbe:	1f 93       	push	r17
     1fc0:	cf 93       	push	r28
     1fc2:	df 93       	push	r29
     1fc4:	00 d0       	rcall	.+0      	; 0x1fc6 <SEG_Init+0x8>
     1fc6:	cd b7       	in	r28, 0x3d	; 61
     1fc8:	de b7       	in	r29, 0x3e	; 62
-	GPIO_Pinconfig_t GPIO_Conf ;
-	GPIO_Conf.pinNumber = GPIO_PIN_1 ;
     1fca:	82 e0       	ldi	r24, 0x02	; 2
     1fcc:	89 83       	std	Y+1, r24	; 0x01
-	GPIO_Conf.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     1fce:	13 e0       	ldi	r17, 0x03	; 3
     1fd0:	1a 83       	std	Y+2, r17	; 0x02
-	MCAL_GPIO_Init(GPIOA , &GPIO_Conf ) ;
     1fd2:	be 01       	movw	r22, r28
     1fd4:	6f 5f       	subi	r22, 0xFF	; 255
     1fd6:	7f 4f       	sbci	r23, 0xFF	; 255
     1fd8:	89 e3       	ldi	r24, 0x39	; 57
     1fda:	90 e0       	ldi	r25, 0x00	; 0
     1fdc:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	GPIO_Conf.pinNumber = GPIO_PIN_2 ;
     1fe0:	84 e0       	ldi	r24, 0x04	; 4
     1fe2:	89 83       	std	Y+1, r24	; 0x01
-	GPIO_Conf.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     1fe4:	1a 83       	std	Y+2, r17	; 0x02
-	MCAL_GPIO_Init(GPIOA , &GPIO_Conf ) ;
     1fe6:	be 01       	movw	r22, r28
     1fe8:	6f 5f       	subi	r22, 0xFF	; 255
     1fea:	7f 4f       	sbci	r23, 0xFF	; 255
     1fec:	89 e3       	ldi	r24, 0x39	; 57
     1fee:	90 e0       	ldi	r25, 0x00	; 0
     1ff0:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	GPIO_Conf.pinNumber = GPIO_PIN_3 ;
     1ff4:	88 e0       	ldi	r24, 0x08	; 8
     1ff6:	89 83       	std	Y+1, r24	; 0x01
-	GPIO_Conf.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     1ff8:	1a 83       	std	Y+2, r17	; 0x02
-	MCAL_GPIO_Init(GPIOA , &GPIO_Conf ) ;
     1ffa:	be 01       	movw	r22, r28
     1ffc:	6f 5f       	subi	r22, 0xFF	; 255
     1ffe:	7f 4f       	sbci	r23, 0xFF	; 255
     2000:	89 e3       	ldi	r24, 0x39	; 57
     2002:	90 e0       	ldi	r25, 0x00	; 0
     2004:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	GPIO_Conf.pinNumber = GPIO_PIN_4 ;
     2008:	80 e1       	ldi	r24, 0x10	; 16
     200a:	89 83       	std	Y+1, r24	; 0x01
-	GPIO_Conf.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     200c:	1a 83       	std	Y+2, r17	; 0x02
-	MCAL_GPIO_Init(GPIOA , &GPIO_Conf ) ;
     200e:	be 01       	movw	r22, r28
     2010:	6f 5f       	subi	r22, 0xFF	; 255
     2012:	7f 4f       	sbci	r23, 0xFF	; 255
     2014:	89 e3       	ldi	r24, 0x39	; 57
     2016:	90 e0       	ldi	r25, 0x00	; 0
     2018:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	GPIO_Conf.pinNumber = GPIO_PIN_5 ;
     201c:	80 e2       	ldi	r24, 0x20	; 32
     201e:	89 83       	std	Y+1, r24	; 0x01
-	GPIO_Conf.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     2020:	1a 83       	std	Y+2, r17	; 0x02
-	MCAL_GPIO_Init(GPIOA , &GPIO_Conf ) ;
     2022:	be 01       	movw	r22, r28
     2024:	6f 5f       	subi	r22, 0xFF	; 255
     2026:	7f 4f       	sbci	r23, 0xFF	; 255
     2028:	89 e3       	ldi	r24, 0x39	; 57
     202a:	90 e0       	ldi	r25, 0x00	; 0
     202c:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	GPIO_Conf.pinNumber = GPIO_PIN_6 ;
     2030:	80 e4       	ldi	r24, 0x40	; 64
     2032:	89 83       	std	Y+1, r24	; 0x01
-	GPIO_Conf.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     2034:	1a 83       	std	Y+2, r17	; 0x02
-	MCAL_GPIO_Init(GPIOA , &GPIO_Conf ) ;
     2036:	be 01       	movw	r22, r28
     2038:	6f 5f       	subi	r22, 0xFF	; 255
     203a:	7f 4f       	sbci	r23, 0xFF	; 255
     203c:	89 e3       	ldi	r24, 0x39	; 57
     203e:	90 e0       	ldi	r25, 0x00	; 0
     2040:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	GPIO_Conf.pinNumber = GPIO_PIN_7 ;
     2044:	80 e8       	ldi	r24, 0x80	; 128
     2046:	89 83       	std	Y+1, r24	; 0x01
-	GPIO_Conf.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     2048:	1a 83       	std	Y+2, r17	; 0x02
-	MCAL_GPIO_Init(GPIOA , &GPIO_Conf ) ;
     204a:	be 01       	movw	r22, r28
     204c:	6f 5f       	subi	r22, 0xFF	; 255
     204e:	7f 4f       	sbci	r23, 0xFF	; 255
     2050:	89 e3       	ldi	r24, 0x39	; 57
     2052:	90 e0       	ldi	r25, 0x00	; 0
     2054:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-}
     2058:	0f 90       	pop	r0
     205a:	0f 90       	pop	r0
     205c:	df 91       	pop	r29
@@ -4579,29 +3936,17 @@ void SEG_Init(void)
     2062:	08 95       	ret
 
 00002064 <SEG_Display>:
-
-void SEG_Display(uint8_t Num)
-{
-	uint8_t Number;
-	Number = num[Num];
     2064:	e8 2f       	mov	r30, r24
     2066:	f0 e0       	ldi	r31, 0x00	; 0
     2068:	ee 59       	subi	r30, 0x9E	; 158
     206a:	ff 4f       	sbci	r31, 0xFF	; 255
     206c:	60 81       	ld	r22, Z
-	MCAL_GPIO_WritePort(GPIOA,Number);
     206e:	89 e3       	ldi	r24, 0x39	; 57
     2070:	90 e0       	ldi	r25, 0x00	; 0
     2072:	0e 94 3e 01 	call	0x27c	; 0x27c <MCAL_GPIO_WritePort>
     2076:	08 95       	ret
 
 00002078 <MOTOR_Init>:
-
-#include "DC_MOTOR.h"
-
-uint16_t TOP=0;
-void MOTOR_Init(void) 
-{
     2078:	cf 93       	push	r28
     207a:	df 93       	push	r29
     207c:	cd b7       	in	r28, 0x3d	; 61
@@ -4612,52 +3957,36 @@ void MOTOR_Init(void)
     2086:	de bf       	out	0x3e, r29	; 62
     2088:	0f be       	out	0x3f, r0	; 63
     208a:	cd bf       	out	0x3d, r28	; 61
-		PWM_config_t PWM_Config ;
-		PWM_Config.Compare_Value_CH_B = 0 ;
     208c:	1a 86       	std	Y+10, r1	; 0x0a
     208e:	19 86       	std	Y+9, r1	; 0x09
-		PWM_Config.Compare_Value_CH_A = 0 ;
     2090:	18 86       	std	Y+8, r1	; 0x08
     2092:	1f 82       	std	Y+7, r1	; 0x07
-		PWM_Config.Output_Compare_pin_A = PWM_Output_Compare_pin_A_Disable;
     2094:	19 82       	std	Y+1, r1	; 0x01
-		PWM_Config.Output_Compare_pin_B = PWM_Output_Compare_pin_B_Clear_At_Compare_Value_Set_At_TOP;
     2096:	80 e2       	ldi	r24, 0x20	; 32
     2098:	8a 83       	std	Y+2, r24	; 0x02
-		PWM_Config.Clock_Source = PWM_Clock_Source_clk_64 ;
     209a:	83 e0       	ldi	r24, 0x03	; 3
     209c:	8b 83       	std	Y+3, r24	; 0x03
-		PWM_Config.TOP_Value = (uint16_t)((F_CPU/(64*50))-1) ;
     209e:	83 ec       	ldi	r24, 0xC3	; 195
     20a0:	99 e0       	ldi	r25, 0x09	; 9
     20a2:	9c 87       	std	Y+12, r25	; 0x0c
     20a4:	8b 87       	std	Y+11, r24	; 0x0b
-		PWM_Config.OCIE1A_EN = PWM_OCIE1A_ENABLE_Disable ;
     20a6:	1d 82       	std	Y+5, r1	; 0x05
-		PWM_Config.OCIE1B_EN = PWM_OCIE1B_ENABLE_Disable ;
     20a8:	1e 82       	std	Y+6, r1	; 0x06
-		PWM_Config.TOIE1_EN = PWM_TOIE1_ENABLE_Disable ;
     20aa:	1c 82       	std	Y+4, r1	; 0x04
-		PWM_Config.P_OCIE1A_CALL = NULL ;
     20ac:	18 8a       	std	Y+16, r1	; 0x10
     20ae:	1f 86       	std	Y+15, r1	; 0x0f
-		PWM_Config.P_OCIE1B_CALL = NULL ;
     20b0:	1a 8a       	std	Y+18, r1	; 0x12
     20b2:	19 8a       	std	Y+17, r1	; 0x11
-		PWM_Config.P_TOIE1_CALL = NULL ;
     20b4:	1e 86       	std	Y+14, r1	; 0x0e
     20b6:	1d 86       	std	Y+13, r1	; 0x0d
-		MCAL_PWM_Init(&PWM_Config) ;
     20b8:	ce 01       	movw	r24, r28
     20ba:	01 96       	adiw	r24, 0x01	; 1
     20bc:	0e 94 6b 01 	call	0x2d6	; 0x2d6 <MCAL_PWM_Init>
-		TOP = PWM_Config.TOP_Value+1;
     20c0:	8b 85       	ldd	r24, Y+11	; 0x0b
     20c2:	9c 85       	ldd	r25, Y+12	; 0x0c
     20c4:	01 96       	adiw	r24, 0x01	; 1
     20c6:	90 93 9b 05 	sts	0x059B, r25	; 0x80059b <TOP+0x1>
     20ca:	80 93 9a 05 	sts	0x059A, r24	; 0x80059a <TOP>
-}
     20ce:	62 96       	adiw	r28, 0x12	; 18
     20d0:	0f b6       	in	r0, 0x3f	; 63
     20d2:	f8 94       	cli
@@ -4669,12 +3998,6 @@ void MOTOR_Init(void)
     20de:	08 95       	ret
 
 000020e0 <MOTOR_Speed>:
-
-void MOTOR_Speed(uint8_t speed) 
-{
-	uint16_t Compare_Value=500 ;
-	Compare_Value = (Compare_Value*speed);
-	MCAL_PWM_Set_Compare_Value(Compare_Value,B) ;
     20e0:	61 e0       	ldi	r22, 0x01	; 1
     20e2:	24 ef       	ldi	r18, 0xF4	; 244
     20e4:	31 e0       	ldi	r19, 0x01	; 1
@@ -4688,29 +4011,21 @@ void MOTOR_Speed(uint8_t speed)
     20f6:	08 95       	ret
 
 000020f8 <MOTOR_Right>:
-}
-
-void MOTOR_Right(void)
-{
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_4 , GPIO_PIN_SET) ;
     20f8:	41 e0       	ldi	r20, 0x01	; 1
     20fa:	60 e1       	ldi	r22, 0x10	; 16
     20fc:	83 e3       	ldi	r24, 0x33	; 51
     20fe:	90 e0       	ldi	r25, 0x00	; 0
     2100:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_5 , GPIO_PIN_RESET) ;
     2104:	40 e0       	ldi	r20, 0x00	; 0
     2106:	60 e2       	ldi	r22, 0x20	; 32
     2108:	83 e3       	ldi	r24, 0x33	; 51
     210a:	90 e0       	ldi	r25, 0x00	; 0
     210c:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_6 , GPIO_PIN_RESET) ;
     2110:	40 e0       	ldi	r20, 0x00	; 0
     2112:	60 e4       	ldi	r22, 0x40	; 64
     2114:	83 e3       	ldi	r24, 0x33	; 51
     2116:	90 e0       	ldi	r25, 0x00	; 0
     2118:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_7 , GPIO_PIN_SET) ;
     211c:	41 e0       	ldi	r20, 0x01	; 1
     211e:	60 e8       	ldi	r22, 0x80	; 128
     2120:	83 e3       	ldi	r24, 0x33	; 51
@@ -4719,29 +4034,21 @@ void MOTOR_Right(void)
     2128:	08 95       	ret
 
 0000212a <MOTOR_Left>:
-}
-
-void MOTOR_Left(void)
-{
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_4 , GPIO_PIN_RESET) ;
     212a:	40 e0       	ldi	r20, 0x00	; 0
     212c:	60 e1       	ldi	r22, 0x10	; 16
     212e:	83 e3       	ldi	r24, 0x33	; 51
     2130:	90 e0       	ldi	r25, 0x00	; 0
     2132:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_5 , GPIO_PIN_SET) ;
     2136:	41 e0       	ldi	r20, 0x01	; 1
     2138:	60 e2       	ldi	r22, 0x20	; 32
     213a:	83 e3       	ldi	r24, 0x33	; 51
     213c:	90 e0       	ldi	r25, 0x00	; 0
     213e:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_6 , GPIO_PIN_SET) ;
     2142:	41 e0       	ldi	r20, 0x01	; 1
     2144:	60 e4       	ldi	r22, 0x40	; 64
     2146:	83 e3       	ldi	r24, 0x33	; 51
     2148:	90 e0       	ldi	r25, 0x00	; 0
     214a:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_7 , GPIO_PIN_RESET) ;
     214e:	40 e0       	ldi	r20, 0x00	; 0
     2150:	60 e8       	ldi	r22, 0x80	; 128
     2152:	83 e3       	ldi	r24, 0x33	; 51
@@ -4750,29 +4057,21 @@ void MOTOR_Left(void)
     215a:	08 95       	ret
 
 0000215c <MOTOR_Stop>:
-}
-
-void MOTOR_Stop(void)
-{
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_4 , GPIO_PIN_RESET) ;
     215c:	40 e0       	ldi	r20, 0x00	; 0
     215e:	60 e1       	ldi	r22, 0x10	; 16
     2160:	83 e3       	ldi	r24, 0x33	; 51
     2162:	90 e0       	ldi	r25, 0x00	; 0
     2164:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_5 , GPIO_PIN_RESET) ;
     2168:	40 e0       	ldi	r20, 0x00	; 0
     216a:	60 e2       	ldi	r22, 0x20	; 32
     216c:	83 e3       	ldi	r24, 0x33	; 51
     216e:	90 e0       	ldi	r25, 0x00	; 0
     2170:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_6 , GPIO_PIN_RESET) ;
     2174:	40 e0       	ldi	r20, 0x00	; 0
     2176:	60 e4       	ldi	r22, 0x40	; 64
     2178:	83 e3       	ldi	r24, 0x33	; 51
     217a:	90 e0       	ldi	r25, 0x00	; 0
     217c:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_7 , GPIO_PIN_RESET) ;
     2180:	40 e0       	ldi	r20, 0x00	; 0
     2182:	60 e8       	ldi	r22, 0x80	; 128
     2184:	83 e3       	ldi	r24, 0x33	; 51
@@ -4781,29 +4080,21 @@ void MOTOR_Stop(void)
     218c:	08 95       	ret
 
 0000218e <MOTOR_Forward>:
-}
-
-void MOTOR_Forward(void)
-{
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_4 , GPIO_PIN_RESET) ;
     218e:	40 e0       	ldi	r20, 0x00	; 0
     2190:	60 e1       	ldi	r22, 0x10	; 16
     2192:	83 e3       	ldi	r24, 0x33	; 51
     2194:	90 e0       	ldi	r25, 0x00	; 0
     2196:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_5 , GPIO_PIN_SET) ;
     219a:	41 e0       	ldi	r20, 0x01	; 1
     219c:	60 e2       	ldi	r22, 0x20	; 32
     219e:	83 e3       	ldi	r24, 0x33	; 51
     21a0:	90 e0       	ldi	r25, 0x00	; 0
     21a2:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_6 , GPIO_PIN_RESET) ;
     21a6:	40 e0       	ldi	r20, 0x00	; 0
     21a8:	60 e4       	ldi	r22, 0x40	; 64
     21aa:	83 e3       	ldi	r24, 0x33	; 51
     21ac:	90 e0       	ldi	r25, 0x00	; 0
     21ae:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_7 , GPIO_PIN_SET) ;
     21b2:	41 e0       	ldi	r20, 0x01	; 1
     21b4:	60 e8       	ldi	r22, 0x80	; 128
     21b6:	83 e3       	ldi	r24, 0x33	; 51
@@ -4812,29 +4103,21 @@ void MOTOR_Forward(void)
     21be:	08 95       	ret
 
 000021c0 <MOTOR_Back>:
-}
-
-void MOTOR_Back(void)
-{
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_4 , GPIO_PIN_SET) ;
     21c0:	41 e0       	ldi	r20, 0x01	; 1
     21c2:	60 e1       	ldi	r22, 0x10	; 16
     21c4:	83 e3       	ldi	r24, 0x33	; 51
     21c6:	90 e0       	ldi	r25, 0x00	; 0
     21c8:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_5 , GPIO_PIN_RESET) ;
     21cc:	40 e0       	ldi	r20, 0x00	; 0
     21ce:	60 e2       	ldi	r22, 0x20	; 32
     21d0:	83 e3       	ldi	r24, 0x33	; 51
     21d2:	90 e0       	ldi	r25, 0x00	; 0
     21d4:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_6 , GPIO_PIN_SET) ;
     21d8:	41 e0       	ldi	r20, 0x01	; 1
     21da:	60 e4       	ldi	r22, 0x40	; 64
     21dc:	83 e3       	ldi	r24, 0x33	; 51
     21de:	90 e0       	ldi	r25, 0x00	; 0
     21e0:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(GPIOC , GPIO_PIN_7 , GPIO_PIN_RESET) ;
     21e4:	40 e0       	ldi	r20, 0x00	; 0
     21e6:	60 e8       	ldi	r22, 0x80	; 128
     21e8:	83 e3       	ldi	r24, 0x33	; 51
@@ -4843,12 +4126,6 @@ void MOTOR_Back(void)
     21f0:	08 95       	ret
 
 000021f2 <ISR_Bluetooth>:
-
-
-//to finish the sending process you must send #
-void Bluetooth_TX_Str(uint8_t* PTXBuffer) 
-{
-	MCAL_USART_Send_String(PTXBuffer , Enable);
     21f2:	08 95       	ret
 
 000021f4 <Bluetooth_Init>:
@@ -4891,49 +4168,28 @@ void Bluetooth_TX_Str(uint8_t* PTXBuffer)
     223e:	08 95       	ret
 
 00002240 <Bluetooth_RX_Byte>:
-}
-
-
-void Bluetooth_RX_Byte(uint8_t* PRXBuffer) 
-{
-	MCAL_USART_ReceiveData(PRXBuffer,Enable);
     2240:	60 e0       	ldi	r22, 0x00	; 0
     2242:	0e 94 50 04 	call	0x8a0	; 0x8a0 <MCAL_USART_ReceiveData>
     2246:	08 95       	ret
 
 00002248 <LCD_cmd>:
-	_delay_ms(2);
-#endif
-}
-
-void LCD_cmd( unsigned char cmd )
-{
     2248:	cf 93       	push	r28
     224a:	c8 2f       	mov	r28, r24
-	_delay_us(1);       
-	MCAL_GPIO_WritePin( lcd_control_Port , en , GPIO_PIN_RESET ) ;               
-	_delay_us(200);
-#endif
-#ifdef _4_bit_mode
-	MCAL_GPIO_WritePort(lcd_Data_Port, (cmd & 0XF0));
     224c:	68 2f       	mov	r22, r24
     224e:	60 7f       	andi	r22, 0xF0	; 240
     2250:	86 e3       	ldi	r24, 0x36	; 54
     2252:	90 e0       	ldi	r25, 0x00	; 0
     2254:	0e 94 3e 01 	call	0x27c	; 0x27c <MCAL_GPIO_WritePort>
-	MCAL_GPIO_WritePin(lcd_control_Port,rs,GPIO_PIN_RESET);            // rs=0 i.e select command reg
     2258:	40 e0       	ldi	r20, 0x00	; 0
     225a:	62 e0       	ldi	r22, 0x02	; 2
     225c:	86 e3       	ldi	r24, 0x36	; 54
     225e:	90 e0       	ldi	r25, 0x00	; 0
     2260:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(lcd_control_Port,RW,GPIO_PIN_RESET);					 // R/W=0 i.e MODE Write
     2264:	40 e0       	ldi	r20, 0x00	; 0
     2266:	61 e0       	ldi	r22, 0x01	; 1
     2268:	86 e3       	ldi	r24, 0x36	; 54
     226a:	90 e0       	ldi	r25, 0x00	; 0
     226c:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(lcd_control_Port,en,GPIO_PIN_SET);					// give high pulse to enable pin
     2270:	41 e0       	ldi	r20, 0x01	; 1
     2272:	64 e0       	ldi	r22, 0x04	; 4
     2274:	86 e3       	ldi	r24, 0x36	; 54
@@ -4949,8 +4205,6 @@ void LCD_cmd( unsigned char cmd )
     227e:	8a 95       	dec	r24
     2280:	f1 f7       	brne	.-4      	; 0x227e <LCD_cmd+0x36>
     2282:	00 c0       	rjmp	.+0      	; 0x2284 <LCD_cmd+0x3c>
-	_delay_us(1);
-	MCAL_GPIO_WritePin(lcd_control_Port,en,GPIO_PIN_RESET);				 // give low pulse to enable pin
     2284:	40 e0       	ldi	r20, 0x00	; 0
     2286:	64 e0       	ldi	r22, 0x04	; 4
     2288:	86 e3       	ldi	r24, 0x36	; 54
@@ -4962,8 +4216,6 @@ void LCD_cmd( unsigned char cmd )
     2296:	f1 f7       	brne	.-4      	; 0x2294 <LCD_cmd+0x4c>
     2298:	00 c0       	rjmp	.+0      	; 0x229a <LCD_cmd+0x52>
     229a:	00 00       	nop
-	_delay_us(200);
-	MCAL_GPIO_WritePort(lcd_Data_Port, ( cmd & 0X0F) << 4);               //sending lower nibble of 8 bit 
     229c:	90 e1       	ldi	r25, 0x10	; 16
     229e:	c9 9f       	mul	r28, r25
     22a0:	b0 01       	movw	r22, r0
@@ -4971,19 +4223,16 @@ void LCD_cmd( unsigned char cmd )
     22a4:	86 e3       	ldi	r24, 0x36	; 54
     22a6:	90 e0       	ldi	r25, 0x00	; 0
     22a8:	0e 94 3e 01 	call	0x27c	; 0x27c <MCAL_GPIO_WritePort>
-	MCAL_GPIO_WritePin(lcd_control_Port,rs,GPIO_PIN_RESET);            // rs=0 i.e select command reg
     22ac:	40 e0       	ldi	r20, 0x00	; 0
     22ae:	62 e0       	ldi	r22, 0x02	; 2
     22b0:	86 e3       	ldi	r24, 0x36	; 54
     22b2:	90 e0       	ldi	r25, 0x00	; 0
     22b4:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(lcd_control_Port,RW,GPIO_PIN_RESET);					 // R/W=0 i.e MODE Write
     22b8:	40 e0       	ldi	r20, 0x00	; 0
     22ba:	61 e0       	ldi	r22, 0x01	; 1
     22bc:	86 e3       	ldi	r24, 0x36	; 54
     22be:	90 e0       	ldi	r25, 0x00	; 0
     22c0:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(lcd_control_Port,en,GPIO_PIN_SET);					// give high pulse to enable pin
     22c4:	41 e0       	ldi	r20, 0x01	; 1
     22c6:	64 e0       	ldi	r22, 0x04	; 4
     22c8:	86 e3       	ldi	r24, 0x36	; 54
@@ -4993,8 +4242,6 @@ void LCD_cmd( unsigned char cmd )
     22d2:	8a 95       	dec	r24
     22d4:	f1 f7       	brne	.-4      	; 0x22d2 <LCD_cmd+0x8a>
     22d6:	00 c0       	rjmp	.+0      	; 0x22d8 <LCD_cmd+0x90>
-	_delay_us(1);
-	MCAL_GPIO_WritePin(lcd_control_Port,en,GPIO_PIN_RESET);				 // give low pulse to enable pin
     22d8:	40 e0       	ldi	r20, 0x00	; 0
     22da:	64 e0       	ldi	r22, 0x04	; 4
     22dc:	86 e3       	ldi	r24, 0x36	; 54
@@ -5012,19 +4259,10 @@ void LCD_cmd( unsigned char cmd )
     22ea:	f1 f7       	brne	.-4      	; 0x22e8 <LCD_cmd+0xa0>
     22ec:	00 c0       	rjmp	.+0      	; 0x22ee <LCD_cmd+0xa6>
     22ee:	00 00       	nop
-	_delay_ms(2);
-#endif
-}
     22f0:	cf 91       	pop	r28
     22f2:	08 95       	ret
 
 000022f4 <LCD_init>:
-#include "LCD.h"
-
-#define _4_bit_mode
-
-void LCD_init(void)
-{
     22f4:	ef 92       	push	r14
     22f6:	ff 92       	push	r15
     22f8:	0f 93       	push	r16
@@ -5034,148 +4272,101 @@ void LCD_init(void)
     2300:	00 d0       	rcall	.+0      	; 0x2302 <LCD_init+0xe>
     2302:	cd b7       	in	r28, 0x3d	; 61
     2304:	de b7       	in	r29, 0x3e	; 62
-	GPIO_Pinconfig_t config ;
-		
-	// set port lcd_data as output
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     2306:	13 e0       	ldi	r17, 0x03	; 3
     2308:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = GPIO_PIN_0 ;
     230a:	01 e0       	ldi	r16, 0x01	; 1
     230c:	09 83       	std	Y+1, r16	; 0x01
-	MCAL_GPIO_Init( lcd_Data_Direction , & config ) ;
     230e:	be 01       	movw	r22, r28
     2310:	6f 5f       	subi	r22, 0xFF	; 255
     2312:	7f 4f       	sbci	r23, 0xFF	; 255
     2314:	86 e3       	ldi	r24, 0x36	; 54
     2316:	90 e0       	ldi	r25, 0x00	; 0
     2318:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-		
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     231c:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = GPIO_PIN_1 ;
     231e:	68 94       	set
     2320:	ff 24       	eor	r15, r15
     2322:	f1 f8       	bld	r15, 1
     2324:	f9 82       	std	Y+1, r15	; 0x01
-	MCAL_GPIO_Init( lcd_Data_Direction , & config ) ;
     2326:	be 01       	movw	r22, r28
     2328:	6f 5f       	subi	r22, 0xFF	; 255
     232a:	7f 4f       	sbci	r23, 0xFF	; 255
     232c:	86 e3       	ldi	r24, 0x36	; 54
     232e:	90 e0       	ldi	r25, 0x00	; 0
     2330:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-				
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     2334:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = GPIO_PIN_2 ;
     2336:	68 94       	set
     2338:	ee 24       	eor	r14, r14
     233a:	e2 f8       	bld	r14, 2
     233c:	e9 82       	std	Y+1, r14	; 0x01
-	MCAL_GPIO_Init( lcd_Data_Direction , & config ) ;
     233e:	be 01       	movw	r22, r28
     2340:	6f 5f       	subi	r22, 0xFF	; 255
     2342:	7f 4f       	sbci	r23, 0xFF	; 255
     2344:	86 e3       	ldi	r24, 0x36	; 54
     2346:	90 e0       	ldi	r25, 0x00	; 0
     2348:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-						
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     234c:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = GPIO_PIN_3 ;
     234e:	88 e0       	ldi	r24, 0x08	; 8
     2350:	89 83       	std	Y+1, r24	; 0x01
-	MCAL_GPIO_Init( lcd_Data_Direction , & config ) ;
     2352:	be 01       	movw	r22, r28
     2354:	6f 5f       	subi	r22, 0xFF	; 255
     2356:	7f 4f       	sbci	r23, 0xFF	; 255
     2358:	86 e3       	ldi	r24, 0x36	; 54
     235a:	90 e0       	ldi	r25, 0x00	; 0
     235c:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-								
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     2360:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = GPIO_PIN_4 ;
     2362:	80 e1       	ldi	r24, 0x10	; 16
     2364:	89 83       	std	Y+1, r24	; 0x01
-	MCAL_GPIO_Init( lcd_Data_Direction , & config ) ;
     2366:	be 01       	movw	r22, r28
     2368:	6f 5f       	subi	r22, 0xFF	; 255
     236a:	7f 4f       	sbci	r23, 0xFF	; 255
     236c:	86 e3       	ldi	r24, 0x36	; 54
     236e:	90 e0       	ldi	r25, 0x00	; 0
     2370:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-										
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     2374:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = GPIO_PIN_5 ;
     2376:	80 e2       	ldi	r24, 0x20	; 32
     2378:	89 83       	std	Y+1, r24	; 0x01
-	MCAL_GPIO_Init( lcd_Data_Direction , & config ) ;
     237a:	be 01       	movw	r22, r28
     237c:	6f 5f       	subi	r22, 0xFF	; 255
     237e:	7f 4f       	sbci	r23, 0xFF	; 255
     2380:	86 e3       	ldi	r24, 0x36	; 54
     2382:	90 e0       	ldi	r25, 0x00	; 0
     2384:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-												
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     2388:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = GPIO_PIN_6 ;
     238a:	80 e4       	ldi	r24, 0x40	; 64
     238c:	89 83       	std	Y+1, r24	; 0x01
-	MCAL_GPIO_Init( lcd_Data_Direction , & config ) ;
     238e:	be 01       	movw	r22, r28
     2390:	6f 5f       	subi	r22, 0xFF	; 255
     2392:	7f 4f       	sbci	r23, 0xFF	; 255
     2394:	86 e3       	ldi	r24, 0x36	; 54
     2396:	90 e0       	ldi	r25, 0x00	; 0
     2398:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-														
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     239c:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = GPIO_PIN_7 ;
     239e:	80 e8       	ldi	r24, 0x80	; 128
     23a0:	89 83       	std	Y+1, r24	; 0x01
-	MCAL_GPIO_Init( lcd_Data_Direction , & config ) ;
     23a2:	be 01       	movw	r22, r28
     23a4:	6f 5f       	subi	r22, 0xFF	; 255
     23a6:	7f 4f       	sbci	r23, 0xFF	; 255
     23a8:	86 e3       	ldi	r24, 0x36	; 54
     23aa:	90 e0       	ldi	r25, 0x00	; 0
     23ac:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	// set en rs rw as output
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     23b0:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = en ;
     23b2:	e9 82       	std	Y+1, r14	; 0x01
-	MCAL_GPIO_Init( lcd_control_Direction , & config ) ;
     23b4:	be 01       	movw	r22, r28
     23b6:	6f 5f       	subi	r22, 0xFF	; 255
     23b8:	7f 4f       	sbci	r23, 0xFF	; 255
     23ba:	86 e3       	ldi	r24, 0x36	; 54
     23bc:	90 e0       	ldi	r25, 0x00	; 0
     23be:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     23c2:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = rs ;
     23c4:	f9 82       	std	Y+1, r15	; 0x01
-	MCAL_GPIO_Init( lcd_control_Direction , & config ) ;
     23c6:	be 01       	movw	r22, r28
     23c8:	6f 5f       	subi	r22, 0xFF	; 255
     23ca:	7f 4f       	sbci	r23, 0xFF	; 255
     23cc:	86 e3       	ldi	r24, 0x36	; 54
     23ce:	90 e0       	ldi	r25, 0x00	; 0
     23d0:	0e 94 07 01 	call	0x20e	; 0x20e <MCAL_GPIO_Init>
-	
-	config.GPIO_MODE =  GPIO_MODE_OUTPUT ;
     23d4:	1a 83       	std	Y+2, r17	; 0x02
-	config.pinNumber = RW ;
     23d6:	09 83       	std	Y+1, r16	; 0x01
-	MCAL_GPIO_Init( lcd_control_Direction , & config ) ;
     23d8:	be 01       	movw	r22, r28
     23da:	6f 5f       	subi	r22, 0xFF	; 255
     23dc:	7f 4f       	sbci	r23, 0xFF	; 255
@@ -5188,27 +4379,16 @@ void LCD_init(void)
     23ec:	f1 f7       	brne	.-4      	; 0x23ea <LCD_init+0xf6>
     23ee:	00 c0       	rjmp	.+0      	; 0x23f0 <LCD_init+0xfc>
     23f0:	00 00       	nop
-	LCD_cmd(Entry_Mode);                        // take cursor to next position "shift cursor to right"
-	LCD_cmd(Clear_Display);                    // Clear display screen
-	_delay_ms(2);
-#endif
-#ifdef _4_bit_mode
-	LCD_cmd(0x02);                // send for 4 bit initialization of LCD "shift cursor to left"
     23f2:	82 e0       	ldi	r24, 0x02	; 2
     23f4:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
-	LCD_cmd(_2L_4b);                              // 2 line 5*7 matrix in 4-bit mode
     23f8:	88 e2       	ldi	r24, 0x28	; 40
     23fa:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
-	LCD_cmd(Entry_Mode);                        // take cursor to next position "shift cursor to right"
     23fe:	86 e0       	ldi	r24, 0x06	; 6
     2400:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
-	LCD_cmd(beginning_of_the_first_line);
     2404:	80 e8       	ldi	r24, 0x80	; 128
     2406:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
-	LCD_cmd(Display_on_Cursor_off);              // Display on cursor off
     240a:	8c e0       	ldi	r24, 0x0C	; 12
     240c:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
-	LCD_cmd(Clear_Display);                    // Clear display screen
     2410:	81 e0       	ldi	r24, 0x01	; 1
     2412:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
     2416:	8f e9       	ldi	r24, 0x9F	; 159
@@ -5217,9 +4397,6 @@ void LCD_init(void)
     241c:	f1 f7       	brne	.-4      	; 0x241a <LCD_init+0x126>
     241e:	00 c0       	rjmp	.+0      	; 0x2420 <LCD_init+0x12c>
     2420:	00 00       	nop
-	_delay_ms(2);
-#endif
-}
     2422:	0f 90       	pop	r0
     2424:	0f 90       	pop	r0
     2426:	df 91       	pop	r29
@@ -5231,12 +4408,6 @@ void LCD_init(void)
     2432:	08 95       	ret
 
 00002434 <lcd_Clear>:
-#endif
-}
-
-void lcd_Clear()
-{
-	LCD_cmd (0x01);                   // send hex 01 to Clear display
     2434:	81 e0       	ldi	r24, 0x01	; 1
     2436:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
     243a:	8f e9       	ldi	r24, 0x9F	; 159
@@ -5245,75 +4416,46 @@ void lcd_Clear()
     2440:	f1 f7       	brne	.-4      	; 0x243e <lcd_Clear+0xa>
     2442:	00 c0       	rjmp	.+0      	; 0x2444 <lcd_Clear+0x10>
     2444:	00 00       	nop
-	_delay_ms(2);
-	LCD_cmd(0x80);                   // send hex 80 to Force Cursor to beginning of 1st line
     2446:	80 e8       	ldi	r24, 0x80	; 128
     2448:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
     244c:	08 95       	ret
 
 0000244e <GOTO_XY>:
-}
-
-void GOTO_XY(unsigned char line , unsigned char posision)
-{
-	if (line==0)
     244e:	81 11       	cpse	r24, r1
     2450:	07 c0       	rjmp	.+14     	; 0x2460 <GOTO_XY+0x12>
-	{
-		if(posision>=0 && posision<16)
     2452:	60 31       	cpi	r22, 0x10	; 16
     2454:	68 f4       	brcc	.+26     	; 0x2470 <GOTO_XY+0x22>
-			LCD_cmd(0X80+posision);
     2456:	80 e8       	ldi	r24, 0x80	; 128
     2458:	86 0f       	add	r24, r22
     245a:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
     245e:	08 95       	ret
-	}
-	else if (line==1)
     2460:	81 30       	cpi	r24, 0x01	; 1
     2462:	31 f4       	brne	.+12     	; 0x2470 <GOTO_XY+0x22>
-	{
-		if(posision>=0 && posision<16)
     2464:	60 31       	cpi	r22, 0x10	; 16
     2466:	20 f4       	brcc	.+8      	; 0x2470 <GOTO_XY+0x22>
-			LCD_cmd(0XC0+posision);
     2468:	80 ec       	ldi	r24, 0xC0	; 192
     246a:	86 0f       	add	r24, r22
     246c:	0e 94 24 11 	call	0x2248	; 0x2248 <LCD_cmd>
     2470:	08 95       	ret
 
 00002472 <LCD_Character>:
-	}
-}
-
-void LCD_Character( unsigned char character )
-{
     2472:	cf 93       	push	r28
     2474:	c8 2f       	mov	r28, r24
-	_delay_us(1);
-	MCAL_GPIO_WritePin( lcd_control_Port , en , GPIO_PIN_RESET ) ;
-	_delay_ms(2);
-#endif
-#ifdef _4_bit_mode
-	MCAL_GPIO_WritePort(lcd_Data_Port, (character & 0XF0));
     2476:	68 2f       	mov	r22, r24
     2478:	60 7f       	andi	r22, 0xF0	; 240
     247a:	86 e3       	ldi	r24, 0x36	; 54
     247c:	90 e0       	ldi	r25, 0x00	; 0
     247e:	0e 94 3e 01 	call	0x27c	; 0x27c <MCAL_GPIO_WritePort>
-	MCAL_GPIO_WritePin(lcd_control_Port,rs,GPIO_PIN_SET);            // rs=0 i.e select DATA reg
     2482:	41 e0       	ldi	r20, 0x01	; 1
     2484:	62 e0       	ldi	r22, 0x02	; 2
     2486:	86 e3       	ldi	r24, 0x36	; 54
     2488:	90 e0       	ldi	r25, 0x00	; 0
     248a:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(lcd_control_Port,RW,GPIO_PIN_RESET);					 // R/W=0 i.e MODE Write
     248e:	40 e0       	ldi	r20, 0x00	; 0
     2490:	61 e0       	ldi	r22, 0x01	; 1
     2492:	86 e3       	ldi	r24, 0x36	; 54
     2494:	90 e0       	ldi	r25, 0x00	; 0
     2496:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(lcd_control_Port,en,GPIO_PIN_SET);					// give high pulse to enable pin
     249a:	41 e0       	ldi	r20, 0x01	; 1
     249c:	64 e0       	ldi	r22, 0x04	; 4
     249e:	86 e3       	ldi	r24, 0x36	; 54
@@ -5329,8 +4471,6 @@ void LCD_Character( unsigned char character )
     24a8:	8a 95       	dec	r24
     24aa:	f1 f7       	brne	.-4      	; 0x24a8 <LCD_Character+0x36>
     24ac:	00 c0       	rjmp	.+0      	; 0x24ae <LCD_Character+0x3c>
-	_delay_us(1);
-	MCAL_GPIO_WritePin(lcd_control_Port,en,GPIO_PIN_RESET);				 // give low pulse to enable pin
     24ae:	40 e0       	ldi	r20, 0x00	; 0
     24b0:	64 e0       	ldi	r22, 0x04	; 4
     24b2:	86 e3       	ldi	r24, 0x36	; 54
@@ -5342,8 +4482,6 @@ void LCD_Character( unsigned char character )
     24c0:	f1 f7       	brne	.-4      	; 0x24be <LCD_Character+0x4c>
     24c2:	00 c0       	rjmp	.+0      	; 0x24c4 <LCD_Character+0x52>
     24c4:	00 00       	nop
-	_delay_us(200);
-	MCAL_GPIO_WritePort(lcd_Data_Port, ( character & 0X0F) << 4);               //sending lower nibble of 8 bit i.e 1byte
     24c6:	90 e1       	ldi	r25, 0x10	; 16
     24c8:	c9 9f       	mul	r28, r25
     24ca:	b0 01       	movw	r22, r0
@@ -5351,19 +4489,16 @@ void LCD_Character( unsigned char character )
     24ce:	86 e3       	ldi	r24, 0x36	; 54
     24d0:	90 e0       	ldi	r25, 0x00	; 0
     24d2:	0e 94 3e 01 	call	0x27c	; 0x27c <MCAL_GPIO_WritePort>
-	MCAL_GPIO_WritePin(lcd_control_Port,rs,GPIO_PIN_SET);            // rs=0 i.e select DATA reg
     24d6:	41 e0       	ldi	r20, 0x01	; 1
     24d8:	62 e0       	ldi	r22, 0x02	; 2
     24da:	86 e3       	ldi	r24, 0x36	; 54
     24dc:	90 e0       	ldi	r25, 0x00	; 0
     24de:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(lcd_control_Port,RW,GPIO_PIN_RESET);					 // R/W=0 i.e MODE Write
     24e2:	40 e0       	ldi	r20, 0x00	; 0
     24e4:	61 e0       	ldi	r22, 0x01	; 1
     24e6:	86 e3       	ldi	r24, 0x36	; 54
     24e8:	90 e0       	ldi	r25, 0x00	; 0
     24ea:	0e 94 2f 01 	call	0x25e	; 0x25e <MCAL_GPIO_WritePin>
-	MCAL_GPIO_WritePin(lcd_control_Port,en,GPIO_PIN_SET);					// give high pulse to enable pin
     24ee:	41 e0       	ldi	r20, 0x01	; 1
     24f0:	64 e0       	ldi	r22, 0x04	; 4
     24f2:	86 e3       	ldi	r24, 0x36	; 54
@@ -5373,8 +4508,6 @@ void LCD_Character( unsigned char character )
     24fc:	8a 95       	dec	r24
     24fe:	f1 f7       	brne	.-4      	; 0x24fc <LCD_Character+0x8a>
     2500:	00 c0       	rjmp	.+0      	; 0x2502 <LCD_Character+0x90>
-	_delay_us(1);
-	MCAL_GPIO_WritePin(lcd_control_Port,en,GPIO_PIN_RESET);				 // give low pulse to enable pin
     2502:	40 e0       	ldi	r20, 0x00	; 0
     2504:	64 e0       	ldi	r22, 0x04	; 4
     2506:	86 e3       	ldi	r24, 0x36	; 54
@@ -5392,45 +4525,29 @@ void LCD_Character( unsigned char character )
     2514:	f1 f7       	brne	.-4      	; 0x2512 <LCD_Character+0xa0>
     2516:	00 c0       	rjmp	.+0      	; 0x2518 <LCD_Character+0xa6>
     2518:	00 00       	nop
-	_delay_ms(2);
-#endif
-}
     251a:	cf 91       	pop	r28
     251c:	08 95       	ret
 
 0000251e <LCD_String>:
-
-void LCD_String (char *string)
-{
     251e:	0f 93       	push	r16
     2520:	1f 93       	push	r17
     2522:	cf 93       	push	r28
     2524:	df 93       	push	r29
     2526:	8c 01       	movw	r16, r24
-	int count=0;
     2528:	c0 e0       	ldi	r28, 0x00	; 0
     252a:	d0 e0       	ldi	r29, 0x00	; 0
-	while(*string)
     252c:	21 c0       	rjmp	.+66     	; 0x2570 <LCD_String+0x52>
-	{
-		count++;
     252e:	21 96       	adiw	r28, 0x01	; 1
-		LCD_Character(*string++);
     2530:	0f 5f       	subi	r16, 0xFF	; 255
     2532:	1f 4f       	sbci	r17, 0xFF	; 255
     2534:	0e 94 39 12 	call	0x2472	; 0x2472 <LCD_Character>
-		if (count==16)
     2538:	c0 31       	cpi	r28, 0x10	; 16
     253a:	d1 05       	cpc	r29, r1
     253c:	29 f4       	brne	.+10     	; 0x2548 <LCD_String+0x2a>
-		{
-			GOTO_XY(1,0);
     253e:	60 e0       	ldi	r22, 0x00	; 0
     2540:	81 e0       	ldi	r24, 0x01	; 1
     2542:	0e 94 27 12 	call	0x244e	; 0x244e <GOTO_XY>
     2546:	14 c0       	rjmp	.+40     	; 0x2570 <LCD_String+0x52>
-		}
-		else if(count==32)
     2548:	c0 32       	cpi	r28, 0x20	; 32
     254a:	d1 05       	cpc	r29, r1
     254c:	89 f4       	brne	.+34     	; 0x2570 <LCD_String+0x52>
@@ -5443,32 +4560,16 @@ void LCD_String (char *string)
     255a:	e1 f7       	brne	.-8      	; 0x2554 <LCD_String+0x36>
     255c:	00 c0       	rjmp	.+0      	; 0x255e <LCD_String+0x40>
     255e:	00 00       	nop
-		{
-			_delay_ms(500);
-			lcd_Clear();
     2560:	0e 94 1a 12 	call	0x2434	; 0x2434 <lcd_Clear>
-			GOTO_XY(0,0);
     2564:	60 e0       	ldi	r22, 0x00	; 0
     2566:	80 e0       	ldi	r24, 0x00	; 0
     2568:	0e 94 27 12 	call	0x244e	; 0x244e <GOTO_XY>
-			count=0;
     256c:	c0 e0       	ldi	r28, 0x00	; 0
     256e:	d0 e0       	ldi	r29, 0x00	; 0
-}
-
-void LCD_String (char *string)
-{
-	int count=0;
-	while(*string)
     2570:	f8 01       	movw	r30, r16
     2572:	80 81       	ld	r24, Z
     2574:	81 11       	cpse	r24, r1
     2576:	db cf       	rjmp	.-74     	; 0x252e <LCD_String+0x10>
-			lcd_Clear();
-			GOTO_XY(0,0);
-			count=0;
-		}
-	}
     2578:	df 91       	pop	r29
     257a:	cf 91       	pop	r28
     257c:	1f 91       	pop	r17
@@ -5476,12 +4577,6 @@ void LCD_String (char *string)
     2580:	08 95       	ret
 
 00002582 <__vector_9>:
- uint32_t count1=0,count2=0;
-static double distance;
-static uint32_t TimerOverflow = 0;
-void __vector_9 (void) __attribute__((signal));
-void __vector_9 (void)
-{
     2582:	1f 92       	push	r1
     2584:	0f 92       	push	r0
     2586:	0f b6       	in	r0, 0x3f	; 63
@@ -5491,7 +4586,6 @@ void __vector_9 (void)
     258e:	9f 93       	push	r25
     2590:	af 93       	push	r26
     2592:	bf 93       	push	r27
-	TimerOverflow++;
     2594:	80 91 a7 05 	lds	r24, 0x05A7	; 0x8005a7 <TimerOverflow>
     2598:	90 91 a8 05 	lds	r25, 0x05A8	; 0x8005a8 <TimerOverflow+0x1>
     259c:	a0 91 a9 05 	lds	r26, 0x05A9	; 0x8005a9 <TimerOverflow+0x2>
@@ -5503,7 +4597,6 @@ void __vector_9 (void)
     25ae:	90 93 a8 05 	sts	0x05A8, r25	; 0x8005a8 <TimerOverflow+0x1>
     25b2:	a0 93 a9 05 	sts	0x05A9, r26	; 0x8005a9 <TimerOverflow+0x2>
     25b6:	b0 93 aa 05 	sts	0x05AA, r27	; 0x8005aa <TimerOverflow+0x3>
-}
     25ba:	bf 91       	pop	r27
     25bc:	af 91       	pop	r26
     25be:	9f 91       	pop	r25
@@ -5515,15 +4608,7 @@ void __vector_9 (void)
     25ca:	18 95       	reti
 
 000025cc <main>:
-***********************************Main Function**********************************
-*********************************************************************************/
-int main(void)
-{
-	//Create  all the Tasks and semaphore 
-	Task_init();
     25cc:	0e 94 15 15 	call	0x2a2a	; 0x2a2a <Task_init>
-	// start os
-	vTaskStartScheduler();
     25d0:	0e 94 92 0c 	call	0x1924	; 0x1924 <vTaskStartScheduler>
     25d4:	ff cf       	rjmp	.-2      	; 0x25d4 <main+0x8>
 
@@ -5895,7 +4980,7 @@ void Print_State(void *pvparam)
 			{
 				lcd_Clear();
     2824:	0e 94 1a 12 	call	0x2434	; 0x2434 <lcd_Clear>
-				LCD_String("STOB");
+				LCD_String("STOP");
     2828:	8a e8       	ldi	r24, 0x8A	; 138
     282a:	90 e0       	ldi	r25, 0x00	; 0
     282c:	0e 94 8f 12 	call	0x251e	; 0x251e <LCD_String>
@@ -5919,7 +5004,7 @@ void Set_Speed(void *pvparam)
 	uint8_t speed;
 	while(1)
 	{
-		speed=CMD_Data-48;
+		speed=CMD_Data-'0';
     2848:	80 91 b7 05 	lds	r24, 0x05B7	; 0x8005b7 <CMD_Data>
     284c:	c0 ed       	ldi	r28, 0xD0	; 208
     284e:	c8 0f       	add	r28, r24
@@ -6242,19 +5327,19 @@ void Task_init(void)
 	//timer0 init to Traffic signal lights
 	Timer0_init();
     2a34:	0e 94 ee 14 	call	0x29dc	; 0x29dc <Timer0_init>
-	//Set speed 1
-	MOTOR_Speed(1);
-    2a38:	81 e0       	ldi	r24, 0x01	; 1
-    2a3a:	0e 94 70 10 	call	0x20e0	; 0x20e0 <MOTOR_Speed>
 	//init 7 segment
 	SEG_Init();
-    2a3e:	0e 94 df 0f 	call	0x1fbe	; 0x1fbe <SEG_Init>
+    2a38:	0e 94 df 0f 	call	0x1fbe	; 0x1fbe <SEG_Init>
 	//lcd init
 	LCD_init();
-    2a42:	0e 94 7a 11 	call	0x22f4	; 0x22f4 <LCD_init>
+    2a3c:	0e 94 7a 11 	call	0x22f4	; 0x22f4 <LCD_init>
 	//DC MOTOR Init
 	MOTOR_Init();
-    2a46:	0e 94 3c 10 	call	0x2078	; 0x2078 <MOTOR_Init>
+    2a40:	0e 94 3c 10 	call	0x2078	; 0x2078 <MOTOR_Init>
+	//Set speed 1
+	MOTOR_Speed(1);
+    2a44:	81 e0       	ldi	r24, 0x01	; 1
+    2a46:	0e 94 70 10 	call	0x20e0	; 0x20e0 <MOTOR_Speed>
 	//Bluetooth module init
 	Bluetooth_Init( INT_Disable);
     2a4a:	81 e0       	ldi	r24, 0x01	; 1
