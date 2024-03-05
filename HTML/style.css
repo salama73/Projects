@@ -1,0 +1,32 @@
+.General {
+    color: bisque;
+    background-color: chocolate;
+    background-image: url("../salama.jpg");
+    /*background-size: 700px 190px;*/
+    background-size: 50% 50%;
+    background-repeat: repeat;
+    margin: 10px;
+    border: 10px solid red;
+}
+
+a {
+    color: gold;
+}
+
+p {
+    color: orange;
+}
+
+nav {
+    color: white;
+    background-color: black;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border: 10px solid red;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+}

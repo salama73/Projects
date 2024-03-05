@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Encoding and character display-->
+    <meta charset="UTF-8" />
+    <!-- Contains a description of the page -->
+    <meta name="description" contains="My information" />
+    <!-- Contains the page title -->
+    <title>My Personal Information</title>
+    <link rel="stylesheet" href="css/Master.css">
+</head>
+
+<body>
+    <div class="General">
+        <div>
+            <h1>Salama Mohamed Abdel-Aal</h1>
+            <p>Email: <a href="mailto:salamamohamedabdelaal@gmail.com"
+                    target="_blank">salamamohamedabdelaal@gmail.com</a>
+            </p>
+            <p>Phone: <a href="tel:+1234567890">+201008308574</a></p>
+            <p>GitHub: <a href="https://github.com/salama73" target="_blank">GitHub</a></p>
+            <p>GitHub: <a href="https://www.linkedin.com/in/salama-mohamed-1a0224220/" target="_blank">LinkedIn</a></p>
+        </div>
+        <nav>
+            <a href="#section1">Summary</a>
+            <a href="#section2">Technical Skills</a>
+            <a href="#section3">Trainings & Courses</a>
+            <a href="#section4">Projects</a>
+            <a href="#section5">My grades</a>
+        </nav>
+        <section id="section1">
+            <h2><b>Summary</b></h2>
+            <p id="Summary">I am a communication and electronics student. I am interested in Embedded Systems.
+                Developing<br>
+                Embedded Software With Adaptive Autosar Guide trainee @ Siemens and Embedded Systems Summer<br>
+                Training @ ITI.</p>
+            <h2><b>Education</b></h2>
+            <p id="Education">
+                Faculty of Engineering Sohag university Communication and electronics department (4rd Year).
+            </p>
+        </section>
+        <section id="section2">
+            <div>
+                <h2>Technical Skills</h2>
+                <p id="Technical Skills">
+                    <!--
+                            Unordered List:     An unordered list is used to represent a list of items where the order doesn't matter. 
+                                                Bullets are commonly used to denote each item.
+                            Ordered list:       An ordered list is used to represent a list of items where the order is significant.
+                                                Numbers or letters are commonly used to denote each item.
+                        -->
+                <ul>
+                    <li>Strong knowledge in C and Embedded C</li>
+                    <li>Basic knowledge in Python</li>
+                    <li>Good knowledge in Data Structures (QUEUE,STACK,LINKED LIST)</li>
+                    <li>Good knowledge in ARM based on Cortex-M3</li>
+                    <li>Very Good knowledge in RTOS</li>
+                    <li>Very Good knowledge in AUTOSAR</li>
+                    <li>Very Good knowledge in OSEK</li>
+                    <li>Basic knowledge in Linux administration</li>
+                    <li>Basic knowledge in Operating System</li>
+                    <li>Embedded interfacing with different microcontrollers (Stm32f103c8,Atmega32)</li>
+                    <li>Good knowledge Communication Protocols (UART,I2C,SPI,CAN)</li>
+                    <li>Tools & Environments (Eclipse,Atmel Studio,Proteus,Stm32 Cube,Keil)</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+        <section id="section3">
+            <h2>Trainings & Courses</h2>
+            <p id="Trainings & Courses ">
+                <!--Span: element is an inline container used to group and apply styles to inline elements-->
+                1: Embedded trainee at <span>Siemens</span> August 2023-October 2023<br>
+                2: Information Technology Institute Internship (162H) August 2023-September 2023. Embedded System<br>
+                3: Diploma (Learn-In-Depth) July-2022
+            </p>
+        </section>
+        <section id="section4">
+            <h2>Projects</h2>
+            <p id="Projects">
+                <!--
+                        description list:   In HTML, you can create a definition list using the <dl>, <dt> (term), and <dd> (description) tags.
+                                            The <dt> tag is used to define terms, and the <dd> tag is used to provide descriptions or definitions 
+                                            for those terms
+                    -->
+            <dl>
+                <!--Term-->
+                <dt><b>Door Lock Indication : </b><a
+                        href="https://github.com/salama73/Projects/tree/master/Door_Lock_indication_Project"
+                        target="_blank">(GitHub)</a></dt>
+                <!--Descrition term-->
+                <dd>
+                    Led the development of the Door Lock Indication project using STM32F103C8 microcontroller.
+                    Oversaw<br>
+                    the implementation of ECU_Abstraction_SWC, efficiently reading door status and directing
+                    information<br>
+                    to Read_Door_State_SWC. DoorLock_indication_SWC analyzed door status, determining LED
+                    indications<br>
+                    for user feedback. Executed LED_Actuator_SWC to enable LED_Switch control within <br>
+                    ECU_Abstraction_SWC. Implemented efficient Sender-Receiver and Client-Server interfaces for
+                    seamless<br>
+                    data transfer and interaction. Incorporated DIO and PORT BSW modules for effective hardware
+                    interfacing.
+                </dd>
+            </dl>
+            <!--
+                <video controls poster="System_Architecture.png">
+                    <source src="salama.mp4" type="video/mp4">
+                </video>
+            -->
+            </p>
+        </section>
+        <section id="section5">
+            <h2>My grades</h2>
+            <p id="My grades">
+                <!--
+                        In HTML, you can create tables using the <table>, 
+                        <tr> (table row), 
+                        <th> (table header) 
+                        <td> (table data) tags
+                    -->
+            <table border="1">
+                <caption>percentage</caption>
+                <thead>
+                    <tr>
+                        <th>Academic year</th>
+                        <th>percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First academic year</td>
+                        <td>81 %</td>
+                    </tr>
+                    <tr>
+                        <td>Second academic year</td>
+                        <td>88 %</td>
+                    </tr>
+                    <tr>
+                        <td>Third academic year</td>
+                        <td>79 %</td>
+                    </tr>
+                    <tr>
+                        <td>Fourth academic year</td>
+                        <td>85 %</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                    </tr>
+                </tfoot>
+            </table>
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>
